@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: mapa_oferta_demanda_utn_db
+    environment:
+      POSTGRES_DB: mapa_oferta_demanda_utn
+      POSTGRES_USER: utn_user
+      POSTGRES_PASSWORD: utn_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
