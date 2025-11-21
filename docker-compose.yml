@@ -2,17 +2,38 @@ version: "3.9"
 
 services:
   postgres:
-    image: postgres:15
+    image: postgis/postgis:16-3.4
     container_name: mapa_oferta_demanda_utn_db
     environment:
       POSTGRES_DB: mapa_oferta_demanda_utn
       POSTGRES_USER: utn_user
       POSTGRES_PASSWORD: utn_password
+      TZ: America/Argentina/Buenos_Aires
+    command:
+      - "postgres"
+      - "-c"
+      - "logging_collector=on"
+      - "-c"
+      - "log_destination=stderr"
+      - "-c"
+      - "log_statement=all"
+      - "-c"
+      - "log_line_prefix=%m [%p] %q%u@%d "
+      - "-c"
+      - "log_duration=on"
+      - "-c"
+      - "log_min_duration_statement=0"
     ports:
       - "5433:5432"
     volumes:
       - ./init:/docker-entrypoint-initdb.d
       - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB} -h 127.0.0.1"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
 
 volumes:
   postgres_data:
