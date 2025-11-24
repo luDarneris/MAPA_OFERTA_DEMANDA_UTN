@@ -35,5 +35,22 @@ services:
       timeout: 5s
       retries: 20
 
+  seeder:
+    image: postgis/postgis:16-3.4
+    container_name: mapa_oferta_demanda_utn_seed
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PGPASSWORD: utn_password
+    volumes:
+      - ./seeds:/seeds
+    entrypoint: >
+      bash -c "
+      echo '---- Iniciando carga de seed ----';
+      psql -h postgres -U utn_user -d mapa_oferta_demanda_utn -f /seeds/seed_current.sql;
+      echo '---- Seed cargada correctamente ----';
+      "
+
 volumes:
   postgres_data:
