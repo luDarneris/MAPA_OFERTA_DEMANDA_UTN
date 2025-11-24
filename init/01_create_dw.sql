@@ -1,8 +1,4 @@
--- DROP SCHEMA public;
 
-CREATE SCHEMA public AUTHORIZATION pg_database_owner;
-
-COMMENT ON SCHEMA public IS 'standard public schema';
 
 -- DROP SEQUENCE public.dim_area_tematica_id_area_seq;
 
