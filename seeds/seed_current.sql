@@ -1855,7 +1855,6 @@ INSERT INTO public.dim_unidad_academica (id_unidad,nombre_unidad,fecha_inicio_vi
 INSERT INTO public.dim_unidad_academica (id_unidad,nombre_unidad,fecha_inicio_vigencia,fecha_fin_vigencia,id_geografia) VALUES
 	 (31,'Concordia','2025-11-21',NULL,259);
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (275,1,false,1,3,182,202201,'Se requiere rebobinado de motores eléctricos para planta de producción','Una planta industrial solicita diagnóstico y rebobinado de motores trifásicos que presentan pérdida de potencia. Se necesita identificar fallas de aislamiento, seleccionar insumos adecuados y realizar el bobinado respetando normas de seguridad e higiene.'),
 	 (276,1,false,1,3,182,202202,'Se necesita servicio de reparación y mantenimiento de motores eléctricos','Empresa metalúrgica reporta motores con recalentamiento y vibraciones. Se requiere evaluación del estado operativo, desmontaje controlado, reparación preventiva/correctiva y pruebas posteriores de funcionamiento.'),
 	 (277,1,false,1,3,182,202210,'Se solicita diagnóstico integral de motores para mantenimiento preventivo','PyME de la zona demanda revisión de motores eléctricos de línea. Se necesita determinar necesidades de mantenimiento, verificar conexiones internas y estado de bobinas para evitar paradas de producción.'),
 	 (278,1,false,1,3,182,202204,'Se requiere bobinado completo de motor monofásico de taller','Taller de servicios generales solicita rebobinado de motor monofásico con falla en arranque. Se necesita reparar bobinas, realizar montaje seguro y dejar el equipo operando bajo criterio de calidad.'),
@@ -1864,84 +1863,63 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (281,1,false,1,3,182,202112,'Se requiere servicio de rebobinado para motores de bombas hidráulicas','Empresa de riego necesita rebobinar motores acoplados a bombas, con desgaste por uso continuo. Se pide seleccionar materiales apropiados, ejecutar bobinado con control de calidad y garantizar seguridad en operación.'),
 	 (282,1,false,1,3,182,202207,'Se necesita restauración de motores eléctricos para línea de montaje','Industria regional solicita restaurar motores con baja eficiencia. Se requiere diagnóstico técnico, reparación de bobinas, limpieza interna, montaje y prueba del equipo bajo normas vigentes.'),
 	 (283,1,false,1,3,182,202208,'Se solicita servicio técnico para bobinado y conexionado de motor trifásico','PyME del sector servicios necesita rebobinado y correcta reconexión interna de motor trifásico. Se requiere aplicar técnicas de bobinado, conexionado seguro y prueba de carga.'),
-	 (284,1,false,1,3,182,202109,'Se requiere reparación de motor eléctrico con pérdida de torque','Empresa logística reporta motor de elevación con pérdida de torque y sobrecalentamiento. Se solicita diagnóstico, rebobinado parcial o total según criterio técnico y testeo final.');
+	 (284,1,false,1,3,182,202109,'Se requiere reparación de motor eléctrico con pérdida de torque','Empresa logística reporta motor de elevación con pérdida de torque y sobrecalentamiento. Se solicita diagnóstico, rebobinado parcial o total según criterio técnico y testeo final.'),
+	 (285,1,false,1,3,182,202211,'Se necesita revisión y rebobinado preventivo de motores de ventilación','Institución pública solicita mantenimiento preventivo/correctivo de motores de ventilación. Se requiere inspección del bobinado, reparación si corresponde, y dejar equipos operativos cumpliendo seguridad e higiene.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (285,1,false,1,3,182,202211,'Se necesita revisión y rebobinado preventivo de motores de ventilación','Institución pública solicita mantenimiento preventivo/correctivo de motores de ventilación. Se requiere inspección del bobinado, reparación si corresponde, y dejar equipos operativos cumpliendo seguridad e higiene.'),
 	 (286,1,false,1,3,182,202212,'Se solicita reparación de motores eléctricos para maquinaria agrícola','Productor agroindustrial requiere servicio por motores usados en maquinaria que presentan fallas intermitentes. Se necesita diagnóstico, selección de insumos, bobinado con criterio de calidad y verificación operativa.'),
-	 (421,1,false,9,3,325,202212,'Se necesita curso práctico de IA para automatización (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (422,1,false,9,3,325,202301,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (423,1,false,9,3,325,202301,'Se requiere entrenamiento en Python + IA para análisis predictivo (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (424,1,false,9,3,325,202301,'Se solicita formación en IA generativa y uso de modelos LLM (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (425,1,false,9,3,325,202301,'Se necesita curso práctico de IA para automatización (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (426,1,false,9,3,325,202301,'Se solicita formación en IA generativa y uso de modelos LLM (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (427,1,false,9,3,325,202301,'Se requiere entrenamiento en Python + IA para análisis predictivo (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (428,1,false,9,3,325,202301,'Se necesita curso práctico de IA para automatización (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.');
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (429,1,false,9,3,325,202301,'Se necesita curso práctico de IA para automatización (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (430,1,false,9,3,325,202301,'Se requiere entrenamiento en Python + IA para análisis predictivo (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (431,1,false,9,3,325,202301,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (432,1,false,9,3,325,202301,'Se necesita curso práctico de IA para automatización (2023-01)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
-	 (433,1,false,9,3,325,202302,'Se necesita curso práctico de IA para automatización (2023-02)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
 	 (287,1,false,9,3,325,202201,'Se solicita capacitación en Deep Learning y redes neuronales (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (288,1,false,9,3,325,202201,'Se solicita capacitación en Deep Learning y redes neuronales (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (289,1,false,9,3,325,202201,'Se necesita curso práctico de IA para automatización (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (290,1,false,9,3,325,202201,'Se solicita capacitación en Deep Learning y redes neuronales (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (291,1,false,9,3,325,202201,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (291,1,false,9,3,325,202201,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (292,1,false,9,3,325,202201,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (293,1,false,9,3,325,202201,'Se requiere curso de IA aplicada para equipos técnicos (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (294,1,false,9,3,325,202201,'Se requiere curso de IA aplicada para equipos técnicos (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (295,1,false,9,3,325,202201,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
+	 (295,1,false,9,3,325,202201,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
 	 (296,1,false,9,3,325,202201,'Se requiere curso de IA aplicada para equipos técnicos (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (297,1,false,9,3,325,202201,'Se necesita curso práctico de IA para automatización (2022-01)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (298,1,false,9,3,325,202202,'Se solicita formación en IA generativa y uso de modelos LLM (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (299,1,false,9,3,325,202202,'Se requiere curso de IA aplicada para equipos técnicos (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (300,1,false,9,3,325,202202,'Se solicita formación en IA generativa y uso de modelos LLM (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (301,1,false,9,3,325,202202,'Se necesita curso práctico de IA para automatización (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (301,1,false,9,3,325,202202,'Se necesita curso práctico de IA para automatización (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (302,1,false,9,3,325,202202,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (303,1,false,9,3,325,202202,'Se necesita curso práctico de IA para automatización (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (304,1,false,9,3,325,202202,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (305,1,false,9,3,325,202202,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
+	 (305,1,false,9,3,325,202202,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
 	 (306,1,false,9,3,325,202202,'Se solicita capacitación en Deep Learning y redes neuronales (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (307,1,false,9,3,325,202202,'Se necesita curso práctico de IA para automatización (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (308,1,false,9,3,325,202202,'Se solicita formación en IA generativa y uso de modelos LLM (2022-02)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (309,1,false,9,3,325,202203,'Se necesita curso práctico de IA para automatización (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (310,1,false,9,3,325,202203,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (311,1,false,9,3,325,202203,'Se necesita curso práctico de IA para automatización (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (434,1,false,9,3,325,202302,'Se solicita capacitación en Deep Learning y redes neuronales (2023-02)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
+	 (311,1,false,9,3,325,202203,'Se necesita curso práctico de IA para automatización (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (312,1,false,9,3,325,202203,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (313,1,false,9,3,325,202203,'Se requiere curso de IA aplicada para equipos técnicos (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (314,1,false,9,3,325,202203,'Se necesita curso práctico de IA para automatización (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (315,1,false,9,3,325,202203,'Se requiere curso de IA aplicada para equipos técnicos (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
+	 (315,1,false,9,3,325,202203,'Se requiere curso de IA aplicada para equipos técnicos (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
 	 (316,1,false,9,3,325,202203,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (317,1,false,9,3,325,202203,'Se necesita curso práctico de IA para automatización (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (318,1,false,9,3,325,202203,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2022-03)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (319,1,false,9,3,325,202204,'Se requiere curso de IA aplicada para equipos técnicos (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (320,1,false,9,3,325,202204,'Se solicita capacitación en Deep Learning y redes neuronales (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (320,1,false,9,3,325,202204,'Se solicita capacitación en Deep Learning y redes neuronales (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (321,1,false,9,3,325,202204,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (322,1,false,9,3,325,202204,'Se necesita curso práctico de IA para automatización (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (323,1,false,9,3,325,202204,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (324,1,false,9,3,325,202204,'Se solicita formación en IA generativa y uso de modelos LLM (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (325,1,false,9,3,325,202204,'Se solicita capacitación en Deep Learning y redes neuronales (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
+	 (325,1,false,9,3,325,202204,'Se solicita capacitación en Deep Learning y redes neuronales (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
 	 (326,1,false,9,3,325,202204,'Se requiere curso de IA aplicada para equipos técnicos (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (327,1,false,9,3,325,202204,'Se solicita capacitación en Deep Learning y redes neuronales (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (328,1,false,9,3,325,202204,'Se solicita formación en IA generativa y uso de modelos LLM (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (329,1,false,9,3,325,202204,'Se requiere curso de IA aplicada para equipos técnicos (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (330,1,false,9,3,325,202204,'Se necesita curso práctico de IA para automatización (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (330,1,false,9,3,325,202204,'Se necesita curso práctico de IA para automatización (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (331,1,false,9,3,325,202204,'Se necesita curso práctico de IA para automatización (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (332,1,false,9,3,325,202204,'Se solicita capacitación en Deep Learning y redes neuronales (2022-04)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (333,1,false,9,3,325,202205,'Se solicita capacitación en Deep Learning y redes neuronales (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (334,1,false,9,3,325,202205,'Se necesita curso práctico de IA para automatización (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (335,1,false,9,3,325,202205,'Se solicita formación en IA generativa y uso de modelos LLM (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (336,1,false,9,3,325,202205,'Se requiere curso de IA aplicada para equipos técnicos (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (337,1,false,9,3,325,202205,'Se requiere curso de IA aplicada para equipos técnicos (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (338,1,false,9,3,325,202205,'Se necesita curso práctico de IA para automatización (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (339,1,false,9,3,325,202205,'Se requiere entrenamiento en Python + IA para análisis predictivo (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (340,1,false,9,3,325,202205,'Se requiere curso de IA aplicada para equipos técnicos (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
+	 (335,1,false,9,3,325,202205,'Se solicita formación en IA generativa y uso de modelos LLM (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
 	 (341,1,false,9,3,325,202205,'Se necesita curso práctico de IA para automatización (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (342,1,false,9,3,325,202205,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2022-05)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
@@ -2019,292 +1997,6 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (407,1,false,9,3,325,202211,'Se requiere curso de IA aplicada para equipos técnicos (2022-11)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (408,1,false,9,3,325,202211,'Se necesita curso práctico de IA para automatización (2022-11)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (409,1,false,9,3,325,202211,'Se solicita formación en IA generativa y uso de modelos LLM (2022-11)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (410,1,false,9,3,325,202212,'Se necesita curso práctico de IA para automatización (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (411,1,false,9,3,325,202212,'Se solicita formación en IA generativa y uso de modelos LLM (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (412,1,false,9,3,325,202212,'Se solicita capacitación en Deep Learning y redes neuronales (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (413,1,false,9,3,325,202212,'Se necesita curso práctico de IA para automatización (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (414,1,false,9,3,325,202212,'Se solicita formación en IA generativa y uso de modelos LLM (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (415,1,false,9,3,325,202212,'Se solicita capacitación en Deep Learning y redes neuronales (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (416,1,false,9,3,325,202212,'Se solicita formación en IA generativa y uso de modelos LLM (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (417,1,false,9,3,325,202212,'Se solicita formación en IA generativa y uso de modelos LLM (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (418,1,false,9,3,325,202212,'Se solicita formación en IA generativa y uso de modelos LLM (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
-	 (25,1,false,11,3,465,202405,'Se necesita capacitación en Laboratorio de Diseño y Simulación para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (26,1,false,11,1,258,202212,'Se solicita formación avanzada en Diplomatura en Herramientas Digitales para el Diseño Industrial. Diseño avanzado de productos con SolidWorks para perfiles con experiencia',NULL),
-	 (27,1,false,2,1,258,202410,'Se solicita Diplomatura en Mantenimiento industrial para profesionalización de equipos de trabajo',NULL),
-	 (28,1,false,12,1,258,202312,'Se solicita Diplomatura en Instalaciones Sanitarias para profesionalización de equipos de trabajo',NULL),
-	 (29,1,false,20,1,258,202312,'Se solicita Diplomatura en Administración Contable para profesionalización de equipos de trabajo',NULL),
-	 (30,1,false,22,1,258,202211,'Se solicita Diplomatura en Liderazgo y Coaching de Equipos para profesionalización de equipos de trabajo',NULL),
-	 (31,1,false,12,1,258,202412,'Se solicita Diplomatura en Albañilería para profesionalización de equipos de trabajo',NULL),
-	 (32,1,false,4,1,258,202212,'Se solicita Diplomatura en soldadura para profesionalización de equipos de trabajo',NULL),
-	 (33,1,false,2,1,68,202412,'Se solicita Diplomatura en Mantenimiento Mecánico para profesionalización de equipos de trabajo',NULL),
-	 (34,1,false,16,1,68,202411,'Se solicita Diplomatura en Tecnologías en la Cadena de Valor del Litio para profesionalización de equipos de trabajo',NULL),
-	 (35,1,false,20,1,68,202411,'Se solicita Diplomatura en Liderazgo y Desarrollo Organizacional para profesionalización de equipos de trabajo',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (36,1,false,16,1,68,202212,'Se solicita Diplomatura en Industrialización de Hidrocarburos para profesionalización de equipos de trabajo',NULL),
-	 (37,1,false,19,3,68,202301,'Se necesita Capacitación en Calidad y Mejora Continua (Lean Manufacturing) para fortalecer competencias del sector público y privado',NULL),
-	 (38,1,false,13,3,68,202501,'Se necesita Capacitación en Sostenibilidad y Responsabilidad Social Corporativa para fortalecer competencias del sector público y privado',NULL),
-	 (39,1,false,6,3,68,202501,'Se necesita Curso de Mantenimiento Industrial para capacitación de personal en organizaciones locales',NULL),
-	 (40,1,false,24,3,68,202506,'Se necesita Curso de Precomisionado, Comisionado y PEM para capacitación de personal en organizaciones locales',NULL),
-	 (41,1,false,1,3,68,202506,'Se necesita Curso sobre Mediciones de Puesta a Tierra para capacitación de personal en organizaciones locales',NULL),
-	 (42,1,false,6,3,68,202412,'Se necesita Curso de Instrumentación y Control para capacitación de personal en organizaciones locales',NULL),
-	 (43,1,false,2,3,68,202405,'Se necesita Curso de Equipos e Instalaciones Industriales para capacitación de personal en organizaciones locales',NULL),
-	 (44,1,false,3,3,68,202401,'Se necesita Curso de Elementos de Máquina para capacitación de personal en organizaciones locales',NULL),
-	 (45,1,false,5,3,68,202306,'Se necesita Curso de Materiales Metálicos y Materiales No Metálicos para capacitación de personal en organizaciones locales',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (46,1,false,4,3,68,202212,'Se necesita Curso de Mecanizado para capacitación de personal en organizaciones locales',NULL),
-	 (47,1,false,20,3,68,202405,'Se necesita Curso de Implementación de Sistema de Gestión de la Energía para capacitación de personal en organizaciones locales',NULL),
-	 (48,1,false,1,3,68,202306,'Se necesita Curso de Seguridad y Riesgo Eléctrico según  AEA 95904 - Esquema para certificación de personas instruidas en  seguridad y riesgos eléctricos - Código BA5 para capacitación de personal en organizaciones locales',NULL),
-	 (49,1,false,1,3,68,202506,'Se necesita Curso de Seguridad y Riesgo Eléctrico según  AEA 95904 - Esquema para certificación de personas instruidas en  seguridad y riesgos eléctricos - Código BA4 para capacitación de personal en organizaciones locales',NULL),
-	 (50,1,false,6,3,68,202407,'Se necesita Curso de Tratamiento de Ambientes con Polvos, Virutas y Fibras para capacitación de personal en organizaciones locales',NULL),
-	 (51,1,false,21,3,68,202301,'Se necesita Curso de Calidad y Tratamiento de Aire Interior para Industrias para capacitación de personal en organizaciones locales',NULL),
-	 (52,1,false,20,3,20,202401,'Se necesita capacitación en LIQUIDACIÓN DE SUELDOS Y CARGAS SOCIALES + LIQUIDACIÓN DE IMPUESTOS para responder a necesidades del mercado laboral',NULL),
-	 (53,1,false,1,3,20,202405,'Se necesita capacitación en FUNCIONAMIENTO DE UN VEHÍCULO ELÉCTRICO, HÍBRIDO Y RETROFIT DE UN VEHÍCULO DE COMBUSTIÓN EN 100% ELÉCTRICO (Curso Intensivo) para responder a necesidades del mercado laboral',NULL),
-	 (54,1,false,2,3,20,202401,'Se necesita capacitación en INSTALACIÓN DE AIRE ACONDICIONADO SPLIT para responder a necesidades del mercado laboral',NULL),
-	 (55,1,false,2,3,20,202405,'Se necesita capacitación en INSTALACIÓN DE CÁMARAS Y ALARMAS para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (56,1,false,23,3,20,202301,'Se necesita capacitación en TECNOLOGÍA INVERTER EN EQUIPOS DE AIRE ACONDICIONADO SPLIT para responder a necesidades del mercado laboral',NULL),
-	 (57,1,false,9,3,20,202212,'Se necesita PROGRAMACIÓN WEB- HTML Y CSS3- NIVEL 1 para empleados del área tecnológica de empresas privadas',NULL),
-	 (58,1,false,22,3,20,202305,'Se solicita formación avanzada en EXCEL INTERMEDIO AVANZADO para perfiles con experiencia',NULL),
-	 (59,1,false,22,3,20,202301,'Se necesita capacitación en PAQUETE OFFICE para responder a necesidades del mercado laboral',NULL),
-	 (60,1,false,24,3,20,202412,'Se necesita capacitación en PASHED ARRAY Nivel 1 para responder a necesidades del mercado laboral',NULL),
-	 (61,1,false,24,3,20,202211,'Se necesita capacitación en ULTRASONIDO Nivel 2 para responder a necesidades del mercado laboral',NULL),
-	 (62,1,false,24,3,20,202301,'Se necesita capacitación en ULTRASONIDO Nivel I para responder a necesidades del mercado laboral',NULL),
-	 (63,1,false,3,2,182,202401,'Se necesita capacitación en MANTENIMIENTO ROTORES-CIGUEÑALES para responder a necesidades del mercado laboral',NULL),
-	 (64,1,false,24,3,182,202412,'Se necesita capacitación en LUMINOTECNIA para responder a necesidades del mercado laboral',NULL),
-	 (65,1,false,1,3,182,202306,'Se necesita SEGURIDAD ELECETRICA para cumplir normativas laborales y prevenir incidentes',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (66,1,false,11,4,182,202410,'Se necesita capacitación en ESTUDIO CARGAS DE FUEGO para responder a necesidades del mercado laboral',NULL),
-	 (67,1,false,1,3,182,202312,'Se necesita capacitación en EFICIENCIA ENERGÉTICA EN EDIFICIOS para responder a necesidades del mercado laboral',NULL),
-	 (68,1,false,5,4,182,202411,'Se necesita capacitación en SELECCION DE MATERIALES para responder a necesidades del mercado laboral',NULL),
-	 (69,1,false,11,4,182,202411,'Se necesita capacitación en DETERMINACIÓN DE CAUSAS DE CORROSIÓN para responder a necesidades del mercado laboral',NULL),
-	 (70,1,false,5,3,20,202307,'Se necesita capacitación en CORRIENTES INDUCIDAS Nivel 2 para responder a necesidades del mercado laboral',NULL),
-	 (71,1,false,18,3,20,202404,'Se necesita capacitación en ENSAYOS VISUALES 1 y 2 para responder a necesidades del mercado laboral',NULL),
-	 (72,1,false,5,3,20,202212,'Se necesita capacitación en PARTÍCULAS MAGNÉTICAS Nivel  1 y 2 para responder a necesidades del mercado laboral',NULL),
-	 (73,1,false,1,3,182,202301,'Se necesita capacitación en BOBINADO DE MOTORES para responder a necesidades del mercado laboral',NULL),
-	 (74,1,false,20,1,20,202210,'Se solicita DIPLOMATURA EN COACHING DEPORTIVO para profesionalización de equipos de trabajo',NULL),
-	 (75,1,false,20,1,20,202312,'Se solicita DIPLOMATURA EN GESTIÓN AGILE para profesionalización de equipos de trabajo',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (76,1,false,20,1,20,202412,'Se solicita DIPLOMATURA ANALISTA ADMINISTRATIVO DE RECURSOS HUMANOS para profesionalización de equipos de trabajo',NULL),
-	 (77,1,false,6,1,20,202212,'Se necesita capacitación en DIPLOMADO DEVOPS TOOLS ENGINEER para responder a necesidades del mercado laboral',NULL),
-	 (78,1,false,10,3,20,202502,'Se requiere POWER BI para mejorar el análisis y la visualización en áreas administrativas',NULL),
-	 (79,1,false,4,3,20,202306,'Se requiere EXCEL para mejorar el análisis y la visualización en áreas administrativas',NULL),
-	 (80,1,false,10,3,182,202401,'Se necesita capacitación introductoria en BUSINESS INTELLIGENCE - POWER BI INICIAL Y AVANZADO para nuevos ingresantes',NULL),
-	 (81,1,false,11,3,182,202212,'Se necesita capacitación introductoria en MS POWER POINT NIVEL INICIAL Y AVANZADO para nuevos ingresantes',NULL),
-	 (82,1,false,9,3,182,202501,'Se necesita capacitación introductoria en MS WORD NIVEL INICIAL Y AVANZADO para nuevos ingresantes',NULL),
-	 (83,1,false,7,3,182,202506,'Se necesita capacitación en ALFABETIZACIÓN DIGITAL para responder a necesidades del mercado laboral',NULL),
-	 (84,1,false,11,4,182,202312,'Se necesita capacitación en REDACCIÓN Y PRESENTACIÓN DE INFORMES para responder a necesidades del mercado laboral',NULL),
-	 (85,1,false,24,3,182,202307,'Se necesita capacitación en LIQUIDACIÓN DE SUELDOS Y JORNALES para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (86,1,false,5,3,182,202212,'Se necesita capacitación en ASPESCTOS CORROSIVOS EN MATERIALES para responder a necesidades del mercado laboral',NULL),
-	 (87,1,false,21,3,182,202406,'Se necesita SEGURIDAD E HIGIENE para cumplir normativas laborales y prevenir incidentes',NULL),
-	 (88,1,false,11,3,182,202412,'Se demanda COMUNICACIÓN ASERTIVA para mejorar la comunicación interna y externa',NULL),
-	 (89,1,false,11,3,182,202208,'Se necesita capacitación en RESOLUCIÓN DE CONFLICTOS Y NEGOCIACIÓN. para responder a necesidades del mercado laboral',NULL),
-	 (90,1,false,20,3,182,202312,'Se requiere GESTIÓN DE RECURSOS HUMANOS para mandos medios y áreas de administración pública/privada',NULL),
-	 (91,1,false,10,4,182,202411,'Se requiere TECNOLOGÍAS DE GESTIÓN para mandos medios y áreas de administración pública/privada',NULL),
-	 (92,1,false,1,4,182,202311,'Se demanda SISTEMAS ELÉCTRICOS DE POTENCIA INDUSTRIAL para equipos de soporte y desarrollo de la región',NULL),
-	 (93,1,false,11,4,182,202312,'Se necesita capacitación en ESTUDIOS ERGONÓMICOS DE LOS PUESTOS DE TRABAJO para responder a necesidades del mercado laboral',NULL),
-	 (94,1,false,5,4,182,202411,'Se necesita capacitación en PREVENSIÓN DE LA CORROSIÓN METÁLICA para responder a necesidades del mercado laboral',NULL),
-	 (95,1,false,15,3,182,202412,'Se necesita capacitación en AGRICULTURA, PESCA Y ALIMENTOS para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (96,1,false,1,4,471,202211,'Se necesita capacitación en Implementación de energías renovables para responder a necesidades del mercado laboral',NULL),
-	 (97,1,false,24,3,471,202506,'Se necesita Idiomas: Inglés Intermedio: Nivel 3A-4B-5C para personal que interactúa con clientes internacionales',NULL),
-	 (98,1,false,11,3,471,202401,'Se necesita Idiomas: Inglés Elemental: Nivel 1A – 2B para personal que interactúa con clientes internacionales',NULL),
-	 (99,1,false,11,3,471,202401,'Se necesita Idiomas: Inglés Elemental: Nivel 1A – 2B para personal que interactúa con clientes internacionales',NULL),
-	 (100,1,false,24,3,471,202302,'Se necesita capacitación en Idiomas: Francés (A1–A2 para responder a necesidades del mercado laboral',NULL),
-	 (101,1,false,1,3,471,202306,'Se requiere Taller Expresarte: Nivel 1 y 2 para actualización de habilidades específicas',NULL),
-	 (102,1,false,24,3,471,202412,'Se necesita capacitación en Adopción de Objetivos del Desarrollo Sostenible en Gobiernos Locales para responder a necesidades del mercado laboral',NULL),
-	 (103,1,false,24,3,471,202306,'Se necesita capacitación en Adopción de Objetivos del Desarrollo Sostenible en Gobiernos Locales para responder a necesidades del mercado laboral',NULL),
-	 (104,1,false,11,3,471,202305,'Se requiere Taller de Oratoria y Comunicación Eficaz para actualización de habilidades específicas',NULL),
-	 (105,1,false,22,3,471,202301,'Se requiere Taller Lenguaje Expresivo para actualización de habilidades específicas',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (106,1,false,9,3,471,202501,'Se necesita capacitación en Uso de la tecnología para Adultos para responder a necesidades del mercado laboral',NULL),
-	 (107,1,false,22,3,471,202505,'Se necesita capacitación en Recursos educativos abiertos: objetos de aprendizaje y otros materiales interactivos para responder a necesidades del mercado laboral',NULL),
-	 (108,1,false,22,3,471,202312,'Se requiere Taller de química para alumnos de escuelas secundarias para actualización de habilidades específicas',NULL),
-	 (109,1,false,20,3,471,202401,'Se requiere Inserción Laboral y Gestión del Capital Humano para mandos medios y áreas de administración pública/privada',NULL),
-	 (110,1,false,19,3,471,202312,'Se necesita capacitación en Introducción a la Formulación y Evaluación de Proyectos de Inversión para responder a necesidades del mercado laboral',NULL),
-	 (111,1,false,19,3,471,202409,'Se necesita capacitación en Introducción a la Formulación y Evaluación de Proyectos de Inversión para responder a necesidades del mercado laboral',NULL),
-	 (112,1,false,9,3,471,202311,'Se requiere Taller: Introducción a la Programación para adolescentes para actualización de habilidades específicas',NULL),
-	 (113,1,false,14,3,471,202406,'Se requiere Taller Materias Básicas para actualización de habilidades específicas',NULL),
-	 (114,1,false,9,3,471,202312,'Se requiere Taller Robótica y Realidad Virtual para actualización de habilidades específicas',NULL),
-	 (115,1,false,9,3,471,202412,'Se necesita capacitación introductoria en Taller Programación Inicial para nuevos ingresantes',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (116,1,false,11,3,471,202307,'Se requiere Taller Fabricación Aditiva para actualización de habilidades específicas',NULL),
-	 (117,1,false,9,3,471,202501,'Se requiere Taller Herramientas informáticas y organizacionales para actualización de habilidades específicas',NULL),
-	 (118,1,false,13,3,237,202402,'Se demanda Sistemas de Gestión de Medio Ambiente ISO 14001:2015 para equipos de soporte y desarrollo de la región',NULL),
-	 (119,1,false,21,3,237,202501,'Se demanda Sistemas de Gestión de Higiene y Seguridad en el Trabajo ISO 45001:2018 para equipos de soporte y desarrollo de la región',NULL),
-	 (120,1,false,20,3,237,202405,'Se necesita capacitación introductoria en Herramientas de Excel Nivel Inicial | Nivel Intermedio para nuevos ingresantes',NULL),
-	 (121,1,false,20,3,237,202501,'Se demanda Sistemas de Gestión de Calidad- Auditor Interno ISO 9001:2015 para equipos de soporte y desarrollo de la región',NULL),
-	 (122,1,false,4,3,237,202502,'Se necesita capacitación en Tornería para responder a necesidades del mercado laboral',NULL),
-	 (123,1,false,9,3,237,202412,'Se requiere Taller “Aprendemos a Programar” para actualización de habilidades específicas',NULL),
-	 (124,1,false,2,3,237,202501,'Se necesita Soldadura para capacitación de operarios y mejora de empleabilidad',NULL),
-	 (125,1,false,3,3,237,202301,'Se necesita Mecánica de Motos para capacitación de operarios y mejora de empleabilidad',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (126,1,false,21,3,237,202506,'Se necesita capacitación en Gasista Matriculado Cat. III para responder a necesidades del mercado laboral',NULL),
-	 (127,1,false,1,3,237,202307,'Se necesita capacitación en Energía Solar Fotovoltaica para responder a necesidades del mercado laboral',NULL),
-	 (128,1,false,2,3,237,202312,'Se necesita capacitación en Reparación de Aires Acondicionados Split Cíclicos e Inverter para responder a necesidades del mercado laboral',NULL),
-	 (129,1,false,1,3,237,202401,'Se necesita Electricidad Industrial para capacitación de operarios y mejora de empleabilidad',NULL),
-	 (130,1,false,9,3,237,202212,'Se solicita formación avanzada en Electricidad Industrial Avanzada y PLC para perfiles con experiencia',NULL),
-	 (131,1,false,1,3,237,202301,'Se necesita Electricidad Domiciliaria para capacitación de operarios y mejora de empleabilidad',NULL),
-	 (132,1,false,21,3,237,202306,'Se necesita Cursos de Cooperativismo y Factores de Riesgo por Actividad para capacitación de personal en organizaciones locales',NULL),
-	 (133,1,false,21,4,457,202412,'Se necesita AUDITORIA DE TANQUES de Seguridad - RES. 1102/04 para cumplir normativas laborales y prevenir incidentes',NULL),
-	 (134,1,false,20,3,457,202501,'Se necesita capacitación en Liderazgo y Manejo de Equipos para responder a necesidades del mercado laboral',NULL),
-	 (135,1,false,14,3,468,202212,'Se necesita capacitación en LABORATORIO DE NUEVAS TECNOLOGÍAS para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (136,1,false,5,3,468,202302,'Se necesita ELECTRICIDAD para capacitación de operarios y mejora de empleabilidad',NULL),
-	 (137,1,false,1,3,457,202505,'Se necesita Curso Instalaciones Eléctricas para capacitación de personal en organizaciones locales',NULL),
-	 (138,1,false,1,3,457,202212,'Se necesita Curso Electricidad Básica para capacitación de personal en organizaciones locales',NULL),
-	 (139,1,false,9,3,457,202306,'Se necesita Curso de informática para principiantes para capacitación de personal en organizaciones locales',NULL),
-	 (140,1,false,9,3,457,202501,'Se necesita Curso de Ofimatica para capacitación de personal en organizaciones locales',NULL),
-	 (141,1,false,24,3,457,202301,'Se necesita Curso de Idiomas: Frances. Nivel I y II para capacitación de personal en organizaciones locales',NULL),
-	 (142,1,false,11,3,457,202412,'Se necesita Curso en Diseño e Impresion 3D para capacitación de personal en organizaciones locales',NULL),
-	 (143,1,false,24,3,457,202301,'Se requiere Manejo de Excel para mejorar el análisis y la visualización en áreas administrativas',NULL),
-	 (144,1,false,21,3,457,202502,'Se necesita Curso de higiene y seguridad laboral para capacitación de personal en organizaciones locales',NULL),
-	 (145,1,false,22,3,465,202307,'Se demanda entrenamiento práctico en CURSO DE DESARROLLO PROFESIONAL MEJORA DE PRÁCTICAS DE EVALUACIÓN orientado a la aplicación laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (146,1,false,20,3,465,202301,'Se necesita Curso de Análisis de Costos para capacitación de personal en organizaciones locales',NULL),
-	 (147,1,false,20,3,465,202302,'Se necesita Curso de Emprendedorismo para capacitación de personal en organizaciones locales',NULL),
-	 (148,1,false,10,3,465,202412,'Se necesita Curso de Principios de mejora de procesos y transformación digital para industrias para capacitación de personal en organizaciones locales',NULL),
-	 (149,1,false,21,3,465,202412,'Se necesita Curso de Método de las “5 S” – Orden y limpieza para capacitación de personal en organizaciones locales',NULL),
-	 (150,1,false,11,3,465,202212,'Se necesita Curso “Herramientas para la Gestión Estratégica de Empresas Agropecuarias” para capacitación de personal en organizaciones locales',NULL),
-	 (151,1,false,19,3,465,202312,'Se necesita Curso Estrategias Agropecuarias para un Futuro Climáticamente Inteligente para capacitación de personal en organizaciones locales',NULL),
-	 (152,1,false,22,3,465,202501,'Se necesita Curso de Desarrollo Frontend para capacitación de personal en organizaciones locales',NULL),
-	 (153,1,false,8,3,514,202301,'Se necesita Capacitación en FTTH para fortalecer competencias del sector público y privado',NULL),
-	 (154,1,false,7,3,512,202307,'Se requiere Taller intensivo de optimización de clima laboral para actualización de habilidades específicas',NULL),
-	 (155,1,false,12,4,468,202410,'Se necesita capacitación en GIDEC - GRUPO DE INVESTIGACION Y DESARROLLO DE ESTRUCTURAS CIVILES para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (156,1,false,9,3,512,202301,'Se necesita capacitación en PLC Controladores Lógicos Programables para responder a necesidades del mercado laboral',NULL),
-	 (157,1,false,23,3,354,202411,'Se necesita capacitación en TECNICAS GENERALES DE ALBAÑILERÍA para responder a necesidades del mercado laboral',NULL),
-	 (158,1,false,24,3,354,202401,'Se requiere USO Y MANEJO DE LA HERRAMIENTA DE EXCEL para mejorar el análisis y la visualización en áreas administrativas',NULL),
-	 (159,1,false,2,3,354,202412,'Se necesita capacitación en OPERARIO RURAL ESPECIALIZADO: TRACTOR y MAQUINARIA para responder a necesidades del mercado laboral',NULL),
-	 (160,1,false,2,3,354,202311,'Se necesita capacitación en ELECTRONICA BÁSICA APLICADA A LA INDUSTRIA para responder a necesidades del mercado laboral',NULL),
-	 (161,1,false,2,3,354,202312,'Se necesita capacitación en REFRIGERACION-CLIMATIZACIÓN para responder a necesidades del mercado laboral',NULL),
-	 (162,1,false,21,3,514,202412,'Se necesita Higiene y Seguridad para cumplir normativas laborales y prevenir incidentes',NULL),
-	 (163,1,false,16,3,514,202401,'Se necesita INGLÉS TÉCNICO PARA MINERÍA para personal que interactúa con clientes internacionales',NULL),
-	 (164,1,false,6,3,514,202307,'Se necesita capacitación en AUTOMATIZACIÓN DE PROCESOS MINEROS CON PLC para responder a necesidades del mercado laboral',NULL),
-	 (165,1,false,1,2,514,202505,'Se requiere GESTIÓN Y MANTENIMIENTO DE APARAMENTA ELÉCTRICA EN ENTORNOS MINEROS para mandos medios y áreas de administración pública/privada',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (166,1,false,16,3,514,202406,'Se requiere Gestión Integral de la Seguridad y Salud en la Minería para agentes sanitarios y personal de atención comunitaria',NULL),
-	 (167,1,false,16,3,514,202312,'Se necesita capacitación en Instrumentación aplicada a la Minería del Litio para responder a necesidades del mercado laboral',NULL),
-	 (168,1,false,24,3,259,202405,'Se necesita CURSOS DE IDIOMAS:  Alemán. Nivel I  para capacitación de personal en organizaciones locales',NULL),
-	 (169,1,false,4,3,259,202401,'Se necesita CURSOS DE IDIOMAS: Portugués. Nivel I para capacitación de personal en organizaciones locales',NULL),
-	 (170,1,false,24,3,259,202501,'Se necesita CURSOS DE IDIOMAS: Italiano. Nivel I para capacitación de personal en organizaciones locales',NULL),
-	 (171,1,false,13,3,259,202301,'Se necesita CURSOS DE FORMACION PROFESIONAL: Taller reparación de pequeños electrodomésticos para capacitación de personal en organizaciones locales',NULL),
-	 (172,1,false,20,3,259,202406,'Se necesita CURSOS DE FORMACION PROFESIONAL: Gestión de negocios digitales para capacitación de personal en organizaciones locales',NULL),
-	 (173,1,false,7,3,259,202501,'Se necesita CURSOS DE OFICIOS: Inyección electrónica para capacitación de personal en organizaciones locales',NULL),
-	 (174,1,false,3,3,259,202305,'Se necesita CURSOS DE OFICIOS: Mecánica general para capacitación de personal en organizaciones locales',NULL),
-	 (175,1,false,3,3,259,202501,'Se necesita CURSOS DE OFICIOS: Mecánica de motos para capacitación de personal en organizaciones locales',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (176,1,false,14,4,340,202312,'Se necesita capacitación en Lab. de Metalografía para responder a necesidades del mercado laboral',NULL),
-	 (177,1,false,5,3,340,202212,'Se necesita capacitación en ITREN (Instituto Tec. Regional de Ensayos no Destructivos) para responder a necesidades del mercado laboral',NULL),
-	 (178,1,false,7,3,237,202501,'Se necesita Capacitaciones en Puesta a Tierra, Electrotecnia y Electrónica Básica. para fortalecer competencias del sector público y privado',NULL),
-	 (179,1,false,21,3,251,202506,'Se necesita CAPACITACIÓN EN METODOLOGIA 5S para fortalecer competencias del sector público y privado',NULL),
-	 (180,1,false,1,3,473,202505,'Se necesita Capacitación en Energías Renovables para fortalecer competencias del sector público y privado',NULL),
-	 (181,1,false,11,3,473,202506,'Se necesita Cursos de capacitación a Instituciones y Empresas para capacitación de personal en organizaciones locales',NULL),
-	 (182,1,false,15,3,473,202305,'Se necesita Capacitación en áreas de ciencia y tecnología de los alimentos para fortalecer competencias del sector público y privado',NULL),
-	 (183,1,false,19,3,89,202312,'Se necesita Capacitaciones Específicas del Ámbito Aeronáutico para fortalecer competencias del sector público y privado',NULL),
-	 (184,1,false,1,3,11,202301,'Se necesita Seguridad y capacitación para el trabajo de campo en electricidad para fortalecer competencias del sector público y privado',NULL),
-	 (185,1,false,1,3,11,202301,'Se necesita Seguridad Eléctrica para cumplir normativas laborales y prevenir incidentes',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (186,1,false,1,3,11,202502,'Se necesita capacitación en Energía eólica para responder a necesidades del mercado laboral',NULL),
-	 (187,1,false,11,3,11,202312,'Se necesita capacitación en Fundamentos de la impresión 3D para responder a necesidades del mercado laboral',NULL),
-	 (188,1,false,1,3,11,202401,'Se necesita capacitación en Control de velocidad para responder a necesidades del mercado laboral',NULL),
-	 (189,1,false,24,3,259,202412,'Se necesita Capacitación del personal para fortalecer competencias del sector público y privado',NULL),
-	 (190,1,false,21,3,259,202305,'Se necesita Capacitación del personal para fortalecer competencias del sector público y privado',NULL),
-	 (191,1,false,8,2,55,202301,'Se necesita capacitación en Armado y Reparación de Redes de Pesca para responder a necesidades del mercado laboral',NULL),
-	 (192,1,false,24,3,55,202307,'Se necesita capacitación en calificación de soldadores (GMAW) para responder a necesidades del mercado laboral',NULL),
-	 (193,1,false,1,3,55,202306,'Se necesita capacitación en Eficiencia energética y energías renovables para responder a necesidades del mercado laboral',NULL),
-	 (194,1,false,12,3,55,202301,'Se necesita capacitación en Steel Frame para responder a necesidades del mercado laboral',NULL),
-	 (195,1,false,18,3,55,202411,'Se necesita capacitación en Manejo de Máquinas en Confección Industrial para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (196,1,false,19,3,55,202405,'Se demanda Diseño y Producción de Indumentaria para fortalecer capacidades del sector productivo local',NULL),
-	 (197,1,false,12,3,55,202412,'Se necesita capacitación en Corseteria para responder a necesidades del mercado laboral',NULL),
-	 (198,1,false,11,3,173,202307,'Se necesita Capacitación en Impresión 3D para fortalecer competencias del sector público y privado',NULL),
-	 (199,1,false,24,3,173,202501,'Se necesita capacitación en Uso de Satélites para la visualización, procesamiento y análisis de imágenes para responder a necesidades del mercado laboral',NULL),
-	 (200,1,false,15,3,11,202301,'Se necesita Curso para operadores de plantas de tratamiento de efluentes de agroindustrias para capacitación de personal en organizaciones locales',NULL),
-	 (201,1,false,3,3,173,202406,'Se necesita Mecánica de motos para capacitación de operarios y mejora de empleabilidad',NULL),
-	 (202,1,false,1,3,173,202302,'Se necesita capacitación en Instalaciones eléctricas domiciliarias para responder a necesidades del mercado laboral',NULL),
-	 (203,1,false,7,2,173,202405,'Se necesita capacitación en Electrónica orientada a la reparación para responder a necesidades del mercado laboral',NULL),
-	 (204,1,false,19,3,173,202312,'Se requiere Taller de animacion 2D para actualización de habilidades específicas',NULL),
-	 (205,1,false,21,3,173,202401,'Se necesita Cursos para la Industria para capacitación de personal en organizaciones locales',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (206,1,false,11,3,173,202405,'Se requiere Taller de impresión 3D para actualización de habilidades específicas',NULL),
-	 (207,1,false,15,3,173,202501,'Se requiere Taller de ImageJ para actualización de habilidades específicas',NULL),
-	 (208,1,false,20,1,173,202412,'Se solicita Diplomatura en resolución de conflictos para profesionalización de equipos de trabajo',NULL),
-	 (209,1,false,7,3,173,202301,'Se necesita formación en herramientas de Herramientas Digitales para el trabajo para mejorar procesos internos',NULL),
-	 (210,1,false,9,3,173,202212,'Se demanda Calidad de Software para equipos de soporte y desarrollo de la región',NULL),
-	 (211,1,false,24,3,173,202412,'Se necesita capacitación en Elaboración de cerveza artesanal para responder a necesidades del mercado laboral',NULL),
-	 (212,1,false,3,3,173,202407,'Se necesita capacitación en Extracción por Soxhlet para responder a necesidades del mercado laboral',NULL),
-	 (213,1,false,3,3,173,202412,'Se necesita capacitación en Obtención de Aceites Esenciales para responder a necesidades del mercado laboral',NULL),
-	 (214,1,false,3,3,173,202412,'Se necesita capacitación en Extracción de componentes a partir de hojas, tallos y raíces de Cannabis sp. para responder a necesidades del mercado laboral',NULL),
-	 (215,1,false,5,3,11,202307,'Se necesita Cursos de: Materiales Metálicos, Selección de Materiales, Aceros Inoxidables, y aceros especiales. para capacitación de personal en organizaciones locales',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (216,1,false,12,3,11,202501,'Se necesita Certificación de soldadura para capacitación de operarios y mejora de empleabilidad',NULL),
-	 (217,1,false,9,3,8,202401,'Se necesita capacitación en Programas de cálculos estructurales. para responder a necesidades del mercado laboral',NULL),
-	 (218,1,false,9,3,8,202312,'Se necesita Curso de Stress Análisis de cañerías básico para capacitación de personal en organizaciones locales',NULL),
-	 (219,1,false,9,3,8,202407,'Se necesita Programación CNC (control numérico computarizado): programación para realizar mecanizados asistidos por computadora. para empleados del área tecnológica de empresas privadas',NULL),
-	 (220,1,false,11,3,8,202406,'Se demanda Software para CAD-CAM-CAE utilizando modelado 3D, para productos y matrices. para equipos de soporte y desarrollo de la región',NULL),
-	 (221,1,false,11,3,8,202301,'Se demanda Software para CAD-CAM-CAE utilizando modelado 3D, para productos y matrices. para equipos de soporte y desarrollo de la región',NULL),
-	 (222,1,false,12,3,8,202412,'Se necesita Capacitación específica de recursos humanos asignados a obras civiles. para fortalecer competencias del sector público y privado',NULL),
-	 (223,1,false,1,4,8,202212,'Se necesita capacitación en Análisis de la aplicación de energías alternativas a procesos industriales. para responder a necesidades del mercado laboral',NULL),
-	 (224,1,false,4,3,8,202312,'Se solicita formación avanzada en Curso de soldadura teórico y práctico, para nivel básico, intermedio y avanzado. para perfiles con experiencia',NULL),
-	 (225,1,false,12,3,8,202312,'Se necesita Capacitación en nuevas tecnologías civiles. para fortalecer competencias del sector público y privado',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (226,1,false,12,3,8,202311,'Se necesita Cursos de actualización de reglamentos de la construcción. para capacitación de personal en organizaciones locales',NULL),
-	 (227,1,false,13,3,8,202412,'Se necesita Curso de Operadores de Equipo de Frio según la normativa de medio ambiente para capacitación de personal en organizaciones locales',NULL),
-	 (228,1,false,24,3,8,202306,'Se necesita Curso de capacitación en mediciones termografías. para capacitación de personal en organizaciones locales',NULL),
-	 (229,1,false,1,3,8,202307,'Se necesita Curso de capacitación en seguridad eléctrica en media y alta tensión. para capacitación de personal en organizaciones locales',NULL),
-	 (230,1,false,1,3,8,202502,'Se demanda entrenamiento práctico en Cursos de Capacitación Teórico - Prácticos sobre protecciones eléctricas y valijas de ensayo orientado a la aplicación laboral',NULL),
-	 (231,1,false,20,3,8,202506,'Se necesita capacitación en Acompañamiento del desarrollo de empresas familiares y emprendedores. para responder a necesidades del mercado laboral',NULL),
-	 (232,1,false,20,3,8,202208,'Se necesita capacitación en Desarrollo de procesos de selección para responder a necesidades del mercado laboral',NULL),
-	 (233,1,false,20,3,8,202405,'Se demanda Desarrollo de las habilidades comunicacionales del personal de todos los niveles. para mejorar la comunicación interna y externa',NULL),
-	 (234,1,false,20,3,8,202412,'Se necesita capacitación en Desarrollo y coaching de liderazgo. para responder a necesidades del mercado laboral',NULL),
-	 (235,1,false,5,4,125,202311,'Se necesita capacitación en LABORATORIO DE METROLOGIA para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (236,1,false,5,4,125,202212,'Se necesita capacitación en LABORATORIO DE METROLOGÍA para responder a necesidades del mercado laboral',NULL),
-	 (237,1,false,14,4,125,202411,'Se necesita capacitación en LABORATORIO DE ENSAYOS MECANICOS para responder a necesidades del mercado laboral',NULL),
-	 (238,1,false,20,4,340,202212,'Se demanda GE-LAB. (Lab. de Gobierno Electrónico) Ing. Sistemas para equipos de soporte y desarrollo de la región',NULL),
-	 (239,1,false,3,4,340,202212,'Se necesita formación en herramientas de DHARMAa (lab. Desarrollo de Herramientas de Aprendizaje y Razonamiento con Máquinas) Ing, Sist. para mejorar procesos internos',NULL),
-	 (240,1,false,9,4,340,202312,'Se demanda LITAPS (Lab. de integración de tecnologías Aplicadas a Prototipos de software) Ing. Sist. para equipos de soporte y desarrollo de la región',NULL),
-	 (241,1,false,9,4,340,202311,'Se necesita capacitación en LADEI (LABORATORIO DE INFORMÁTICA) Ing. Sist. para responder a necesidades del mercado laboral',NULL),
-	 (242,1,false,21,4,340,202212,'Se necesita capacitación en LICPaD (Lab. de Inv. en cómputo Paralelo Distribuido) Ing. Sis para responder a necesidades del mercado laboral',NULL),
-	 (243,1,false,20,4,340,202412,'Se necesita capacitación en GIDEC (Grupo Reg.UTN.de Inv.y Desarr. de Ecosist.de Conoc. ) I. Sist. para responder a necesidades del mercado laboral',NULL),
-	 (244,1,false,24,3,258,202501,'Se necesita capacitación en Idiomas para empresas para responder a necesidades del mercado laboral',NULL),
-	 (245,1,false,20,1,258,202210,'Se necesita Capacitaciones sobre Habilidades blandas para fortalecer competencias del sector público y privado',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (246,1,false,9,1,258,202412,'Se necesita Capacitaciones sobre programación y Sistemas de información para fortalecer competencias del sector público y privado',NULL),
-	 (247,1,false,20,1,258,202412,'Se necesita Capacitaciones sobre Administración y Negocios para fortalecer competencias del sector público y privado',NULL),
-	 (248,1,false,13,3,11,202212,'Se necesita Capacitación en Análisis de efluentes Industriales para fortalecer competencias del sector público y privado',NULL),
-	 (249,1,false,15,3,11,202502,'Se necesita Capacitación en Análisis de Alimentos para fortalecer competencias del sector público y privado',NULL),
-	 (250,1,false,24,3,11,202412,'Se necesita Curso Análisis fisicoquímico y microbiológico de aguas para capacitación de personal en organizaciones locales',NULL),
-	 (251,1,false,13,3,128,202401,'Se requiere Taller Aproximación a la Sustentabilidad en los Edificios y en las Infraestructuras para actualización de habilidades específicas',NULL),
-	 (252,1,false,7,3,128,202501,'Se necesita Curso sobre Arduino para capacitación de personal en organizaciones locales',NULL),
-	 (253,1,false,9,3,128,202501,'Se necesita Curso sobre Python para capacitación de personal en organizaciones locales',NULL),
-	 (254,1,false,24,3,128,202401,'Se necesita capacitación en FODA Estratégico para responder a necesidades del mercado laboral',NULL),
-	 (255,1,false,10,3,128,202212,'Se requiere Taller de Transformación Digital para PYMES para actualización de habilidades específicas',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (256,1,false,20,3,128,202501,'Se necesita capacitación en Clínica de Acompañamiento a Emprendedores y PyMES para responder a necesidades del mercado laboral',NULL),
-	 (257,1,false,1,3,340,202301,'Se necesita capacitación en Riesgo Eléctrico para fortalecer competencias del sector público y privado',NULL),
-	 (258,1,false,16,3,340,202501,'Se necesita capacitación oficio Andamista para fortalecer competencias del sector público y privado',NULL),
-	 (259,1,false,23,3,340,202505,'Se necesita capacitación en CERTIFICACION DE OFICIOS para responder a necesidades del mercado laboral',NULL),
-	 (260,1,false,19,1,471,202412,'Se solicita Diplomatura en Tecnologías de Gestión de La Producción para profesionalización de equipos de trabajo',NULL),
-	 (261,1,false,3,3,471,202401,'Se necesita Soldaduras para Calificar para capacitación de operarios y mejora de empleabilidad',NULL),
-	 (262,1,false,8,3,471,202306,'Se solicita formación en Programa de Formación en Tendido y Mantenimiento de Fibra Óptica para ampliar oportunidades laborales',NULL),
-	 (263,1,false,1,3,471,202305,'Se requiere Gestión de la Energía en Edificios Comerciales y Públicos para mandos medios y áreas de administración pública/privada',NULL),
-	 (264,1,false,2,3,471,202407,'Se necesita capacitación en Generadores Fotovoltaicos de Baja Potencia para responder a necesidades del mercado laboral',NULL),
-	 (265,1,false,9,3,471,202301,'Se necesita capacitación en Desarrollador de Aplicaciones Móviles con Android para responder a necesidades del mercado laboral',NULL);
-INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
-	 (266,1,false,20,3,471,202501,'Se necesita capacitación en Desarrollador de Aplicaciones Empresariales con Java para responder a necesidades del mercado laboral',NULL),
-	 (267,1,false,20,3,471,202501,'Se solicita formación en Programa de formación en Innovación y Emprendimiento Social para ampliar oportunidades laborales',NULL),
-	 (268,1,false,20,3,471,202312,'Se necesita capacitación en Eficiencia energética en PyMEs y en Municipios para responder a necesidades del mercado laboral',NULL),
-	 (269,1,false,20,4,471,202412,'Se requiere Gestión en PyMEs II para mandos medios y áreas de administración pública/privada',NULL),
-	 (270,1,false,20,4,471,202411,'Se requiere Gestión en PyMEs I para mandos medios y áreas de administración pública/privada',NULL),
-	 (271,1,false,20,2,471,202301,'Se requiere Gestión de Mantenimiento de Plantas Industriales para mandos medios y áreas de administración pública/privada',NULL),
-	 (272,1,false,12,3,471,202306,'Se necesita Programa de capacitación para la fabricación y construcción con Bloques de Tierra Comprimida para fortalecer competencias del sector público y privado',NULL),
-	 (273,1,false,11,3,471,202412,'Se necesita capacitación en Solidworks: Diseño 3D - CAD para responder a necesidades del mercado laboral',NULL),
-	 (274,1,false,11,3,471,202407,'Se necesita Programación de Máquinas de Control Numérico - CNC para empleados del área tecnológica de empresas privadas',NULL),
-	 (419,1,false,9,3,325,202212,'Se requiere curso de IA aplicada para equipos técnicos (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
 	 (420,1,false,9,3,325,202212,'Se necesita curso práctico de IA para automatización (2022-12)','Alta demanda de cursos de IA por adopción acelerada. Se buscan formaciones prácticas en ML, automatización inteligente, visión por computadora y analítica avanzada.'),
 	 (436,1,false,9,3,325,202302,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2023-02)','Demanda aún fuerte pero más selectiva. Se solicitan cursos orientados a casos reales, MLOps, despliegue de modelos y analítica aplicada.'),
@@ -2449,6 +2141,7 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (563,1,false,9,3,325,202405,'Se solicita capacitación en Deep Learning y redes neuronales (2024-05)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (564,1,false,9,3,325,202405,'Se necesita curso práctico de IA para automatización (2024-05)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (73,1,true,1,3,182,202301,'Se necesita capacitación en BOBINADO DE MOTORES para responder a necesidades del mercado laboral',NULL),
 	 (565,1,false,9,3,325,202405,'Se requiere curso de IA aplicada para equipos técnicos (2024-05)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (566,1,false,9,3,325,202405,'Se solicita formación en IA generativa y uso de modelos LLM (2024-05)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (567,1,false,9,3,325,202406,'Se requiere entrenamiento en Python + IA para análisis predictivo (2024-06)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
@@ -2457,9 +2150,9 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (570,1,false,9,3,325,202406,'Se solicita capacitación en Deep Learning y redes neuronales (2024-06)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (571,1,false,9,3,325,202406,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-06)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (572,1,false,9,3,325,202406,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-06)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (573,1,false,9,3,325,202406,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-06)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (574,1,false,9,3,325,202406,'Se solicita capacitación en Deep Learning y redes neuronales (2024-06)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
+	 (573,1,false,9,3,325,202406,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-06)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (574,1,false,9,3,325,202406,'Se solicita capacitación en Deep Learning y redes neuronales (2024-06)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (575,1,false,9,3,325,202407,'Se requiere entrenamiento en Python + IA para análisis predictivo (2024-07)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (576,1,false,9,3,325,202407,'Se solicita capacitación en Deep Learning y redes neuronales (2024-07)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (577,1,false,9,3,325,202407,'Se requiere curso de IA aplicada para equipos técnicos (2024-07)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
@@ -2468,9 +2161,9 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (580,1,false,9,3,325,202407,'Se solicita formación en IA generativa y uso de modelos LLM (2024-07)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (581,1,false,9,3,325,202407,'Se necesita curso práctico de IA para automatización (2024-07)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (582,1,false,9,3,325,202408,'Se solicita capacitación en Deep Learning y redes neuronales (2024-08)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (583,1,false,9,3,325,202408,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-08)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (584,1,false,9,3,325,202408,'Se requiere entrenamiento en Python + IA para análisis predictivo (2024-08)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
+	 (583,1,false,9,3,325,202408,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-08)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (584,1,false,9,3,325,202408,'Se requiere entrenamiento en Python + IA para análisis predictivo (2024-08)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (585,1,false,9,3,325,202408,'Se solicita capacitación en Deep Learning y redes neuronales (2024-08)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (586,1,false,9,3,325,202408,'Se solicita formación en IA generativa y uso de modelos LLM (2024-08)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (587,1,false,9,3,325,202409,'Se necesita curso práctico de IA para automatización (2024-09)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
@@ -2478,10 +2171,11 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (589,1,false,9,3,325,202409,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-09)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (590,1,false,9,3,325,202409,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-09)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (591,1,false,9,3,325,202409,'Se necesita curso práctico de IA para automatización (2024-09)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (592,1,false,9,3,325,202410,'Se requiere entrenamiento en Python + IA para análisis predictivo (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (593,1,false,9,3,325,202410,'Se solicita formación en IA generativa y uso de modelos LLM (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (594,1,false,9,3,325,202410,'Se requiere curso de IA aplicada para equipos técnicos (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
+	 (74,1,true,20,1,20,202210,'Se solicita DIPLOMATURA EN COACHING DEPORTIVO para profesionalización de equipos de trabajo',NULL),
+	 (592,1,false,9,3,325,202410,'Se requiere entrenamiento en Python + IA para análisis predictivo (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (593,1,false,9,3,325,202410,'Se solicita formación en IA generativa y uso de modelos LLM (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
+	 (594,1,false,9,3,325,202410,'Se requiere curso de IA aplicada para equipos técnicos (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (595,1,false,9,3,325,202410,'Se requiere curso de IA aplicada para equipos técnicos (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (596,1,false,9,3,325,202410,'Se requiere curso de IA aplicada para equipos técnicos (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (597,1,false,9,3,325,202410,'Se requiere curso de IA aplicada para equipos técnicos (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
@@ -2489,10 +2183,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (599,1,false,9,3,325,202410,'Se solicita formación en IA generativa y uso de modelos LLM (2024-10)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (600,1,false,9,3,325,202411,'Se solicita capacitación en Deep Learning y redes neuronales (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (601,1,false,9,3,325,202411,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (602,1,false,9,3,325,202411,'Se solicita capacitación en Deep Learning y redes neuronales (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (603,1,false,9,3,325,202411,'Se necesita curso práctico de IA para automatización (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (604,1,false,9,3,325,202411,'Se solicita formación en IA generativa y uso de modelos LLM (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
+	 (602,1,false,9,3,325,202411,'Se solicita capacitación en Deep Learning y redes neuronales (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (603,1,false,9,3,325,202411,'Se necesita curso práctico de IA para automatización (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
+	 (604,1,false,9,3,325,202411,'Se solicita formación en IA generativa y uso de modelos LLM (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (605,1,false,9,3,325,202411,'Se requiere curso de IA aplicada para equipos técnicos (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (606,1,false,9,3,325,202411,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (607,1,false,9,3,325,202411,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-11)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
@@ -2500,10 +2194,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (609,1,false,9,3,325,202412,'Se requiere curso de IA aplicada para equipos técnicos (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (610,1,false,9,3,325,202412,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (611,1,false,9,3,325,202412,'Se requiere curso de IA aplicada para equipos técnicos (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (612,1,false,9,3,325,202412,'Se requiere entrenamiento en Python + IA para análisis predictivo (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (613,1,false,9,3,325,202412,'Se solicita capacitación en Deep Learning y redes neuronales (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
-	 (614,1,false,9,3,325,202412,'Se solicita capacitación en Deep Learning y redes neuronales (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
+	 (612,1,false,9,3,325,202412,'Se requiere entrenamiento en Python + IA para análisis predictivo (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (613,1,false,9,3,325,202412,'Se solicita capacitación en Deep Learning y redes neuronales (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
+	 (614,1,false,9,3,325,202412,'Se solicita capacitación en Deep Learning y redes neuronales (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (615,1,false,9,3,325,202412,'Se requiere curso de IA aplicada para equipos técnicos (2024-12)','Se desacelera la demanda general y se concentra en especializaciones. Crece interés en IA generativa, RAG, fine-tuning y aplicaciones sectoriales.'),
 	 (616,1,false,9,3,325,202501,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-01)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (617,1,false,9,3,325,202501,'Se solicita formación en IA generativa y uso de modelos LLM (2025-01)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
@@ -2511,10 +2205,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (619,1,false,9,3,325,202501,'Se solicita formación en IA generativa y uso de modelos LLM (2025-01)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (620,1,false,9,3,325,202501,'Se necesita curso práctico de IA para automatización (2025-01)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (621,1,false,9,3,325,202501,'Se necesita curso práctico de IA para automatización (2025-01)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (622,1,false,9,3,325,202501,'Se necesita curso práctico de IA para automatización (2025-01)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (623,1,false,9,3,325,202502,'Se solicita formación en IA generativa y uso de modelos LLM (2025-02)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (624,1,false,9,3,325,202502,'Se requiere curso de IA aplicada para equipos técnicos (2025-02)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+	 (622,1,false,9,3,325,202501,'Se necesita curso práctico de IA para automatización (2025-01)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (623,1,false,9,3,325,202502,'Se solicita formación en IA generativa y uso de modelos LLM (2025-02)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (624,1,false,9,3,325,202502,'Se requiere curso de IA aplicada para equipos técnicos (2025-02)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (625,1,false,9,3,325,202502,'Se solicita capacitación en Deep Learning y redes neuronales (2025-02)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (626,1,false,9,3,325,202502,'Se necesita curso práctico de IA para automatización (2025-02)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (627,1,false,9,3,325,202502,'Se solicita formación en IA generativa y uso de modelos LLM (2025-02)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
@@ -2522,10 +2216,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (629,1,false,9,3,325,202502,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-02)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (630,1,false,9,3,325,202503,'Se requiere curso de IA aplicada para equipos técnicos (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (631,1,false,9,3,325,202503,'Se solicita formación en IA generativa y uso de modelos LLM (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (632,1,false,9,3,325,202503,'Se solicita formación en IA generativa y uso de modelos LLM (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (633,1,false,9,3,325,202503,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (634,1,false,9,3,325,202503,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+	 (632,1,false,9,3,325,202503,'Se solicita formación en IA generativa y uso de modelos LLM (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (633,1,false,9,3,325,202503,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (634,1,false,9,3,325,202503,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (635,1,false,9,3,325,202503,'Se solicita capacitación en Deep Learning y redes neuronales (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (636,1,false,9,3,325,202503,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-03)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (637,1,false,9,3,325,202504,'Se solicita formación en IA generativa y uso de modelos LLM (2025-04)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
@@ -2533,10 +2227,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (639,1,false,9,3,325,202504,'Se solicita formación en IA generativa y uso de modelos LLM (2025-04)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (640,1,false,9,3,325,202504,'Se solicita capacitación en Deep Learning y redes neuronales (2025-04)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (641,1,false,9,3,325,202504,'Se requiere curso de IA aplicada para equipos técnicos (2025-04)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (642,1,false,9,3,325,202504,'Se requiere curso de IA aplicada para equipos técnicos (2025-04)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (643,1,false,9,3,325,202505,'Se requiere curso de IA aplicada para equipos técnicos (2025-05)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (644,1,false,9,3,325,202505,'Se necesita curso práctico de IA para automatización (2025-05)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+	 (642,1,false,9,3,325,202504,'Se requiere curso de IA aplicada para equipos técnicos (2025-04)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (643,1,false,9,3,325,202505,'Se requiere curso de IA aplicada para equipos técnicos (2025-05)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (644,1,false,9,3,325,202505,'Se necesita curso práctico de IA para automatización (2025-05)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (645,1,false,9,3,325,202505,'Se solicita formación en IA generativa y uso de modelos LLM (2025-05)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (646,1,false,9,3,325,202505,'Se necesita curso práctico de IA para automatización (2025-05)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (647,1,false,9,3,325,202505,'Se solicita capacitación en Deep Learning y redes neuronales (2025-05)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
@@ -2544,10 +2238,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (649,1,false,9,3,325,202505,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-05)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (650,1,false,9,3,325,202506,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (651,1,false,9,3,325,202506,'Se solicita formación en IA generativa y uso de modelos LLM (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (652,1,false,9,3,325,202506,'Se solicita capacitación en Deep Learning y redes neuronales (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (653,1,false,9,3,325,202506,'Se solicita formación en IA generativa y uso de modelos LLM (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (654,1,false,9,3,325,202506,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+	 (652,1,false,9,3,325,202506,'Se solicita capacitación en Deep Learning y redes neuronales (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (653,1,false,9,3,325,202506,'Se solicita formación en IA generativa y uso de modelos LLM (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (654,1,false,9,3,325,202506,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (655,1,false,9,3,325,202506,'Se requiere curso de IA aplicada para equipos técnicos (2025-06)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (656,1,false,9,3,325,202507,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-07)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (657,1,false,9,3,325,202507,'Se solicita formación en IA generativa y uso de modelos LLM (2025-07)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
@@ -2555,10 +2249,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (659,1,false,9,3,325,202507,'Se requiere curso de IA aplicada para equipos técnicos (2025-07)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (660,1,false,9,3,325,202507,'Se requiere curso de IA aplicada para equipos técnicos (2025-07)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (661,1,false,9,3,325,202507,'Se solicita formación en IA generativa y uso de modelos LLM (2025-07)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (662,1,false,9,3,325,202508,'Se solicita formación en IA generativa y uso de modelos LLM (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (663,1,false,9,3,325,202508,'Se solicita capacitación en Deep Learning y redes neuronales (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (664,1,false,9,3,325,202508,'Se necesita curso práctico de IA para automatización (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+	 (662,1,false,9,3,325,202508,'Se solicita formación en IA generativa y uso de modelos LLM (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (663,1,false,9,3,325,202508,'Se solicita capacitación en Deep Learning y redes neuronales (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (664,1,false,9,3,325,202508,'Se necesita curso práctico de IA para automatización (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (665,1,false,9,3,325,202508,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (666,1,false,9,3,325,202508,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (667,1,false,9,3,325,202508,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-08)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
@@ -2566,10 +2260,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (669,1,false,9,3,325,202509,'Se solicita formación en IA generativa y uso de modelos LLM (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (670,1,false,9,3,325,202509,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (671,1,false,9,3,325,202509,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (672,1,false,9,3,325,202509,'Se solicita capacitación en Deep Learning y redes neuronales (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (673,1,false,9,3,325,202509,'Se necesita curso práctico de IA para automatización (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (674,1,false,9,3,325,202509,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+	 (672,1,false,9,3,325,202509,'Se solicita capacitación en Deep Learning y redes neuronales (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (673,1,false,9,3,325,202509,'Se necesita curso práctico de IA para automatización (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (674,1,false,9,3,325,202509,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-09)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (675,1,false,9,3,325,202510,'Se solicita capacitación en Deep Learning y redes neuronales (2025-10)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (676,1,false,9,3,325,202510,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-10)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (677,1,false,9,3,325,202510,'Se necesita curso práctico de IA para automatización (2025-10)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
@@ -2577,10 +2271,10 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (679,1,false,9,3,325,202510,'Se necesita capacitación en Inteligencia Artificial y Machine Learning (2025-10)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (680,1,false,9,3,325,202510,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-10)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (681,1,false,9,3,325,202510,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-10)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (682,1,false,9,3,325,202511,'Se necesita curso práctico de IA para automatización (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (683,1,false,9,3,325,202511,'Se requiere curso de IA aplicada para equipos técnicos (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (684,1,false,9,3,325,202511,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+	 (682,1,false,9,3,325,202511,'Se necesita curso práctico de IA para automatización (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
 INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (683,1,false,9,3,325,202511,'Se requiere curso de IA aplicada para equipos técnicos (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (684,1,false,9,3,325,202511,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (685,1,false,9,3,325,202511,'Se necesita curso práctico de IA para automatización (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (686,1,false,9,3,325,202511,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (687,1,false,9,3,325,202511,'Se requiere entrenamiento en Python + IA para análisis predictivo (2025-11)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
@@ -2588,9 +2282,284 @@ INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,i
 	 (689,1,false,9,3,325,202512,'Se necesita curso práctico de IA para automatización (2025-12)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (690,1,false,9,3,325,202512,'Se solicita formación en IA generativa y uso de modelos LLM (2025-12)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
 	 (691,1,false,9,3,325,202512,'Se solicita capacitación en Deep Learning y redes neuronales (2025-12)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (692,1,false,9,3,325,202512,'Se solicita formación en IA generativa y uso de modelos LLM (2025-12)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (692,1,false,9,3,325,202512,'Se solicita formación en IA generativa y uso de modelos LLM (2025-12)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
 	 (693,1,false,9,3,325,202512,'Se solicita formación en IA generativa y uso de modelos LLM (2025-12)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
-	 (694,1,false,9,3,325,202512,'Se necesita curso práctico de IA para automatización (2025-12)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.');
+	 (694,1,false,9,3,325,202512,'Se necesita curso práctico de IA para automatización (2025-12)','Demanda estable de capacitación en IA para actualización profesional. Cursos de herramientas modernas, ética, seguridad y buenas prácticas.'),
+	 (75,1,true,20,1,20,202312,'Se solicita DIPLOMATURA EN GESTIÓN AGILE para profesionalización de equipos de trabajo',NULL),
+	 (76,1,true,20,1,20,202412,'Se solicita DIPLOMATURA ANALISTA ADMINISTRATIVO DE RECURSOS HUMANOS para profesionalización de equipos de trabajo',NULL),
+	 (275,1,true,1,3,182,202201,'Se requiere rebobinado de motores eléctricos para planta de producción','Una planta industrial solicita diagnóstico y rebobinado de motores trifásicos que presentan pérdida de potencia. Se necesita identificar fallas de aislamiento, seleccionar insumos adecuados y realizar el bobinado respetando normas de seguridad e higiene.'),
+	 (63,1,true,3,2,182,202401,'Se necesita capacitación en MANTENIMIENTO ROTORES-CIGUEÑALES para responder a necesidades del mercado laboral',NULL),
+	 (64,1,true,24,3,182,202412,'Se necesita capacitación en LUMINOTECNIA para responder a necesidades del mercado laboral',NULL),
+	 (65,1,true,1,3,182,202306,'Se necesita SEGURIDAD ELECETRICA para cumplir normativas laborales y prevenir incidentes',NULL),
+	 (66,1,true,11,4,182,202410,'Se necesita capacitación en ESTUDIO CARGAS DE FUEGO para responder a necesidades del mercado laboral',NULL),
+	 (25,1,true,11,3,465,202405,'Se necesita capacitación en Laboratorio de Diseño y Simulación para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (77,1,true,6,1,20,202212,'Se necesita capacitación en DIPLOMADO DEVOPS TOOLS ENGINEER para responder a necesidades del mercado laboral',NULL),
+	 (26,1,true,11,1,258,202212,'Se solicita formación avanzada en Diplomatura en Herramientas Digitales para el Diseño Industrial. Diseño avanzado de productos con SolidWorks para perfiles con experiencia',NULL),
+	 (27,1,true,2,1,258,202410,'Se solicita Diplomatura en Mantenimiento industrial para profesionalización de equipos de trabajo',NULL),
+	 (28,1,true,12,1,258,202312,'Se solicita Diplomatura en Instalaciones Sanitarias para profesionalización de equipos de trabajo',NULL),
+	 (29,1,true,20,1,258,202312,'Se solicita Diplomatura en Administración Contable para profesionalización de equipos de trabajo',NULL),
+	 (30,1,true,22,1,258,202211,'Se solicita Diplomatura en Liderazgo y Coaching de Equipos para profesionalización de equipos de trabajo',NULL),
+	 (31,1,true,12,1,258,202412,'Se solicita Diplomatura en Albañilería para profesionalización de equipos de trabajo',NULL),
+	 (32,1,true,4,1,258,202212,'Se solicita Diplomatura en soldadura para profesionalización de equipos de trabajo',NULL),
+	 (33,1,true,2,1,68,202412,'Se solicita Diplomatura en Mantenimiento Mecánico para profesionalización de equipos de trabajo',NULL),
+	 (34,1,true,16,1,68,202411,'Se solicita Diplomatura en Tecnologías en la Cadena de Valor del Litio para profesionalización de equipos de trabajo',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (35,1,true,20,1,68,202411,'Se solicita Diplomatura en Liderazgo y Desarrollo Organizacional para profesionalización de equipos de trabajo',NULL),
+	 (36,1,true,16,1,68,202212,'Se solicita Diplomatura en Industrialización de Hidrocarburos para profesionalización de equipos de trabajo',NULL),
+	 (37,1,true,19,3,68,202301,'Se necesita Capacitación en Calidad y Mejora Continua (Lean Manufacturing) para fortalecer competencias del sector público y privado',NULL),
+	 (38,1,true,13,3,68,202501,'Se necesita Capacitación en Sostenibilidad y Responsabilidad Social Corporativa para fortalecer competencias del sector público y privado',NULL),
+	 (39,1,true,6,3,68,202501,'Se necesita Curso de Mantenimiento Industrial para capacitación de personal en organizaciones locales',NULL),
+	 (40,1,true,24,3,68,202506,'Se necesita Curso de Precomisionado, Comisionado y PEM para capacitación de personal en organizaciones locales',NULL),
+	 (41,1,true,1,3,68,202506,'Se necesita Curso sobre Mediciones de Puesta a Tierra para capacitación de personal en organizaciones locales',NULL),
+	 (42,1,true,6,3,68,202412,'Se necesita Curso de Instrumentación y Control para capacitación de personal en organizaciones locales',NULL),
+	 (43,1,true,2,3,68,202405,'Se necesita Curso de Equipos e Instalaciones Industriales para capacitación de personal en organizaciones locales',NULL),
+	 (44,1,true,3,3,68,202401,'Se necesita Curso de Elementos de Máquina para capacitación de personal en organizaciones locales',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (45,1,true,5,3,68,202306,'Se necesita Curso de Materiales Metálicos y Materiales No Metálicos para capacitación de personal en organizaciones locales',NULL),
+	 (46,1,true,4,3,68,202212,'Se necesita Curso de Mecanizado para capacitación de personal en organizaciones locales',NULL),
+	 (47,1,true,20,3,68,202405,'Se necesita Curso de Implementación de Sistema de Gestión de la Energía para capacitación de personal en organizaciones locales',NULL),
+	 (48,1,true,1,3,68,202306,'Se necesita Curso de Seguridad y Riesgo Eléctrico según  AEA 95904 - Esquema para certificación de personas instruidas en  seguridad y riesgos eléctricos - Código BA5 para capacitación de personal en organizaciones locales',NULL),
+	 (49,1,true,1,3,68,202506,'Se necesita Curso de Seguridad y Riesgo Eléctrico según  AEA 95904 - Esquema para certificación de personas instruidas en  seguridad y riesgos eléctricos - Código BA4 para capacitación de personal en organizaciones locales',NULL),
+	 (50,1,true,6,3,68,202407,'Se necesita Curso de Tratamiento de Ambientes con Polvos, Virutas y Fibras para capacitación de personal en organizaciones locales',NULL),
+	 (51,1,true,21,3,68,202301,'Se necesita Curso de Calidad y Tratamiento de Aire Interior para Industrias para capacitación de personal en organizaciones locales',NULL),
+	 (52,1,true,20,3,20,202401,'Se necesita capacitación en LIQUIDACIÓN DE SUELDOS Y CARGAS SOCIALES + LIQUIDACIÓN DE IMPUESTOS para responder a necesidades del mercado laboral',NULL),
+	 (53,1,true,1,3,20,202405,'Se necesita capacitación en FUNCIONAMIENTO DE UN VEHÍCULO ELÉCTRICO, HÍBRIDO Y RETROFIT DE UN VEHÍCULO DE COMBUSTIÓN EN 100% ELÉCTRICO (Curso Intensivo) para responder a necesidades del mercado laboral',NULL),
+	 (54,1,true,2,3,20,202401,'Se necesita capacitación en INSTALACIÓN DE AIRE ACONDICIONADO SPLIT para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (55,1,true,2,3,20,202405,'Se necesita capacitación en INSTALACIÓN DE CÁMARAS Y ALARMAS para responder a necesidades del mercado laboral',NULL),
+	 (56,1,true,23,3,20,202301,'Se necesita capacitación en TECNOLOGÍA INVERTER EN EQUIPOS DE AIRE ACONDICIONADO SPLIT para responder a necesidades del mercado laboral',NULL),
+	 (57,1,true,9,3,20,202212,'Se necesita PROGRAMACIÓN WEB- HTML Y CSS3- NIVEL 1 para empleados del área tecnológica de empresas privadas',NULL),
+	 (58,1,true,22,3,20,202305,'Se solicita formación avanzada en EXCEL INTERMEDIO AVANZADO para perfiles con experiencia',NULL),
+	 (59,1,true,22,3,20,202301,'Se necesita capacitación en PAQUETE OFFICE para responder a necesidades del mercado laboral',NULL),
+	 (60,1,true,24,3,20,202412,'Se necesita capacitación en PASHED ARRAY Nivel 1 para responder a necesidades del mercado laboral',NULL),
+	 (61,1,true,24,3,20,202211,'Se necesita capacitación en ULTRASONIDO Nivel 2 para responder a necesidades del mercado laboral',NULL),
+	 (62,1,true,24,3,20,202301,'Se necesita capacitación en ULTRASONIDO Nivel I para responder a necesidades del mercado laboral',NULL),
+	 (67,1,true,1,3,182,202312,'Se necesita capacitación en EFICIENCIA ENERGÉTICA EN EDIFICIOS para responder a necesidades del mercado laboral',NULL),
+	 (68,1,true,5,4,182,202411,'Se necesita capacitación en SELECCION DE MATERIALES para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (69,1,true,11,4,182,202411,'Se necesita capacitación en DETERMINACIÓN DE CAUSAS DE CORROSIÓN para responder a necesidades del mercado laboral',NULL),
+	 (70,1,true,5,3,20,202307,'Se necesita capacitación en CORRIENTES INDUCIDAS Nivel 2 para responder a necesidades del mercado laboral',NULL),
+	 (71,1,true,18,3,20,202404,'Se necesita capacitación en ENSAYOS VISUALES 1 y 2 para responder a necesidades del mercado laboral',NULL),
+	 (72,1,true,5,3,20,202212,'Se necesita capacitación en PARTÍCULAS MAGNÉTICAS Nivel  1 y 2 para responder a necesidades del mercado laboral',NULL),
+	 (78,1,true,10,3,20,202502,'Se requiere POWER BI para mejorar el análisis y la visualización en áreas administrativas',NULL),
+	 (79,1,true,4,3,20,202306,'Se requiere EXCEL para mejorar el análisis y la visualización en áreas administrativas',NULL),
+	 (80,1,true,10,3,182,202401,'Se necesita capacitación introductoria en BUSINESS INTELLIGENCE - POWER BI INICIAL Y AVANZADO para nuevos ingresantes',NULL),
+	 (81,1,true,11,3,182,202212,'Se necesita capacitación introductoria en MS POWER POINT NIVEL INICIAL Y AVANZADO para nuevos ingresantes',NULL),
+	 (82,1,true,9,3,182,202501,'Se necesita capacitación introductoria en MS WORD NIVEL INICIAL Y AVANZADO para nuevos ingresantes',NULL),
+	 (83,1,true,7,3,182,202506,'Se necesita capacitación en ALFABETIZACIÓN DIGITAL para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (84,1,true,11,4,182,202312,'Se necesita capacitación en REDACCIÓN Y PRESENTACIÓN DE INFORMES para responder a necesidades del mercado laboral',NULL),
+	 (85,1,true,24,3,182,202307,'Se necesita capacitación en LIQUIDACIÓN DE SUELDOS Y JORNALES para responder a necesidades del mercado laboral',NULL),
+	 (86,1,true,5,3,182,202212,'Se necesita capacitación en ASPESCTOS CORROSIVOS EN MATERIALES para responder a necesidades del mercado laboral',NULL),
+	 (87,1,true,21,3,182,202406,'Se necesita SEGURIDAD E HIGIENE para cumplir normativas laborales y prevenir incidentes',NULL),
+	 (88,1,true,11,3,182,202412,'Se demanda COMUNICACIÓN ASERTIVA para mejorar la comunicación interna y externa',NULL),
+	 (89,1,true,11,3,182,202208,'Se necesita capacitación en RESOLUCIÓN DE CONFLICTOS Y NEGOCIACIÓN. para responder a necesidades del mercado laboral',NULL),
+	 (90,1,true,20,3,182,202312,'Se requiere GESTIÓN DE RECURSOS HUMANOS para mandos medios y áreas de administración pública/privada',NULL),
+	 (91,1,true,10,4,182,202411,'Se requiere TECNOLOGÍAS DE GESTIÓN para mandos medios y áreas de administración pública/privada',NULL),
+	 (92,1,true,1,4,182,202311,'Se demanda SISTEMAS ELÉCTRICOS DE POTENCIA INDUSTRIAL para equipos de soporte y desarrollo de la región',NULL),
+	 (93,1,true,11,4,182,202312,'Se necesita capacitación en ESTUDIOS ERGONÓMICOS DE LOS PUESTOS DE TRABAJO para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (94,1,true,5,4,182,202411,'Se necesita capacitación en PREVENSIÓN DE LA CORROSIÓN METÁLICA para responder a necesidades del mercado laboral',NULL),
+	 (95,1,true,15,3,182,202412,'Se necesita capacitación en AGRICULTURA, PESCA Y ALIMENTOS para responder a necesidades del mercado laboral',NULL),
+	 (96,1,true,1,4,471,202211,'Se necesita capacitación en Implementación de energías renovables para responder a necesidades del mercado laboral',NULL),
+	 (97,1,true,24,3,471,202506,'Se necesita Idiomas: Inglés Intermedio: Nivel 3A-4B-5C para personal que interactúa con clientes internacionales',NULL),
+	 (98,1,true,11,3,471,202401,'Se necesita Idiomas: Inglés Elemental: Nivel 1A – 2B para personal que interactúa con clientes internacionales',NULL),
+	 (99,1,true,11,3,471,202401,'Se necesita Idiomas: Inglés Elemental: Nivel 1A – 2B para personal que interactúa con clientes internacionales',NULL),
+	 (100,1,true,24,3,471,202302,'Se necesita capacitación en Idiomas: Francés (A1–A2 para responder a necesidades del mercado laboral',NULL),
+	 (101,1,true,1,3,471,202306,'Se requiere Taller Expresarte: Nivel 1 y 2 para actualización de habilidades específicas',NULL),
+	 (102,1,true,24,3,471,202412,'Se necesita capacitación en Adopción de Objetivos del Desarrollo Sostenible en Gobiernos Locales para responder a necesidades del mercado laboral',NULL),
+	 (103,1,true,24,3,471,202306,'Se necesita capacitación en Adopción de Objetivos del Desarrollo Sostenible en Gobiernos Locales para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (104,1,true,11,3,471,202305,'Se requiere Taller de Oratoria y Comunicación Eficaz para actualización de habilidades específicas',NULL),
+	 (105,1,true,22,3,471,202301,'Se requiere Taller Lenguaje Expresivo para actualización de habilidades específicas',NULL),
+	 (106,1,true,9,3,471,202501,'Se necesita capacitación en Uso de la tecnología para Adultos para responder a necesidades del mercado laboral',NULL),
+	 (107,1,true,22,3,471,202505,'Se necesita capacitación en Recursos educativos abiertos: objetos de aprendizaje y otros materiales interactivos para responder a necesidades del mercado laboral',NULL),
+	 (108,1,true,22,3,471,202312,'Se requiere Taller de química para alumnos de escuelas secundarias para actualización de habilidades específicas',NULL),
+	 (109,1,true,20,3,471,202401,'Se requiere Inserción Laboral y Gestión del Capital Humano para mandos medios y áreas de administración pública/privada',NULL),
+	 (110,1,true,19,3,471,202312,'Se necesita capacitación en Introducción a la Formulación y Evaluación de Proyectos de Inversión para responder a necesidades del mercado laboral',NULL),
+	 (111,1,true,19,3,471,202409,'Se necesita capacitación en Introducción a la Formulación y Evaluación de Proyectos de Inversión para responder a necesidades del mercado laboral',NULL),
+	 (112,1,true,9,3,471,202311,'Se requiere Taller: Introducción a la Programación para adolescentes para actualización de habilidades específicas',NULL),
+	 (113,1,true,14,3,471,202406,'Se requiere Taller Materias Básicas para actualización de habilidades específicas',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (114,1,true,9,3,471,202312,'Se requiere Taller Robótica y Realidad Virtual para actualización de habilidades específicas',NULL),
+	 (115,1,true,9,3,471,202412,'Se necesita capacitación introductoria en Taller Programación Inicial para nuevos ingresantes',NULL),
+	 (116,1,true,11,3,471,202307,'Se requiere Taller Fabricación Aditiva para actualización de habilidades específicas',NULL),
+	 (117,1,true,9,3,471,202501,'Se requiere Taller Herramientas informáticas y organizacionales para actualización de habilidades específicas',NULL),
+	 (118,1,true,13,3,237,202402,'Se demanda Sistemas de Gestión de Medio Ambiente ISO 14001:2015 para equipos de soporte y desarrollo de la región',NULL),
+	 (119,1,true,21,3,237,202501,'Se demanda Sistemas de Gestión de Higiene y Seguridad en el Trabajo ISO 45001:2018 para equipos de soporte y desarrollo de la región',NULL),
+	 (120,1,true,20,3,237,202405,'Se necesita capacitación introductoria en Herramientas de Excel Nivel Inicial | Nivel Intermedio para nuevos ingresantes',NULL),
+	 (121,1,true,20,3,237,202501,'Se demanda Sistemas de Gestión de Calidad- Auditor Interno ISO 9001:2015 para equipos de soporte y desarrollo de la región',NULL),
+	 (122,1,true,4,3,237,202502,'Se necesita capacitación en Tornería para responder a necesidades del mercado laboral',NULL),
+	 (123,1,true,9,3,237,202412,'Se requiere Taller “Aprendemos a Programar” para actualización de habilidades específicas',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (124,1,true,2,3,237,202501,'Se necesita Soldadura para capacitación de operarios y mejora de empleabilidad',NULL),
+	 (125,1,true,3,3,237,202301,'Se necesita Mecánica de Motos para capacitación de operarios y mejora de empleabilidad',NULL),
+	 (126,1,true,21,3,237,202506,'Se necesita capacitación en Gasista Matriculado Cat. III para responder a necesidades del mercado laboral',NULL),
+	 (127,1,true,1,3,237,202307,'Se necesita capacitación en Energía Solar Fotovoltaica para responder a necesidades del mercado laboral',NULL),
+	 (128,1,true,2,3,237,202312,'Se necesita capacitación en Reparación de Aires Acondicionados Split Cíclicos e Inverter para responder a necesidades del mercado laboral',NULL),
+	 (129,1,true,1,3,237,202401,'Se necesita Electricidad Industrial para capacitación de operarios y mejora de empleabilidad',NULL),
+	 (130,1,true,9,3,237,202212,'Se solicita formación avanzada en Electricidad Industrial Avanzada y PLC para perfiles con experiencia',NULL),
+	 (131,1,true,1,3,237,202301,'Se necesita Electricidad Domiciliaria para capacitación de operarios y mejora de empleabilidad',NULL),
+	 (132,1,true,21,3,237,202306,'Se necesita Cursos de Cooperativismo y Factores de Riesgo por Actividad para capacitación de personal en organizaciones locales',NULL),
+	 (133,1,true,21,4,457,202412,'Se necesita AUDITORIA DE TANQUES de Seguridad - RES. 1102/04 para cumplir normativas laborales y prevenir incidentes',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (134,1,true,20,3,457,202501,'Se necesita capacitación en Liderazgo y Manejo de Equipos para responder a necesidades del mercado laboral',NULL),
+	 (135,1,true,14,3,468,202212,'Se necesita capacitación en LABORATORIO DE NUEVAS TECNOLOGÍAS para responder a necesidades del mercado laboral',NULL),
+	 (136,1,true,5,3,468,202302,'Se necesita ELECTRICIDAD para capacitación de operarios y mejora de empleabilidad',NULL),
+	 (137,1,true,1,3,457,202505,'Se necesita Curso Instalaciones Eléctricas para capacitación de personal en organizaciones locales',NULL),
+	 (138,1,true,1,3,457,202212,'Se necesita Curso Electricidad Básica para capacitación de personal en organizaciones locales',NULL),
+	 (139,1,true,9,3,457,202306,'Se necesita Curso de informática para principiantes para capacitación de personal en organizaciones locales',NULL),
+	 (140,1,true,9,3,457,202501,'Se necesita Curso de Ofimatica para capacitación de personal en organizaciones locales',NULL),
+	 (141,1,true,24,3,457,202301,'Se necesita Curso de Idiomas: Frances. Nivel I y II para capacitación de personal en organizaciones locales',NULL),
+	 (142,1,true,11,3,457,202412,'Se necesita Curso en Diseño e Impresion 3D para capacitación de personal en organizaciones locales',NULL),
+	 (143,1,true,24,3,457,202301,'Se requiere Manejo de Excel para mejorar el análisis y la visualización en áreas administrativas',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (144,1,true,21,3,457,202502,'Se necesita Curso de higiene y seguridad laboral para capacitación de personal en organizaciones locales',NULL),
+	 (145,1,true,22,3,465,202307,'Se demanda entrenamiento práctico en CURSO DE DESARROLLO PROFESIONAL MEJORA DE PRÁCTICAS DE EVALUACIÓN orientado a la aplicación laboral',NULL),
+	 (146,1,true,20,3,465,202301,'Se necesita Curso de Análisis de Costos para capacitación de personal en organizaciones locales',NULL),
+	 (147,1,true,20,3,465,202302,'Se necesita Curso de Emprendedorismo para capacitación de personal en organizaciones locales',NULL),
+	 (148,1,true,10,3,465,202412,'Se necesita Curso de Principios de mejora de procesos y transformación digital para industrias para capacitación de personal en organizaciones locales',NULL),
+	 (149,1,true,21,3,465,202412,'Se necesita Curso de Método de las “5 S” – Orden y limpieza para capacitación de personal en organizaciones locales',NULL),
+	 (150,1,true,11,3,465,202212,'Se necesita Curso “Herramientas para la Gestión Estratégica de Empresas Agropecuarias” para capacitación de personal en organizaciones locales',NULL),
+	 (151,1,true,19,3,465,202312,'Se necesita Curso Estrategias Agropecuarias para un Futuro Climáticamente Inteligente para capacitación de personal en organizaciones locales',NULL),
+	 (152,1,true,22,3,465,202501,'Se necesita Curso de Desarrollo Frontend para capacitación de personal en organizaciones locales',NULL),
+	 (153,1,true,8,3,514,202301,'Se necesita Capacitación en FTTH para fortalecer competencias del sector público y privado',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (154,1,true,7,3,512,202307,'Se requiere Taller intensivo de optimización de clima laboral para actualización de habilidades específicas',NULL),
+	 (155,1,true,12,4,468,202410,'Se necesita capacitación en GIDEC - GRUPO DE INVESTIGACION Y DESARROLLO DE ESTRUCTURAS CIVILES para responder a necesidades del mercado laboral',NULL),
+	 (156,1,true,9,3,512,202301,'Se necesita capacitación en PLC Controladores Lógicos Programables para responder a necesidades del mercado laboral',NULL),
+	 (157,1,true,23,3,354,202411,'Se necesita capacitación en TECNICAS GENERALES DE ALBAÑILERÍA para responder a necesidades del mercado laboral',NULL),
+	 (158,1,true,24,3,354,202401,'Se requiere USO Y MANEJO DE LA HERRAMIENTA DE EXCEL para mejorar el análisis y la visualización en áreas administrativas',NULL),
+	 (159,1,true,2,3,354,202412,'Se necesita capacitación en OPERARIO RURAL ESPECIALIZADO: TRACTOR y MAQUINARIA para responder a necesidades del mercado laboral',NULL),
+	 (160,1,true,2,3,354,202311,'Se necesita capacitación en ELECTRONICA BÁSICA APLICADA A LA INDUSTRIA para responder a necesidades del mercado laboral',NULL),
+	 (161,1,true,2,3,354,202312,'Se necesita capacitación en REFRIGERACION-CLIMATIZACIÓN para responder a necesidades del mercado laboral',NULL),
+	 (162,1,true,21,3,514,202412,'Se necesita Higiene y Seguridad para cumplir normativas laborales y prevenir incidentes',NULL),
+	 (163,1,true,16,3,514,202401,'Se necesita INGLÉS TÉCNICO PARA MINERÍA para personal que interactúa con clientes internacionales',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (164,1,true,6,3,514,202307,'Se necesita capacitación en AUTOMATIZACIÓN DE PROCESOS MINEROS CON PLC para responder a necesidades del mercado laboral',NULL),
+	 (165,1,true,1,2,514,202505,'Se requiere GESTIÓN Y MANTENIMIENTO DE APARAMENTA ELÉCTRICA EN ENTORNOS MINEROS para mandos medios y áreas de administración pública/privada',NULL),
+	 (166,1,true,16,3,514,202406,'Se requiere Gestión Integral de la Seguridad y Salud en la Minería para agentes sanitarios y personal de atención comunitaria',NULL),
+	 (167,1,true,16,3,514,202312,'Se necesita capacitación en Instrumentación aplicada a la Minería del Litio para responder a necesidades del mercado laboral',NULL),
+	 (168,1,true,24,3,259,202405,'Se necesita CURSOS DE IDIOMAS:  Alemán. Nivel I  para capacitación de personal en organizaciones locales',NULL),
+	 (169,1,true,4,3,259,202401,'Se necesita CURSOS DE IDIOMAS: Portugués. Nivel I para capacitación de personal en organizaciones locales',NULL),
+	 (170,1,true,24,3,259,202501,'Se necesita CURSOS DE IDIOMAS: Italiano. Nivel I para capacitación de personal en organizaciones locales',NULL),
+	 (171,1,true,13,3,259,202301,'Se necesita CURSOS DE FORMACION PROFESIONAL: Taller reparación de pequeños electrodomésticos para capacitación de personal en organizaciones locales',NULL),
+	 (172,1,true,20,3,259,202406,'Se necesita CURSOS DE FORMACION PROFESIONAL: Gestión de negocios digitales para capacitación de personal en organizaciones locales',NULL),
+	 (173,1,true,7,3,259,202501,'Se necesita CURSOS DE OFICIOS: Inyección electrónica para capacitación de personal en organizaciones locales',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (174,1,true,3,3,259,202305,'Se necesita CURSOS DE OFICIOS: Mecánica general para capacitación de personal en organizaciones locales',NULL),
+	 (175,1,true,3,3,259,202501,'Se necesita CURSOS DE OFICIOS: Mecánica de motos para capacitación de personal en organizaciones locales',NULL),
+	 (176,1,true,14,4,340,202312,'Se necesita capacitación en Lab. de Metalografía para responder a necesidades del mercado laboral',NULL),
+	 (177,1,true,5,3,340,202212,'Se necesita capacitación en ITREN (Instituto Tec. Regional de Ensayos no Destructivos) para responder a necesidades del mercado laboral',NULL),
+	 (178,1,true,7,3,237,202501,'Se necesita Capacitaciones en Puesta a Tierra, Electrotecnia y Electrónica Básica. para fortalecer competencias del sector público y privado',NULL),
+	 (179,1,true,21,3,251,202506,'Se necesita CAPACITACIÓN EN METODOLOGIA 5S para fortalecer competencias del sector público y privado',NULL),
+	 (180,1,true,1,3,473,202505,'Se necesita Capacitación en Energías Renovables para fortalecer competencias del sector público y privado',NULL),
+	 (181,1,true,11,3,473,202506,'Se necesita Cursos de capacitación a Instituciones y Empresas para capacitación de personal en organizaciones locales',NULL),
+	 (182,1,true,15,3,473,202305,'Se necesita Capacitación en áreas de ciencia y tecnología de los alimentos para fortalecer competencias del sector público y privado',NULL),
+	 (183,1,true,19,3,89,202312,'Se necesita Capacitaciones Específicas del Ámbito Aeronáutico para fortalecer competencias del sector público y privado',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (184,1,true,1,3,11,202301,'Se necesita Seguridad y capacitación para el trabajo de campo en electricidad para fortalecer competencias del sector público y privado',NULL),
+	 (185,1,true,1,3,11,202301,'Se necesita Seguridad Eléctrica para cumplir normativas laborales y prevenir incidentes',NULL),
+	 (186,1,true,1,3,11,202502,'Se necesita capacitación en Energía eólica para responder a necesidades del mercado laboral',NULL),
+	 (187,1,true,11,3,11,202312,'Se necesita capacitación en Fundamentos de la impresión 3D para responder a necesidades del mercado laboral',NULL),
+	 (188,1,true,1,3,11,202401,'Se necesita capacitación en Control de velocidad para responder a necesidades del mercado laboral',NULL),
+	 (189,1,true,24,3,259,202412,'Se necesita Capacitación del personal para fortalecer competencias del sector público y privado',NULL),
+	 (190,1,true,21,3,259,202305,'Se necesita Capacitación del personal para fortalecer competencias del sector público y privado',NULL),
+	 (191,1,true,8,2,55,202301,'Se necesita capacitación en Armado y Reparación de Redes de Pesca para responder a necesidades del mercado laboral',NULL),
+	 (192,1,true,24,3,55,202307,'Se necesita capacitación en calificación de soldadores (GMAW) para responder a necesidades del mercado laboral',NULL),
+	 (193,1,true,1,3,55,202306,'Se necesita capacitación en Eficiencia energética y energías renovables para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (194,1,true,12,3,55,202301,'Se necesita capacitación en Steel Frame para responder a necesidades del mercado laboral',NULL),
+	 (195,1,true,18,3,55,202411,'Se necesita capacitación en Manejo de Máquinas en Confección Industrial para responder a necesidades del mercado laboral',NULL),
+	 (196,1,true,19,3,55,202405,'Se demanda Diseño y Producción de Indumentaria para fortalecer capacidades del sector productivo local',NULL),
+	 (197,1,true,12,3,55,202412,'Se necesita capacitación en Corseteria para responder a necesidades del mercado laboral',NULL),
+	 (198,1,true,11,3,173,202307,'Se necesita Capacitación en Impresión 3D para fortalecer competencias del sector público y privado',NULL),
+	 (199,1,true,24,3,173,202501,'Se necesita capacitación en Uso de Satélites para la visualización, procesamiento y análisis de imágenes para responder a necesidades del mercado laboral',NULL),
+	 (200,1,true,15,3,11,202301,'Se necesita Curso para operadores de plantas de tratamiento de efluentes de agroindustrias para capacitación de personal en organizaciones locales',NULL),
+	 (201,1,true,3,3,173,202406,'Se necesita Mecánica de motos para capacitación de operarios y mejora de empleabilidad',NULL),
+	 (202,1,true,1,3,173,202302,'Se necesita capacitación en Instalaciones eléctricas domiciliarias para responder a necesidades del mercado laboral',NULL),
+	 (203,1,true,7,2,173,202405,'Se necesita capacitación en Electrónica orientada a la reparación para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (204,1,true,19,3,173,202312,'Se requiere Taller de animacion 2D para actualización de habilidades específicas',NULL),
+	 (205,1,true,21,3,173,202401,'Se necesita Cursos para la Industria para capacitación de personal en organizaciones locales',NULL),
+	 (206,1,true,11,3,173,202405,'Se requiere Taller de impresión 3D para actualización de habilidades específicas',NULL),
+	 (207,1,true,15,3,173,202501,'Se requiere Taller de ImageJ para actualización de habilidades específicas',NULL),
+	 (208,1,true,20,1,173,202412,'Se solicita Diplomatura en resolución de conflictos para profesionalización de equipos de trabajo',NULL),
+	 (209,1,true,7,3,173,202301,'Se necesita formación en herramientas de Herramientas Digitales para el trabajo para mejorar procesos internos',NULL),
+	 (210,1,true,9,3,173,202212,'Se demanda Calidad de Software para equipos de soporte y desarrollo de la región',NULL),
+	 (211,1,true,24,3,173,202412,'Se necesita capacitación en Elaboración de cerveza artesanal para responder a necesidades del mercado laboral',NULL),
+	 (212,1,true,3,3,173,202407,'Se necesita capacitación en Extracción por Soxhlet para responder a necesidades del mercado laboral',NULL),
+	 (213,1,true,3,3,173,202412,'Se necesita capacitación en Obtención de Aceites Esenciales para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (214,1,true,3,3,173,202412,'Se necesita capacitación en Extracción de componentes a partir de hojas, tallos y raíces de Cannabis sp. para responder a necesidades del mercado laboral',NULL),
+	 (215,1,true,5,3,11,202307,'Se necesita Cursos de: Materiales Metálicos, Selección de Materiales, Aceros Inoxidables, y aceros especiales. para capacitación de personal en organizaciones locales',NULL),
+	 (216,1,true,12,3,11,202501,'Se necesita Certificación de soldadura para capacitación de operarios y mejora de empleabilidad',NULL),
+	 (217,1,true,9,3,8,202401,'Se necesita capacitación en Programas de cálculos estructurales. para responder a necesidades del mercado laboral',NULL),
+	 (218,1,true,9,3,8,202312,'Se necesita Curso de Stress Análisis de cañerías básico para capacitación de personal en organizaciones locales',NULL),
+	 (219,1,true,9,3,8,202407,'Se necesita Programación CNC (control numérico computarizado): programación para realizar mecanizados asistidos por computadora. para empleados del área tecnológica de empresas privadas',NULL),
+	 (220,1,true,11,3,8,202406,'Se demanda Software para CAD-CAM-CAE utilizando modelado 3D, para productos y matrices. para equipos de soporte y desarrollo de la región',NULL),
+	 (221,1,true,11,3,8,202301,'Se demanda Software para CAD-CAM-CAE utilizando modelado 3D, para productos y matrices. para equipos de soporte y desarrollo de la región',NULL),
+	 (222,1,true,12,3,8,202412,'Se necesita Capacitación específica de recursos humanos asignados a obras civiles. para fortalecer competencias del sector público y privado',NULL),
+	 (223,1,true,1,4,8,202212,'Se necesita capacitación en Análisis de la aplicación de energías alternativas a procesos industriales. para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (224,1,true,4,3,8,202312,'Se solicita formación avanzada en Curso de soldadura teórico y práctico, para nivel básico, intermedio y avanzado. para perfiles con experiencia',NULL),
+	 (225,1,true,12,3,8,202312,'Se necesita Capacitación en nuevas tecnologías civiles. para fortalecer competencias del sector público y privado',NULL),
+	 (226,1,true,12,3,8,202311,'Se necesita Cursos de actualización de reglamentos de la construcción. para capacitación de personal en organizaciones locales',NULL),
+	 (227,1,true,13,3,8,202412,'Se necesita Curso de Operadores de Equipo de Frio según la normativa de medio ambiente para capacitación de personal en organizaciones locales',NULL),
+	 (228,1,true,24,3,8,202306,'Se necesita Curso de capacitación en mediciones termografías. para capacitación de personal en organizaciones locales',NULL),
+	 (229,1,true,1,3,8,202307,'Se necesita Curso de capacitación en seguridad eléctrica en media y alta tensión. para capacitación de personal en organizaciones locales',NULL),
+	 (230,1,true,1,3,8,202502,'Se demanda entrenamiento práctico en Cursos de Capacitación Teórico - Prácticos sobre protecciones eléctricas y valijas de ensayo orientado a la aplicación laboral',NULL),
+	 (231,1,true,20,3,8,202506,'Se necesita capacitación en Acompañamiento del desarrollo de empresas familiares y emprendedores. para responder a necesidades del mercado laboral',NULL),
+	 (232,1,true,20,3,8,202208,'Se necesita capacitación en Desarrollo de procesos de selección para responder a necesidades del mercado laboral',NULL),
+	 (233,1,true,20,3,8,202405,'Se demanda Desarrollo de las habilidades comunicacionales del personal de todos los niveles. para mejorar la comunicación interna y externa',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (234,1,true,20,3,8,202412,'Se necesita capacitación en Desarrollo y coaching de liderazgo. para responder a necesidades del mercado laboral',NULL),
+	 (235,1,true,5,4,125,202311,'Se necesita capacitación en LABORATORIO DE METROLOGIA para responder a necesidades del mercado laboral',NULL),
+	 (236,1,true,5,4,125,202212,'Se necesita capacitación en LABORATORIO DE METROLOGÍA para responder a necesidades del mercado laboral',NULL),
+	 (237,1,true,14,4,125,202411,'Se necesita capacitación en LABORATORIO DE ENSAYOS MECANICOS para responder a necesidades del mercado laboral',NULL),
+	 (238,1,true,20,4,340,202212,'Se demanda GE-LAB. (Lab. de Gobierno Electrónico) Ing. Sistemas para equipos de soporte y desarrollo de la región',NULL),
+	 (239,1,true,3,4,340,202212,'Se necesita formación en herramientas de DHARMAa (lab. Desarrollo de Herramientas de Aprendizaje y Razonamiento con Máquinas) Ing, Sist. para mejorar procesos internos',NULL),
+	 (240,1,true,9,4,340,202312,'Se demanda LITAPS (Lab. de integración de tecnologías Aplicadas a Prototipos de software) Ing. Sist. para equipos de soporte y desarrollo de la región',NULL),
+	 (241,1,true,9,4,340,202311,'Se necesita capacitación en LADEI (LABORATORIO DE INFORMÁTICA) Ing. Sist. para responder a necesidades del mercado laboral',NULL),
+	 (242,1,true,21,4,340,202212,'Se necesita capacitación en LICPaD (Lab. de Inv. en cómputo Paralelo Distribuido) Ing. Sis para responder a necesidades del mercado laboral',NULL),
+	 (243,1,true,20,4,340,202412,'Se necesita capacitación en GIDEC (Grupo Reg.UTN.de Inv.y Desarr. de Ecosist.de Conoc. ) I. Sist. para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (244,1,true,24,3,258,202501,'Se necesita capacitación en Idiomas para empresas para responder a necesidades del mercado laboral',NULL),
+	 (245,1,true,20,1,258,202210,'Se necesita Capacitaciones sobre Habilidades blandas para fortalecer competencias del sector público y privado',NULL),
+	 (246,1,true,9,1,258,202412,'Se necesita Capacitaciones sobre programación y Sistemas de información para fortalecer competencias del sector público y privado',NULL),
+	 (247,1,true,20,1,258,202412,'Se necesita Capacitaciones sobre Administración y Negocios para fortalecer competencias del sector público y privado',NULL),
+	 (248,1,true,13,3,11,202212,'Se necesita Capacitación en Análisis de efluentes Industriales para fortalecer competencias del sector público y privado',NULL),
+	 (249,1,true,15,3,11,202502,'Se necesita Capacitación en Análisis de Alimentos para fortalecer competencias del sector público y privado',NULL),
+	 (250,1,true,24,3,11,202412,'Se necesita Curso Análisis fisicoquímico y microbiológico de aguas para capacitación de personal en organizaciones locales',NULL),
+	 (251,1,true,13,3,128,202401,'Se requiere Taller Aproximación a la Sustentabilidad en los Edificios y en las Infraestructuras para actualización de habilidades específicas',NULL),
+	 (252,1,true,7,3,128,202501,'Se necesita Curso sobre Arduino para capacitación de personal en organizaciones locales',NULL),
+	 (253,1,true,9,3,128,202501,'Se necesita Curso sobre Python para capacitación de personal en organizaciones locales',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (254,1,true,24,3,128,202401,'Se necesita capacitación en FODA Estratégico para responder a necesidades del mercado laboral',NULL),
+	 (255,1,true,10,3,128,202212,'Se requiere Taller de Transformación Digital para PYMES para actualización de habilidades específicas',NULL),
+	 (256,1,true,20,3,128,202501,'Se necesita capacitación en Clínica de Acompañamiento a Emprendedores y PyMES para responder a necesidades del mercado laboral',NULL),
+	 (257,1,true,1,3,340,202301,'Se necesita capacitación en Riesgo Eléctrico para fortalecer competencias del sector público y privado',NULL),
+	 (258,1,true,16,3,340,202501,'Se necesita capacitación oficio Andamista para fortalecer competencias del sector público y privado',NULL),
+	 (259,1,true,23,3,340,202505,'Se necesita capacitación en CERTIFICACION DE OFICIOS para responder a necesidades del mercado laboral',NULL),
+	 (260,1,true,19,1,471,202412,'Se solicita Diplomatura en Tecnologías de Gestión de La Producción para profesionalización de equipos de trabajo',NULL),
+	 (261,1,true,3,3,471,202401,'Se necesita Soldaduras para Calificar para capacitación de operarios y mejora de empleabilidad',NULL),
+	 (262,1,true,8,3,471,202306,'Se solicita formación en Programa de Formación en Tendido y Mantenimiento de Fibra Óptica para ampliar oportunidades laborales',NULL),
+	 (263,1,true,1,3,471,202305,'Se requiere Gestión de la Energía en Edificios Comerciales y Públicos para mandos medios y áreas de administración pública/privada',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (264,1,true,2,3,471,202407,'Se necesita capacitación en Generadores Fotovoltaicos de Baja Potencia para responder a necesidades del mercado laboral',NULL),
+	 (265,1,true,9,3,471,202301,'Se necesita capacitación en Desarrollador de Aplicaciones Móviles con Android para responder a necesidades del mercado laboral',NULL),
+	 (266,1,true,20,3,471,202501,'Se necesita capacitación en Desarrollador de Aplicaciones Empresariales con Java para responder a necesidades del mercado laboral',NULL),
+	 (267,1,true,20,3,471,202501,'Se solicita formación en Programa de formación en Innovación y Emprendimiento Social para ampliar oportunidades laborales',NULL),
+	 (268,1,true,20,3,471,202312,'Se necesita capacitación en Eficiencia energética en PyMEs y en Municipios para responder a necesidades del mercado laboral',NULL),
+	 (269,1,true,20,4,471,202412,'Se requiere Gestión en PyMEs II para mandos medios y áreas de administración pública/privada',NULL),
+	 (270,1,true,20,4,471,202411,'Se requiere Gestión en PyMEs I para mandos medios y áreas de administración pública/privada',NULL),
+	 (271,1,true,20,2,471,202301,'Se requiere Gestión de Mantenimiento de Plantas Industriales para mandos medios y áreas de administración pública/privada',NULL),
+	 (272,1,true,12,3,471,202306,'Se necesita Programa de capacitación para la fabricación y construcción con Bloques de Tierra Comprimida para fortalecer competencias del sector público y privado',NULL),
+	 (273,1,true,11,3,471,202412,'Se necesita capacitación en Solidworks: Diseño 3D - CAD para responder a necesidades del mercado laboral',NULL);
+INSERT INTO public.hecho_demanda (id_hecho_demanda,demanda_count,cubierta_flag,id_area,id_tipo_servicio,id_geografia,id_mes,titulo_demanda,descripcion_demanda) VALUES
+	 (274,1,true,11,3,471,202407,'Se necesita Programación de Máquinas de Control Numérico - CNC para empleados del área tecnológica de empresas privadas',NULL);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (4,1,true,2,1,9,1,202502,202512,'Diplomatura en Mantenimiento industrial','El objetivo principal de esta capacitación es formar a las personas para que puedan garantizar el correcto funcionamiento de los equipos y maquinarias utilizadas para el desarrollo de la actividad, a través del mantenimiento preventivo y predictivo.',12),
 	 (10,1,true,12,1,9,1,202502,202512,'Diplomatura en Albañilería','Identificar y reconocer la función y aplicación de herramientas y materiales a utilizar.
@@ -2631,6 +2600,7 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (120,1,true,9,3,13,1,202503,202511,'Uso de la tecnología para Adultos','El curso consiste en talleres de distinto nivel, destinados a adultos que estén interesados en adquirir y/o profundizar sus conocimientos sobre el uso de la computadora y otros dispositivos tecnológicos actuales.
 Los mismos serán dictados por profesores y/o profesionales de UTN - FRSF, con el fin de realizar una actividad constructiva para formación de los participantes e inclusión en las tecnologías que se utilizan en el ámbito laboral.
 Dado que, en muchos casos, la tecnología presenta barreras a las personas de dicho grupo, se propone esta capacitación sobre herramientas informáticas, con el objetivo de facilitarles la posibilidad de acceso y uso de computadoras, celulares, tabletas, así como de Internet, APP, etc.',6),
+	 (323,1,true,20,3,17,1,202503,202511,'Desarrollo y coaching de liderazgo.','Liderazgo y Gestión',6),
 	 (137,1,true,9,3,13,1,202503,202511,'Taller Programación Inicial','La capacitación busca que el/la estudiante ingrese al mundo del desarrollo de software, dándole conceptos de hardware, electrónica y programación, se desarrollarán actividades tendientes a transferir los conocimientos de lógica y programación aplicada. Se efectuarán prácticas y desarrollos en los Kit de programación que cumplen el rol de apoyo para el dictado de la formación',6),
 	 (139,1,true,9,3,13,1,202503,202511,'Taller Herramientas informáticas y organizacionales','La capacitación se enfoca en dotar de herramientas, conceptos y temáticas con el objeto de que esto sirva de base para la transmisión de estos conocimientos al momento que cada participante necesite expresarse en forma corporal, escrita y oral, presentar en una exposición, y, además, puedan en un futuro ser formadores de formadores. Para una última etapa de este módulo se presenta el Taller Creativo de la Imagen, con el objetivo de generar un espacio de aprendizaje y exploración de la imagen desde distintas perspectivas. El participante encontrará un lugar de experimentación artística que le permitirá explorar, crear y desarrollar sus dones creativos.',6),
 	 (143,1,true,21,3,1,1,202503,202511,'Sistemas de Gestión de Higiene y Seguridad en el Trabajo ISO 45001:2018','Los objetivos del mismo se resumen en que los participantes desarrollen las competencias, es
@@ -2643,12 +2613,12 @@ Trabajo según la Norma 45001:2018.
 - Llevar a cabo auditorías internas para verificar la eficacia del Sistema de Gestión de Higiene y
 Seguridad en el Trabajo.
 - Reconocer las características y problemas más habituales en la consecución de la
-certificación de gestión de un Sistema de Gestión de Higiene y Seguridad en el Trabajo.',6),
+certificación de gestión de un Sistema de Gestión de Higiene y Seguridad en el Trabajo.',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (162,1,true,21,4,28,1,202502,202512,'AUDITORIA DE TANQUES de Seguridad - RES. 1102/04','Estaciones de servicios (auditoria de superficie SASH) 
  Playas de almacenamiento 
  Depósito de tambores y envases
- Erradicación de tanques',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+ Erradicación de tanques',12),
 	 (148,1,true,9,3,1,1,202503,202511,'Taller “Aprendemos a Programar”','Curso de formación constituido en 2 Niveles con clases  teórico-prácticas.
 Destinado a adolescentes que muestran interés por la programación para que comiencen a
 aprender los conceptos y técnicas fundamentales de manera lúdica como, así también, a
@@ -2694,9 +2664,10 @@ Dar al estudiante los conocimientos y habilidades necesarias para el modelado en
 Orden y Limpieza, dada la necesidad de capacitación del personal y de una metodología para realizar de manera correcta el trabajo diario.
 La aplicación del método genera además una mejora en la competitividad 
 y en la eficiencia que involucra a todos los integrantes de la organización, logrando aumentos efectivos en la productividad (orden y reducción de costos) y sentando las bases de la calidad en la empresa.',6),
-	 (192,1,true,21,3,7,3,202503,202511,'Curso de Higiene y Seguridad Laboral en Establecimientos Educativos','La higiene y seguridad laboral en los establecimientos educativos es fundamental para garantizar un ambiente seguro y saludable para estudiantes, docentes y personal administrativo. Este curso está diseñado para brindar a los participantes los conocimientos y herramientas necesarias para identificar, evaluar y controlar los riesgos presentes en el entorno educativo. A través de un enfoque práctico y basado en la normativa vigente, se busca promover una cultura de prevención y cuidado que minimice los accidentes y enfermedades laborales, contribuyendo así a un ambiente escolar más seguro y propicio para el aprendizaje.',6),
-	 (222,1,true,24,3,31,1,202503,202511,'CURSOS DE IDIOMAS: Italiano. Nivel I','Capacitación abierta. El objetivo es proporcionar: Elementos para que el individuo obtenga autonomía en el proceso de aprendizaje. Medios para un mejor desempeño en la vida cotidiana.',6);
+	 (192,1,true,21,3,7,3,202503,202511,'Curso de Higiene y Seguridad Laboral en Establecimientos Educativos','La higiene y seguridad laboral en los establecimientos educativos es fundamental para garantizar un ambiente seguro y saludable para estudiantes, docentes y personal administrativo. Este curso está diseñado para brindar a los participantes los conocimientos y herramientas necesarias para identificar, evaluar y controlar los riesgos presentes en el entorno educativo. A través de un enfoque práctico y basado en la normativa vigente, se busca promover una cultura de prevención y cuidado que minimice los accidentes y enfermedades laborales, contribuyendo así a un ambiente escolar más seguro y propicio para el aprendizaje.',6);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (318,1,true,11,3,17,2,202509,202511,'Simulación de procesos industriales y logísticos aplicados a personas y materiales.','Liderazgo y gestión',3),
+	 (222,1,true,24,3,31,1,202503,202511,'CURSOS DE IDIOMAS: Italiano. Nivel I','Capacitación abierta. El objetivo es proporcionar: Elementos para que el individuo obtenga autonomía en el proceso de aprendizaje. Medios para un mejor desempeño en la vida cotidiana.',6),
 	 (267,1,true,2,3,14,2,202503,202511,'Mantenimiento Industrial','Formación sólida que abarque los conceptos fundamentales y las buenas prácticas del mantenimiento industrial.',6),
 	 (568,1,true,21,4,17,1,202502,202512,'Implementación de normas de seguridad en el trabajo','SEGURIDAD E HIGIENE',12),
 	 (195,1,true,22,3,7,1,202503,202511,'Curso de Desarrollo Frontend','En un mundo donde la tecnología juega un papel crucial en la educación, la capacidad de enseñar desarrollo web se ha convertido en una habilidad esencial para los docentes de escuelas secundarias técnicas. Este curso está diseñado específicamente para profesores que desean incorporar el desarrollo frontend en su currículo, preparando a sus estudiantes para las demandas del mundo digital actual.
@@ -2707,10 +2678,10 @@ Evaluación de la calidad de productos madereros, vigas laminadas encoladas, apl
 	 (223,1,true,24,3,31,3,202503,202511,'CURSOS DE IDIOMAS: Ingles. Nivel I, II, III, IV','Capacitación abierta. Su estudio provee al alumno de una herramienta útil para su desarrollo en el mundo actual, al mismo tiempo que le permite explorar otras culturas, experimentar, analizar, producir y comunicarse en otro idioma, facilitándole al mismo tiempo la posibilidad de insertarse en el terreno laboral',6),
 	 (204,1,true,23,3,16,1,202503,202511,'TECNICAS GENERALES DE ALBAÑILERÍA','Taller de Capacitación en Técnicas Generales de Albañilería',6),
 	 (206,1,true,2,3,16,1,202503,202511,'OPERARIO RURAL ESPECIALIZADO: TRACTOR y MAQUINARIA','El objetivo del curso es formar operarios con aptitudes en la operación y mantenimiento de tractores y maquinaria agrícola utilizados en los sistemas productivos predominantes del oasis sur de la provincia de Mendoza.',6),
-	 (209,1,true,21,3,22,1,202503,202511,'Higiene y Seguridad','Ergonomía',6),
-	 (210,1,true,13,3,22,3,202509,202511,'Medio ambiente','Medio Ambiente, Agua, Aire, Economía Circular, Huella de Carbono, Huella Hídrica.',3),
-	 (211,1,true,20,3,22,3,202503,202511,'LIDERAZGO Y MANEJO DE EQUIPOS','Capacitar a mandos medios en el desarrollo de habilidades de liderazgo efectivas, utilizando técnicas y estrategias para inspirar y guiar a sus equipos hacia el logro de los objetivos organizacionales. Los participantes aprenderán a aplicar herramientas de gestión para motivar a sus equipos, mejorar la comunicación y supervisar el rendimiento, adoptando un enfoque estratégico en sus áreas de trabajo dentro de un entorno competitivo.',6);
+	 (209,1,true,21,3,22,1,202503,202511,'Higiene y Seguridad','Ergonomía',6);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (210,1,true,13,3,22,3,202509,202511,'Medio ambiente','Medio Ambiente, Agua, Aire, Economía Circular, Huella de Carbono, Huella Hídrica.',3),
+	 (211,1,true,20,3,22,3,202503,202511,'LIDERAZGO Y MANEJO DE EQUIPOS','Capacitar a mandos medios en el desarrollo de habilidades de liderazgo efectivas, utilizando técnicas y estrategias para inspirar y guiar a sus equipos hacia el logro de los objetivos organizacionales. Los participantes aprenderán a aplicar herramientas de gestión para motivar a sus equipos, mejorar la comunicación y supervisar el rendimiento, adoptando un enfoque estratégico en sus áreas de trabajo dentro de un entorno competitivo.',6),
 	 (230,1,true,20,3,31,3,202503,202511,'CURSOS DE FORMACION PROFESIONAL: Coaching y Liderazgo – personal y organizacional','Capacitación abierta. El objetivo es facilitar el conocimiento y descubrimiento de estas habilidades blandas',6),
 	 (232,1,true,21,3,31,3,202503,202511,'CURSOS DE FORMACION PROFESIONAL: Instalación de cámaras de seguridad','Capacitación abierta. Aprender de forma teórica y práctica el diseño, armado y configuración completa de un sistema de Circuito Cerrado de TV, tanto analógico como IP',6),
 	 (235,1,true,3,3,31,1,202503,202511,'CURSOS DE OFICIOS: Mecánica de motos','Capacitación abierta. El objetivo es aprender a reparar motos mono y multi cilindradas con motores de 2 y 4 tiempos.',6),
@@ -2718,18 +2689,16 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (261,1,true,24,3,31,1,202503,202511,'Capacitación del personal','Cursos de la especialidad de acuerdo a las necesidades',6),
 	 (270,1,true,11,3,14,2,202503,202511,'Tapiceria','Se aprenderán técnicas básicas de tapicería a través del desarmado y armado de diferentes objetos.',6),
 	 (271,1,true,18,3,14,1,202503,202511,'Manejo de Máquinas en Confección Industrial','Conocimientos de manejo de máquinas de coser industrial, confeccionando diferentes productos y utilizando diferentes máquinas: recta, overlock de 3, 4 y 5 hilos, tapacostura y collareta.',6),
-	 (272,1,true,14,4,14,2,202502,202512,'Laboratorio de aromas','Formular tipos y cuáles son las formas más adecuadas de conservación y creacion de blends de aromas y perfumes.',12),
-	 (274,1,true,18,3,14,3,202509,202511,'Diseño de estampas para superficies textiles','creación de diseños para estampar superficies textiles, creando piezas únicas en una colección.',3),
-	 (275,1,true,12,3,14,1,202503,202511,'Corseteria','Ampliar los conocimientos en cuanto a las estructuras del corset. Profundizar las variables tipológicas industriales aplicadas a tendencias actuales.',6);
+	 (272,1,true,14,4,14,2,202502,202512,'Laboratorio de aromas','Formular tipos y cuáles son las formas más adecuadas de conservación y creacion de blends de aromas y perfumes.',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (274,1,true,18,3,14,3,202509,202511,'Diseño de estampas para superficies textiles','creación de diseños para estampar superficies textiles, creando piezas únicas en una colección.',3),
+	 (275,1,true,12,3,14,1,202503,202511,'Corseteria','Ampliar los conocimientos en cuanto a las estructuras del corset. Profundizar las variables tipológicas industriales aplicadas a tendencias actuales.',6),
 	 (276,1,true,5,3,14,2,202503,202511,'Bordado en prendas','se aprenderá en este taller los puntos básicos para crear distintas texturas, los materiales a utilizar y pasos necesarios desde el dibujo hasta el resultado final.',6),
 	 (290,1,true,20,1,12,1,202502,202512,'Diplomatura en resolución de conflictos','Diseñar, organizar y gestionar el desarrollo de programas y proyectos socio comunitarios en el marco de la anticipación, prevención, administración y gestión de conflictos en los ámbitos públicos y privados',12),
 	 (297,1,true,3,3,12,1,202503,202511,'Extracción de componentes a partir de hojas, tallos y raíces de Cannabis sp.','Capacitación en la mecánica de extracción de compuestos de interés a partir de hojas, tallos y raíces de Cannabis sp.',6),
 	 (298,1,true,7,3,2,2,202509,202511,'Capacitación en Diseño de Hardware Digital','Capacitación en Diseño Digital de Alta Complejidad mediante dispositivos lógicos configurables (FPGA), Lenguajes de Descripción de Hardware (HDL) y Técnicas  de Verificación. Se utilizan placas de desarrollo de UTN.',3),
 	 (308,1,true,12,3,17,1,202503,202511,'Capacitación específica de recursos humanos asignados a obras civiles.','Productiva- Tecnología',6),
 	 (313,1,true,13,3,17,1,202503,202511,'Curso de Operadores de Equipo de Frio según la normativa de medio ambiente','Productiva- Tecnología',6),
-	 (318,1,true,11,3,17,2,202509,202511,'Simulación de procesos industriales y logísticos aplicados a personas y materiales.','Liderazgo y gestión',3),
-	 (323,1,true,20,3,17,1,202503,202511,'Desarrollo y coaching de liderazgo.','Liderazgo y Gestión',6),
 	 (327,1,true,14,4,23,1,202502,202512,'LABORATORIO DE ENSAYOS MECANICOS','CAPACITACION EN ENSAYOS DESTRUCTIVOS Y NO DESTRUCTIVOS - SERVICIOS EMPRESARIALES',12),
 	 (335,1,true,8,4,5,3,202502,202512,'GIRSyT (Grupo de Inv. Redes,Software y Telecomunicaciones.) I.Sistemas.','Desarrollo de Sistemas de Comiunicación y Redes alámbricas e inalámbricas',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
@@ -2804,21 +2773,22 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 Auditoría de pérdidas no técnicas.
 Calidad de servicio.
 Eficiencia Energética en Instalaciones Eléctricas y Envolventes."',12),
+	 (428,1,false,24,4,25,3,202302,202312,'AUDITORIA BATANES','Según resolución  1102/404 S.G.D.A',12),
 	 (528,1,true,12,4,26,2,202502,202512,'ICET - Ingeniería Civil en Estructuras y Tecnologías','Se realizan trabajos de tipo investigación y estudios.Sanitarios. Estructural.',12),
 	 (531,1,true,24,4,26,1,202502,202512,'Tránsito y transporte','Se realizan trabajos de tipo investigación y estudios',12),
 	 (533,1,true,24,4,12,2,202502,202512,'Pirolisis de Biomasa','Asesoramiento y acompañamiento en estudios fisicoquímicos de los productos de pirolisis obtenidos (contenido de humedad, componentes en sólidos, componentes en líquidos) y sus usos y aplicaciones.',12),
 	 (534,1,true,5,4,12,1,202502,202512,'Soluciones 3D para Industria','Diseño e impresión de piezas para la industria, fabricados con materiales técnicos de alta resistencia, como el Nilón, Policarbonato, Policarbonato con fibra de carbono, ABS, PEEK, PEKK, PEI y PPSU.',12),
 	 (540,1,true,19,4,26,1,202502,202512,'Operaciones de molienda en distintos molinos y tamizado','Los ensayos tienen como objetivo realizar la molienda de la materia prima y la caracterización granulométrica si correspondiera.',12),
 	 (542,1,true,24,4,20,1,202502,202512,'Elaboración de Manuales Técnicos','Generación de manuales técnicos sobre los productos comercializados por las empresas.',12),
-	 (544,1,true,24,4,13,1,202502,202512,'Res. 201/04 Min. de MA. De la Pcia de Santa Fe','Medición de concentraciones en aire de contaminantes gaseosos y partículas (O3, CO, SO2, NOx, SH2, PM10, TSP)',12),
+	 (544,1,true,24,4,13,1,202502,202512,'Res. 201/04 Min. de MA. De la Pcia de Santa Fe','Medición de concentraciones en aire de contaminantes gaseosos y partículas (O3, CO, SO2, NOx, SH2, PM10, TSP)',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (545,1,true,1,4,13,1,202502,202512,'Protocolo Internacional de Medida Verificación - EVO 10000 – 1:2010 (Es)','Mediciones de temperatura de bulbo húmedo y seco en sistemas de generación de vapor, hornos y secaderos
 Análisis de gases de combustión (CO2, CO, O2, Partículas carbonosas) en sistemas de generación de vapor, hornos y secaderos.
 Mediciones de tiro en sistemas de generación de vapor, hornos y secaderos
 Termografía en sistemas de distribución de vapor.
 Medición de concentración en chimenea de contaminantes gaseosos (CO, NO, NO2).
 Mediciones de temperaturas (bulbo seco y húmedo) en instalaciones de aire comprimido y frigorífico.
-Mediciones de potencia de los compresores en instalaciones de aire comprimido y frigorífico.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+Mediciones de potencia de los compresores en instalaciones de aire comprimido y frigorífico.',12),
 	 (555,1,true,1,4,4,1,202502,202512,'Energías Alternativas','Proyectos de investigación y desarrollo de energías renovables (solar, eólica, biomasa) para reducir la dependencia de combustibles fósiles y fomentar fuentes de energía limpias.',12),
 	 (559,1,true,10,4,4,1,202502,202512,'Transformación Digital e Industria 4.0','Proyectos que impulsan la adopción de tecnologías avanzadas (Iot, inteligencia artificial, robótica) en el sector industrial y empresarial para modernizar y optimizar la producción.',12),
 	 (561,1,true,1,4,4,3,202502,202512,'Eficiencia Energética','Implementación de estrategias para mejorar el uso eficiente de la energía en industrias y empresas locales, reduciendo costos operativos y contribuyendo a la sostenibilidad ambiental.',12),
@@ -2827,9 +2797,9 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (582,1,true,1,4,2,3,202502,202512,'Desarrollo de Sistemas Híbridos de Energía','Desarrollo e investigación aplicada sobre sistemas híbridos, eólicos, solares y/o térmicos y otras energías renovables; y su vinculación a sistemas eléctricos convecionales.',12),
 	 (589,1,true,1,4,2,1,202502,202512,'Asesoramiento técnico para instalaciones de distribución','Asesoramiento técnico, instalación eléctrica, diseño de instalaciones eléctricas',12),
 	 (591,1,true,1,4,31,1,202502,202512,'Estudios Económico','Energía Eléctrica. Subtransmisión de energía',12),
-	 (592,1,true,1,4,31,3,202502,202512,'Estudios Económicos','Energía Eléctrica. Métodos alternativos de electrificación',12),
-	 (599,1,true,24,4,31,3,202502,202512,'Estudios de Problemas Técnicos Especiales','En instalaciones',12);
+	 (592,1,true,1,4,31,3,202502,202512,'Estudios Económicos','Energía Eléctrica. Métodos alternativos de electrificación',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (599,1,true,24,4,31,3,202502,202512,'Estudios de Problemas Técnicos Especiales','En instalaciones',12),
 	 (605,1,true,8,4,31,1,202502,202512,'Asesoramiento y Estudios de Redes','Aplicaciones industriales',12),
 	 (608,1,true,24,2,14,3,202503,202511,'Asistencia en procesos tecnologicos','Asistencia en el desarrollo de procesos productivos para la industria pesquera y naval.',6),
 	 (609,1,true,14,4,14,3,202502,202512,'Asistencia y control en cultivo de ovas trucha arcoiris','Provisión de ovas de Trucha Arcoiris por el CEAN (Oncorhynchus
@@ -2840,9 +2810,9 @@ mykiss) para cultivo en el Laboratorio de Acuicultura en UTN',12),
 	 (635,1,true,24,4,2,1,202502,202512,'Sistemas de abastecimiento de agua, saneamiento y pluviales.','Desarrollo de proyecto.',12),
 	 (636,1,true,10,4,2,1,202502,202512,'Transición energética','Trabajos en escenarios para la transición energética en el área portuaria industrial, a partir de los datos aportados por las estimaciones de la HC realizadas con anterioridad',12),
 	 (639,1,true,13,4,2,1,202502,202512,'Sistemas de control y monitoreo ambiental','Evaluaciones de los Planes Integrales de Monitoreo del área portuario industrial (Ley 12530. sobre el monitoreo y preservación de la calidad ambiental del área portuaria  Elaboración de  estudios de caracterización y propuestas de remediación de áreas contaminadas con metales 
-Elaboración de sistemas de control de la actividad de procesamiento.',12),
-	 (641,1,true,20,4,2,1,202502,202512,'Gestión Integrada de Residuos Sólidos Urbanos- Análisis del Mercado de Valoración de materiales','El GEIA tiene experiencias en asesoramientos a diversos municipios del Sudoeste bonaerense en relación a la gestión de sus RSU.',12);
+Elaboración de sistemas de control de la actividad de procesamiento.',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (641,1,true,20,4,2,1,202502,202512,'Gestión Integrada de Residuos Sólidos Urbanos- Análisis del Mercado de Valoración de materiales','El GEIA tiene experiencias en asesoramientos a diversos municipios del Sudoeste bonaerense en relación a la gestión de sus RSU.',12),
 	 (643,1,true,13,4,2,1,202502,202512,'Planta de Tratamiento de Aguas Residuales','Estudio de análisis de prefactibilidad socio económica ambiental de proyecto de reuso de aguas residuales. Análisis comparativos de costos operativos de una Planta de Tratamiento de Aguas Residuales. Identificación y análisis del marco normativo.',12),
 	 (646,1,true,11,4,2,2,202502,202512,'Diseño de productos mediante impresión 3D','Diseño de materiales y dispositivos mediante impresión 3D. Medición de propiedades del material resultante. Análisis de estructuras.',12),
 	 (652,1,true,8,4,2,1,202502,202512,'Asesoramiento y ejecución. Cálculo de enlaces inalámbricos para sistemas de comunicaciones. Cálculo y diseño de sistemas de comunicaciones.','Instrumento VNA. 
@@ -2854,9 +2824,9 @@ PLC y SCADA.',12),
 	 (662,1,true,5,4,30,1,202502,202512,'Control de Calidad de Materiales Asfálticos','Control de calidad de materiales asfálticos: Mezclas en frío con emulsiones modificadas con polímeros. 
 Ensayos de granulometría de los áridos, ensayo de Estabilidad-Fluencia de la mezcla, ensayo de recuperación asfáltica. Recomendaciones y Especificaciones Técnicas relacionadas.',12),
 	 (665,1,true,5,4,30,3,202502,202512,'Control de Calidad de Materiales Asfálticos','Control de Calidad de Materiales Asfálticos, mezclas en frío con emulsiones de última generación.',12),
-	 (670,1,true,5,4,30,3,202502,202512,'Control de Calidad de Materiales en Pavimentación Urbana','Ensayos para el cumplimiento de los parámetros y estándares requeridos por las constructoras para garantizar la calidad de las pavimentaciones urbanas.',12),
-	 (675,1,true,20,4,17,1,202502,202512,'Desarrollo de hojas de ruta e instructivos.','SISTEMAS DE GESTIÓN',12);
+	 (670,1,true,5,4,30,3,202502,202512,'Control de Calidad de Materiales en Pavimentación Urbana','Ensayos para el cumplimiento de los parámetros y estándares requeridos por las constructoras para garantizar la calidad de las pavimentaciones urbanas.',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (675,1,true,20,4,17,1,202502,202512,'Desarrollo de hojas de ruta e instructivos.','SISTEMAS DE GESTIÓN',12),
 	 (689,1,true,2,4,13,1,202502,202512,'Diseño eficiente de instalaciones de Aire Acondicionado','Diseño eficiente de instalaciones de Aire Acondicionado',12),
 	 (690,1,true,1,4,13,1,202502,202512,'Reglamento AEA','*Diseño eficiente de instalaciones de iluminación y eléctrica.
 *Diseños de tableros eléctricos y grupos electrógenos',12),
@@ -2874,9 +2844,9 @@ Desarrollo e implantación de Sistemas de Gestión.',12),
 	 (708,1,true,19,4,9,1,202502,202512,'Tratamiento de de efluentes industriales','Servicios a terceros para la determinación de la capacidad metanogénica con un equipo portátil, especialmente adaptado para este fin en lagunas de tratamiento de efluentes de la industria frigorífica y de la producción intensiva primaria.',12),
 	 (710,1,true,12,4,9,1,202502,202512,'Estudios estructurales de la madera','Clasificación de la madera como material estructural. Investigación de la madera aserrada, laminada encolada y subproductos derivados, provenientes de especies forestadas en Argentina, para uso estructural y en construcciones.',12),
 	 (716,1,true,11,4,9,3,202502,202512,'Simulación y optimización de procesos productivos.','Estudios de diagnóstico de procesos y asesoría a través de modelos de simulación y optimización.',12),
-	 (717,1,true,9,4,9,1,202502,202512,'Modelos predictivos y prescriptivos','Asesorías técnicas para la mejora de procesos basadas en analíticas y modelos predictivos y prescriptivos, especialmente sobre problemas que surgen en procesos logísticos, productivos, y de programación de proyectos y agendas.',12),
-	 (718,1,true,20,4,9,1,202502,202512,'Información tecnológica de patentes','búsqueda de información sobre patentes de invención, Búsquedas temáticas de patentes y estado de la técnica, tendencias de patentamiento. Destinado a empresas, emprendedores, instituciones, público en general, etc.',12);
+	 (717,1,true,9,4,9,1,202502,202512,'Modelos predictivos y prescriptivos','Asesorías técnicas para la mejora de procesos basadas en analíticas y modelos predictivos y prescriptivos, especialmente sobre problemas que surgen en procesos logísticos, productivos, y de programación de proyectos y agendas.',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (718,1,true,20,4,9,1,202502,202512,'Información tecnológica de patentes','búsqueda de información sobre patentes de invención, Búsquedas temáticas de patentes y estado de la técnica, tendencias de patentamiento. Destinado a empresas, emprendedores, instituciones, público en general, etc.',12),
 	 (719,1,true,20,2,9,1,202503,202511,'Gestión de la propiedad industrial','Asistencia y orientación en mecanismos de protección de la propiedad industrial, gestión de solicitudes de patentes de invención, registros de marcas, modelos y diseños industriales.',6),
 	 (721,1,true,20,3,2,1,202509,202511,'Asesoramiento en materia de Propiedad Intelectual e Industrial. Vigilancia Tecnológica.','Actividades de soporte institucional y hacia sectores externos en materia de protección intelectual.
 Asesoramiento en relación a la gestión de la propiedad intelectual (licencias, convenios de confidencialidad y tareas relacionadas).
@@ -2890,11 +2860,12 @@ Capacitaciones a medida del demandante – Sector Privado y Sector Público.',3)
 	 (732,1,true,14,4,12,2,202502,202512,'Adsorción de sustancias químicas presentes en aguas y efluente','Uso de materiales de bajo costo como material adsorbente de sustancias químicas presentes en aguas y efluente.',12),
 	 (737,1,true,1,4,8,1,202502,202512,'Control de calidad de tableros eléctricos','Control de calidad de tableros eléctricos de media tensión (celdas de 33kV, 24kV, 13.2kV y 6.6kV) y baja tensión (Tableros de comando de estaciones transformadoras, TGBT, CCM y PLC).',12),
 	 (740,1,true,24,4,8,3,202502,202512,'Medición de puestas a tierra','Medición de puestas a tierra.',12),
+	 (476,1,false,13,3,22,1,202503,202505,'Impacto Ambiental','Estudio y Evaluación de Impactos Ambientales',3),
 	 (741,1,true,24,4,8,3,202502,202512,'Medición de constante elástica a resortes','Medición de constante elástica a resortes (torsión, 
-compresión y tracción)',12),
-	 (743,1,true,14,4,8,3,202502,202512,'Auditoria en actividades de soldadura a soldadores.','A través del Laboratorio de Ensayos Metalúrgicos ejerce la auditoría para evidenciar continuidad en actividades de soldadura a soldadores ya calificados de empresas de la región en cumplimiento de lo establecido en la norma IRAMISO/IEC 17024:2003. Según código ASME B&PV sección IX.',12),
-	 (744,1,true,5,4,8,1,202502,202512,'Análisis de fallas superficiales en todo tipo de materiales','Kit completo de tintas penetrantes para END. Análisis de fallas superficiales en todo tipo de materiales.',12);
+compresión y tracción)',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (743,1,true,14,4,8,3,202502,202512,'Auditoria en actividades de soldadura a soldadores.','A través del Laboratorio de Ensayos Metalúrgicos ejerce la auditoría para evidenciar continuidad en actividades de soldadura a soldadores ya calificados de empresas de la región en cumplimiento de lo establecido en la norma IRAMISO/IEC 17024:2003. Según código ASME B&PV sección IX.',12),
+	 (744,1,true,5,4,8,1,202502,202512,'Análisis de fallas superficiales en todo tipo de materiales','Kit completo de tintas penetrantes para END. Análisis de fallas superficiales en todo tipo de materiales.',12),
 	 (746,1,true,24,4,8,1,202502,202512,'Muestras metalográficas','Equipamiento para el preparado de las muestras metalográficas (cortadora, incluidora, pulidora).',12),
 	 (749,1,true,5,4,8,1,202502,202512,'Ensayos de dureza in situ','Durómetro portátil de lectura digital directa HLD modelo HL – 10. Marca: Megatest . Para ensayos de dureza in situ',12),
 	 (750,1,true,5,4,8,1,202502,202512,'Ensayos de dureza tanto en materiales  ferrosos como no ferrosos','Durómetro de banco para ensayos de dureza Rockwell normal y superficial. Modelo PRVH 1875 Marca: Isotest. Para ensayos de dureza tanto en materiales ferrosos como no ferrosos.',12),
@@ -2905,7 +2876,8 @@ variaciones del peso unitario de un suelo en función de los contenidos de humed
 	 (764,1,true,12,4,16,1,202502,202512,'TRANSFERENCIA TECNOLÓGICA DE CONOCIMIENTO y PROTOTIPOS','Existen metodologías e infraestructuras propia orientadas a combinar esfuerzos, que favorezcan e impulsen estrategias colaborativas a fin de  validar prototipos en campo',12),
 	 (766,1,true,24,3,15,1,202503,202511,'INNOVACIÓN PRÁCTICA','Implementación de metodología TRIZ para resolución de problemas complejos.
 
-Capacitación.',6),
+Capacitación.',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (767,1,true,13,3,15,1,202503,202511,'AMBIENTE','Implementación de programas de Economía Circular.
 
 Evaluación de impacto ambiental.
@@ -2923,8 +2895,7 @@ Tecnologías de biorremediación de suelos contaminados con hidrocarburos.',6),
 
 Control estadístico de procesos.
 
-Desarrollo de modelos de simulación dinámica y optimización o mejoras operativas.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+Desarrollo de modelos de simulación dinámica y optimización o mejoras operativas.',12),
 	 (772,1,true,24,3,15,3,202503,202511,'EMISIÓN ACÚSTICA','Desarrollo de sistemas de emisión y detección de ondas acústicas para detección e inspección de fallas en tanques, piping y otros equipos.
 
 Asesoramiento técnico para evaluación de informes
@@ -2939,13 +2910,13 @@ Técnicas ópticas para la caracterización de vibraciones, deformaciones y desp
 	 (788,1,true,13,4,12,1,202502,202512,'Remoción biológica de residuos de agroquímicos utilizados en cultivos regionales','Aislado de bacterias que puedan degradar herbicidas, incrementando su resistencia para un posible proceso de biorremediación. Esta en etapa de investigación.',12),
 	 (789,1,true,15,4,12,1,202502,202512,'Secadero solar de vegetales','Secadero solar de vegetales a baja temperatura para lograr conservar las vitaminas y composición de las mismas, sin modificación química de las mismas, conservando las características naturales de los alimentos.',12),
 	 (794,1,true,15,4,12,3,202502,202512,'Secado solar de cannabis y extracción de CBD (cannabidiol) a partir de hojas, tallos y raíces','Proceso de secado y oxidación de hojas, tallos y raíces de Cannabis sp. con el objetivo de afianzar la presencia de compuestos de interés en el material vegetal que será destinado a la obtención, entre otros de CBD, derivados terpenicos, etc..',12),
-	 (800,1,true,15,4,14,1,202502,202512,'Alimentos trucha arcoiris','Desarrollar un alimento pesquero con un ingrediente no tradicional en la composición de la dieta de alimentos para la trucha arcoiris',12),
+	 (800,1,true,15,4,14,1,202502,202512,'Alimentos trucha arcoiris','Desarrollar un alimento pesquero con un ingrediente no tradicional en la composición de la dieta de alimentos para la trucha arcoiris',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (801,1,true,19,4,14,3,202502,202512,'Proyecto Offshore YPF','Desarrollo de la industria offshore en pesca y turismo en las ciudades Mar del Plata y Bahía Blanca junto con un análisis de capacidades
 formativas, servicios y logística en el litoral atlántico.',12),
 	 (803,1,true,24,4,14,1,202502,202512,'Desarrollo tecnologico industria del caucho','El objetivo es evaluar la factibilidad de propuestas de desarrollo
 tecnológico para cadenas de suministro circular de la industria
-del caucho.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+del caucho.',12),
 	 (807,1,true,19,4,30,1,202502,202512,'CAMBIOS EN LOS SISTEMAS AGROPECUARIOS EN EL OESTE BONAERENSE','El trabajo de investigación pretende, para un partido del oeste de Buenos Aires (Trenque Lauquen), identificar y describir las principales formas productivas del sector agropecuario, su evolución y diagnosticar sus principales restricciones. Por otra parte, estimar el impacto ambiental de sus actividades, la producción primaria actual y potencial y su importancia para el desarrollo territorial.',12),
 	 (810,1,true,13,4,30,2,202502,202512,'Desarrollo de un Sistema de Tratamientos de Residuos Generados a partir de la Electrocoagulación de Arsénico','El presente estudio tiene como finalidad la caracterización de los efluentes generados en el sistema de potabilización por EC, diseñado para abatir arsénico y flúor en aguas subterráneas, y el diseño de un sistema de tratamiento que mitigue el impacto medioambiental  de los mismos.',12),
 	 (815,1,true,15,4,10,3,202502,202512,'Extracción de productos naturales','Obtención de aceites esenciales y oleorresinas a partir de productos naturales renovables a partir de métodos tradicionales e innovadores como extracción con microondas, ultrasonido y fluidos supercríticos. Obtención de rendimiento y cuantificación de principios activos.',12),
@@ -2953,10 +2924,10 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (97,1,false,1,4,25,1,202402,202412,'SISTEMAS ELÉCTRICOS DE POTENCIA INDUSTRIAL','Realizar diseños, cálculos y  optimización de los sistemas electricos',12),
 	 (817,1,true,13,4,10,2,202502,202512,'Estudio y desarrollo de microemulsiones Pickering','Este proyecto está relacionado con el diseño y la síntesis de microemulsiones Pickering para ser utilizadas en la formulación de repelentes para uso tópico. Serán formulados a base de biocompuestos, tales como lípidos y solventes de origen vegetal, con lo cual resultarán amigables con el medio ambiente y la salud humana.',12),
 	 (818,1,true,1,4,10,1,202502,202512,'Programa de bobinados ProGeBo - Laboratorio CIDEME','El Programa de Gestión de Bobinados (ProGeBo) se desarrolla en el laboratorio del Grupo CIDEME y en la empresa WEG Equipamientos Eléctricos. Se trata de un software que calcula y esquematiza bobinados trifásicos introduciendo unos pocos datos fundamentales del paquete de chapas del estator y del propio bobinado del motor eléctrico. Además, ofrece prestaciones tales como generación y archivo de fichas técnicas, acceso a foros, chat y biblioteca técnica.',12),
-	 (1,1,false,11,3,7,1,202408,202410,'Laboratorio de Diseño y Simulación','Capacitación en herramientas 3D',3),
-	 (2,1,false,11,1,9,1,202302,202312,'Diplomatura en Herramientas Digitales para el Diseño Industrial. Diseño avanzado de productos con SolidWorks','La diplomatura abarca la temática relacionada con el diseño y modelado 3D de productos industriales utilizando el software Cad Solidworks. Tiene como objetivos: Transformar los conocimientos del diseño bidimensional, en conceptos de diseño tridimensional, a fin de generar las habilidades necesarias para la visualización y dimensionamiento del modelado 3D. Alcanzar el conocimiento Avanzado de software SolidWorks® para el diseño y modelado de un producto industrial. Producir modelos 3D de objetos de mediana complejidad partiendo de planos o croquis. Producir modelos y dibujos detallados de objetos de mediana complejidad.',12),
-	 (3,1,false,7,3,9,2,202404,202406,'Curso de Inyección electrónica','Esta formación, brinda todas las herramientas técnicas y prácticas para conocer el campo laboral y profesional de este importante componente de los motores vehiculares. La Inyección electrónica ha reemplazado a los antiguos carburadores y es una forma de inyección de combustible para motores nafteros, en los cuales lleva ya varias décadas implantada, y para motores diésel, cuya introducción es relativamente más reciente.',3);
+	 (1,1,false,11,3,7,1,202408,202410,'Laboratorio de Diseño y Simulación','Capacitación en herramientas 3D',3);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (2,1,false,11,1,9,1,202302,202312,'Diplomatura en Herramientas Digitales para el Diseño Industrial. Diseño avanzado de productos con SolidWorks','La diplomatura abarca la temática relacionada con el diseño y modelado 3D de productos industriales utilizando el software Cad Solidworks. Tiene como objetivos: Transformar los conocimientos del diseño bidimensional, en conceptos de diseño tridimensional, a fin de generar las habilidades necesarias para la visualización y dimensionamiento del modelado 3D. Alcanzar el conocimiento Avanzado de software SolidWorks® para el diseño y modelado de un producto industrial. Producir modelos 3D de objetos de mediana complejidad partiendo de planos o croquis. Producir modelos y dibujos detallados de objetos de mediana complejidad.',12),
+	 (3,1,false,7,3,9,2,202404,202406,'Curso de Inyección electrónica','Esta formación, brinda todas las herramientas técnicas y prácticas para conocer el campo laboral y profesional de este importante componente de los motores vehiculares. La Inyección electrónica ha reemplazado a los antiguos carburadores y es una forma de inyección de combustible para motores nafteros, en los cuales lleva ya varias décadas implantada, y para motores diésel, cuya introducción es relativamente más reciente.',3),
 	 (5,1,false,12,1,9,1,202402,202412,'Diplomatura en Instalaciones Sanitarias','El futuro profesional sanitarista deberá estar preparado para desempeñarse en empresas constructoras prestando servicios tanto en la construcción de obras edilicias, como así también, en la refacción o ampliación de edificios existentes.
 Deberá realizar el tendido de las instalaciones domiciliarias para la provisión de agua fría y caliente, desagües cloacales y pluviales, ventilaciones e instalación de artefactos sanitarios y griferías, teniendo en cuenta la normativa vigente.
 Deberá realizar la instalación para tanques de bombeos y reserva, y tendidos para la conexión de bombas para elevación habituales en edificios de vivienda; aplicando la normativa correspondiente y de seguridad e higiene vigentes.',12),
@@ -2998,10 +2969,10 @@ Desarrollar criterios para la ejecución de proyectos de fabricación, montaje y
 Entender los riesgos que supone invertir en Internet como medio de comercialización.
 Adquirir habilidades necesarias para armar un proyecto de sitio web de comercio electrónico y cobro online.
 Aprender a todo lo necesario para gestionar un e-commerce.',12),
-	 (16,1,false,16,1,4,1,202302,202312,'Diplomatura en Industrialización de Hidrocarburos','Especialización en los procesos de transformación y refinamiento de hidrocarburos.',12),
-	 (19,1,false,1,3,4,3,202303,202311,'Capacitación en Eficiencia Energética y Gestión de recursos','Formación en la implementación de medidas para la optimización del uso de energía y recursos en procesos industriales.',6),
-	 (20,1,false,19,3,4,1,202303,202305,'Capacitación en Calidad y Mejora Continua (Lean Manufacturing)','Capacitación en técnicas de mejora continua y optimización de procesos bajo el enfoque Lean.',3);
+	 (16,1,false,16,1,4,1,202302,202312,'Diplomatura en Industrialización de Hidrocarburos','Especialización en los procesos de transformación y refinamiento de hidrocarburos.',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (19,1,false,1,3,4,3,202303,202311,'Capacitación en Eficiencia Energética y Gestión de recursos','Formación en la implementación de medidas para la optimización del uso de energía y recursos en procesos industriales.',6),
+	 (20,1,false,19,3,4,1,202303,202305,'Capacitación en Calidad y Mejora Continua (Lean Manufacturing)','Capacitación en técnicas de mejora continua y optimización de procesos bajo el enfoque Lean.',3),
 	 (21,1,false,13,3,4,1,202504,202506,'Capacitación en Sostenibilidad y Responsabilidad Social Corporativa','Formación en prácticas sostenibles y éticas empresariales, enfocándose en el impacto social y ambiental.',3),
 	 (23,1,false,6,3,4,2,202508,202510,'Curso de Introducción a la Programación de PLC','Capacitación en programación y configuración básica de controladores lógicos programables (PLC), utilizados en la automatización de procesos industriales.',3),
 	 (24,1,false,24,3,4,1,202508,202510,'Curso de Precomisionado, Comisionado y PEM','Formación en los procesos de puesta en marcha y pruebas de equipos y sistemas industriales.',3),
@@ -3009,10 +2980,10 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (27,1,false,2,3,4,1,202408,202410,'Curso de Equipos e Instalaciones Industriales','Proporciona habilidades para la operación y mantenimiento de equipos e instalaciones industriales complejas.',3),
 	 (28,1,false,3,3,4,1,202403,202411,'Curso de Elementos de Máquina','Enseñanza de los fundamentos sobre componentes mecánicos utilizados en máquinas industriales.',6),
 	 (29,1,false,5,3,4,1,202309,202311,'Curso de Materiales Metálicos y Materiales No Metálicos','Capacitación sobre propiedades y aplicaciones de distintos materiales metálicos y no metálicos en procesos industriales.',3),
-	 (30,1,false,4,3,4,1,202303,202311,'Curso de Mecanizado','Formación en procesos de mecanizado de materiales, incluyendo el uso de maquinaria y herramientas específicas.',6),
-	 (31,1,false,4,3,4,3,202503,202505,'Curso de Soldadura','Capacitación en técnicas de soldadura aplicadas a diversas industrias, enfocada en seguridad y calidad.',3),
-	 (32,1,false,5,3,4,2,202309,202311,'Curso de Metrología y Calidad','Proporciona conocimientos sobre medición precisa y la implementación de sistemas de calidad en procesos productivos.',3);
+	 (30,1,false,4,3,4,1,202303,202311,'Curso de Mecanizado','Formación en procesos de mecanizado de materiales, incluyendo el uso de maquinaria y herramientas específicas.',6);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (31,1,false,4,3,4,3,202503,202505,'Curso de Soldadura','Capacitación en técnicas de soldadura aplicadas a diversas industrias, enfocada en seguridad y calidad.',3),
+	 (32,1,false,5,3,4,2,202309,202311,'Curso de Metrología y Calidad','Proporciona conocimientos sobre medición precisa y la implementación de sistemas de calidad en procesos productivos.',3),
 	 (33,1,false,20,3,4,1,202409,202411,'Curso de Implementación de Sistema de Gestión de la Energía','Formación para optimizar el uso energético y reducir costos operativos en instalaciones.',3),
 	 (34,1,false,1,3,4,1,202308,202310,'Curso de Seguridad y Riesgo Eléctrico según  AEA 95904 - Esquema para certificación de personas instruidas en  seguridad y riesgos eléctricos - Código BA5','Certificación para personas que requieren conocimientos básicos sobre riesgos eléctricos y seguridad en instalaciones.',3),
 	 (36,1,false,6,3,4,1,202409,202411,'Curso de Tratamiento de Ambientes con Polvos, Virutas y Fibras','Capacita en el manejo y control de partículas y residuos industriales, minimizando riesgos de contaminación y accidentes.',3),
@@ -3020,13 +2991,14 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (38,1,false,20,3,15,1,202404,202406,'LIQUIDACIÓN DE SUELDOS Y CARGAS SOCIALES + LIQUIDACIÓN DE IMPUESTOS','Curso abierto. En este curso se incorporarán los conocimientos básicos en Liquidación de sueldos y cargas sociales, como así también conocimientos básicos en la liquidación de impuestos (AFIP-ARBA Y MONOTRIBUTO)  que permitan mejorar la productividad y/o incrementar la empleabilidad de aquellas personas que se desempeñen en áreas administrativo/contables de organizaciones o pequeños emprendimientos.',3),
 	 (39,1,false,1,3,15,1,202408,202410,'FUNCIONAMIENTO DE UN VEHÍCULO ELÉCTRICO, HÍBRIDO Y RETROFIT DE UN VEHÍCULO DE COMBUSTIÓN EN 100% ELÉCTRICO (Curso Intensivo)','Curso abierto. Se trata de un curso intensivo dictado por la Cámara Argentina de Vehículos Eléctricos. Primer y única entidad desde el año 2009 de representación al sector de fabricantes e importadores de electromovilidad, Alternativos y Autopartes en conjunto con la UTN  FR. DELTA.',3),
 	 (40,1,false,2,3,15,2,202309,202311,'INSTALACIÓN DE CÁMARAS DE SEGURIDAD','Cursos abiertos. En este curso los participantes aprenderán a Instalar y dar mantenimiento a Sistemas de Video-Vigilancia mediante Cámaras Analógicas (CCTV) e IP. Configurar el Software y Hardware para controlar y visualizar a distancia mediante dispositivos móviles.',3),
-	 (41,1,false,2,3,15,1,202403,202405,'INSTALACIÓN DE AIRE ACONDICIONADO SPLIT','Curso abierto. Preparar al/la alumno/a para la correcta instalación de las distintas Unidades de Split Convencionales e Inverter conociendo y respetando las diferentes normas y reglamentaciones impartidas por los fabricantes como así también los aspectos legales del rubro.',3),
+	 (41,1,false,2,3,15,1,202403,202405,'INSTALACIÓN DE AIRE ACONDICIONADO SPLIT','Curso abierto. Preparar al/la alumno/a para la correcta instalación de las distintas Unidades de Split Convencionales e Inverter conociendo y respetando las diferentes normas y reglamentaciones impartidas por los fabricantes como así también los aspectos legales del rubro.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (42,1,false,2,3,15,1,202408,202410,'INSTALACIÓN DE CÁMARAS Y ALARMAS','Curso abierto. En este curso los/as alumnos/ as aprenderán a instalar y dar mantenimiento a sistemas de videovigilancia (VSS – ex CCTV) configurando cámaras IP y Analógicas, cableadas e inalámbricas, como así también sistemas de alarma. Aprenderá tanto la parte práctica como también la configuración a nivel software y uso remoto de las distintas aplicaciones. Reconocerán cada uno de los componentes que integran estos sistemas.',3),
 	 (43,1,false,23,3,15,1,202303,202305,'TECNOLOGÍA INVERTER EN EQUIPOS DE AIRE ACONDICIONADO SPLIT','Curso abierto. Aprender a reparar unidades split con tecnología inverter, identificando
 
-correctamente las fallas, conociendo cada uno de los elementos que componen tanto a la unidad interior como a la exterior. Operar sobre placas electrónicas inverter conociendo cada uno de sus componentes, microcontroladores, diagrama de bloques y periféricos.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+correctamente las fallas, conociendo cada uno de los elementos que componen tanto a la unidad interior como a la exterior. Operar sobre placas electrónicas inverter conociendo cada uno de sus componentes, microcontroladores, diagrama de bloques y periféricos.',3),
 	 (44,1,false,9,3,15,3,202308,202310,'PROGRAMACIÓN WEB – JAVASCRIPT (NIVEL 2)','Curso abierto. Continuación al curso introductorio de programación web en donde aprenderán un lenguaje de programación muy potente llamado JavaScript el cual tiene como principal tarea la de proveer de funcionalidad y dinamismo a nuestros sitios web.',3),
+	 (92,1,false,21,3,25,1,202409,202411,'SEGURIDAD E HIGIENE','Diseñado para proporcionar a los mandos medios las herramientas necesarias para garantizar un entorno laboral seguro y saludable',3),
 	 (45,1,false,9,3,15,1,202303,202311,'PROGRAMACIÓN WEB- HTML Y CSS3- NIVEL 1','Curso abierto introductorio de programación web donde el/la alumno/a tendrá la oportunidad de aprender diferentes técnicas y metodologías de diseño apuntadas al desarrollo de sitios web, en particular, nos enfocaremos en el desarrollo Front-end, es decir, la parte donde los usuarios interactúan. Serán los responsables de crear la interfaz visual sobre la cual los usuarios experimentan un producto. Para ello utilizarnos HTML (para definir la estructura de los elementos) y CSS3 (para definir la forma en la que estos serán visualizados).',6),
 	 (46,1,false,22,3,15,1,202309,202311,'EXCEL INTERMEDIO AVANZADO','Curso abierto. En este curso se capacitará a los alumnos y alumnas que ya poseen conocimientos de Excel y lo utilizan a diario. Al finalizar el curso, los alumnos/as podrán realizar gráficos combinados, funciones y fórmulas de avanzada, crear tablas y gráficos dinámicos cómo así también macros. Se contempla a su vez también para este nivel la capacitación y/o explicación de planillas de cálculo propuestas por los alumnos/as ya que se estima trabajan a diario con Excel',3),
 	 (47,1,false,22,3,15,2,202403,202411,'MICROSOFT PROJECT NIVEL 1','Curso abierto. En este curso se capacitará a los/as alumnos/as para que adquirieran las nociones esenciales para utilizar el programa Microsoft Project.',6),
@@ -3044,7 +3016,8 @@ de CND establecidos.
 • Conocer los procedimientos y adquirir las habilidades indispensables para realizar y supervisar un ensayo
 de manera correcta.
 • Conocer los requisitos necesarios para confeccionar y producir la documentación de trabajo
-(procedimientos, instrucciones o especificaciones)',6),
+(procedimientos, instrucciones o especificaciones)',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (52,1,false,24,3,15,1,202303,202311,'ULTRASONIDO Nivel I','Duración 48 hs.
 Habilitante para certificar Norma IRAM 9712
 OBJETIVOS:
@@ -3054,8 +3027,7 @@ OBJETIVOS:
 
 •	Comprender la importancia de realizar el ensayo de Ultrasonido siguiendo las normas y procedimientos de CND establecidos.',6),
 	 (53,1,false,3,2,25,1,202404,202406,'MANTENIMIENTO ROTORES-CIGUEÑALES','Capturando y analizando datos sobre el equipamiento utilizando tecnicas de vibraciones mecanicas.',3),
-	 (55,1,false,1,3,25,1,202308,202310,'SEGURIDAD ELECETRICA','Aprender el procedimiento que evalúa la seguridad de las instalaciones eléctricas con puesta a tierra.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (55,1,false,1,3,25,1,202308,202310,'SEGURIDAD ELECETRICA','Aprender el procedimiento que evalúa la seguridad de las instalaciones eléctricas con puesta a tierra.',3),
 	 (57,1,false,21,3,25,3,202308,202310,'SERVICIOS DE SEGURIDAD E HIGIENE','Saber identificar y gestionar los riesgos laborales e Implementar medidas preventivas',3),
 	 (58,1,false,20,3,25,3,202303,202311,'IMPLEMENTACIÓN DE SISTEMAS OHSAS 18001','Desarrollar e implementar un sistema de gestión de la salud y seguridad en el trabajo.',6),
 	 (62,1,false,1,3,25,1,202403,202411,'EFICIENCIA ENERGÉTICA EN EDIFICIOS','Aprender a utilizar de forma optima la energía para reducir su consumo con el fin de realizar las mismas tareas o producir los mismos resultados.',6),
@@ -3096,7 +3068,9 @@ procedimientos de CND establecidos.
 • Conocer los procedimientos y adquirir las habilidades indispensables para realizar y supervisar un ensayo
 de manera correcta.
 • Conocer los requisitos necesarios para confeccionar y producir la documentación de trabajo
-(procedimientos, instrucciones o especificaciones)',3),
+(procedimientos, instrucciones o especificaciones)',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (598,1,false,24,4,31,2,202402,202412,'Estudios de Problemas Técnicos Especiales','Líneas de transmisión y distribución',12),
 	 (95,1,false,20,3,25,1,202403,202411,'GESTIÓN DE RECURSOS HUMANOS','Abordar la toma de decisiones y las personalidades en el trabajo en equipo, fomentando un entorno colaborativo. Concientizar sobre el impacto del consumo de sustancias en el ámbito laboral, promoviendo un ambiente saludable. Mejorar los procesos de comunicación para fortalecer la interacción en el trabajo. Considerar la influencia de la personalidad y las emociones en la toma de decisiones dentro de entornos laborales.',6),
 	 (70,1,false,5,3,15,1,202303,202311,'PARTÍCULAS MAGNÉTICAS Nivel  1 y 2','40 horas de duración. Habilitante para certificar Norma IRAM 9712
 OBJETIVOS: 
@@ -3107,32 +3081,30 @@ Magnetizables
 resultados.
 • Reconocer los equipos y accesorios usados para la inspección, controles y calibración necesaria.
 • Comprender Normas y las prácticas operativas relacionadas con la técnica.',6),
-	 (71,1,false,1,3,25,2,202503,202505,'INSTALACIONES ELÉCTRICAS-ACOMETIDAS TRIFASICAS HASTA 10KW','Desarrollar habilidades en el cableado y conexionado de instalaciones eléctricas domiciliarias y comerciales, comprendiendo las funciones del interruptor diferencial, interruptor termomagnético y conexión a tierra, así como las normas de seguridad necesarias para la instalación. Adquirir la capacidad de interpretar planos eléctricos con acometida trifásica, y fomentar la formación en oficios, mejorando la inserción laboral y generando alternativas de ingreso.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (71,1,false,1,3,25,2,202503,202505,'INSTALACIONES ELÉCTRICAS-ACOMETIDAS TRIFASICAS HASTA 10KW','Desarrollar habilidades en el cableado y conexionado de instalaciones eléctricas domiciliarias y comerciales, comprendiendo las funciones del interruptor diferencial, interruptor termomagnético y conexión a tierra, así como las normas de seguridad necesarias para la instalación. Adquirir la capacidad de interpretar planos eléctricos con acometida trifásica, y fomentar la formación en oficios, mejorando la inserción laboral y generando alternativas de ingreso.',3),
 	 (72,1,false,1,3,25,1,202303,202311,'BOBINADO DE MOTORES','Realizar el diagnóstico del estado operativo de motores eléctricos, identificando necesidades de reparación o mantenimiento preventivo y correctivo. Seleccionar herramientas, equipos e insumos adecuados para su reparación, aplicando técnicas de montaje, conexionado y mantenimiento. Ejecutar tareas de bobinado bajo criterios de calidad, normas de seguridad e higiene, gestionando recursos materiales y humanos, y manteniendo en óptimas condiciones los equipos y herramientas. Utilizar los equipos de protección personal correctamente e incorporar prácticas de cuidado ambiental.',6),
 	 (73,1,false,20,1,15,1,202302,202312,'DIPLOMATURA EN COACHING DEPORTIVO','Curso abierto. Partiendo desde el análisis desde lo individual, y ampliando a una mirada sistémica-deportiva del mismo, con este diplomado podrás adquirir los conocimientos y herramientas necesarias para ampliar tu observación y desde allí, acompañar a cada una de las partes como coach deportivo profesional.',12),
 	 (74,1,false,20,1,15,1,202402,202412,'DIPLOMATURA EN GESTIÓN AGILE','Curso abierto. El curso tiene como objetivo conocer los conceptos teórico-prácticos de Lean, Kanban y Scrum. Comprender la necesidad del cambio cultural para trabajar en equipos multifuncionales empoderados y los elementos para lograr el cambio de mindset.',12),
 	 (76,1,false,20,1,15,2,202302,202312,'DIPLOMATURA ASISTENTE ADMINISTRATIVO CONTABLE','Curso abierto. Desde la teoría y la práctica se busca la profesionalización de los asistentes para que adopten criterios fundamentados al momento de la toma de decisiones. Dotar de las herramientas necesarias para las personas que se desempeñan o deseen desempeñarse en un puesto administrativo/contable, ya sea en las áreas de Gestión/Administración, RRHH, Impuestos y Contabilidad.',12),
 	 (77,1,false,13,1,15,3,202402,202412,'DIPLOMATURA EN ECONOMÍA CIRCULAR','Curso abierto. Los participantes conocerán el concepto y los alcances de la Economía Circular y las herramientas y competencias necesarias, para desarrollar diagnósticos e implementar acciones que promuevan la transición más allá de la
 sostenibilidad, hacia una economía restaurativa y regenerativa, tal lo planteado por este modelo.',12),
-	 (78,1,false,8,1,15,3,202302,202312,'DIPLOMADO UNIVERSITARIO ADMINISTRADOR DE REDES LINUX','Curso abierto. En este curso los alumnos comprenderán los conceptos de monitoreo de redes GNU/Linux. Conocer las herramientas básicas de virtualización. Crear y configurar Redes privadas virtuales.',12),
+	 (78,1,false,8,1,15,3,202302,202312,'DIPLOMADO UNIVERSITARIO ADMINISTRADOR DE REDES LINUX','Curso abierto. En este curso los alumnos comprenderán los conceptos de monitoreo de redes GNU/Linux. Conocer las herramientas básicas de virtualización. Crear y configurar Redes privadas virtuales.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (79,1,false,6,1,15,1,202302,202312,'DIPLOMADO DEVOPS TOOLS ENGINEER','Curso abierto. DevOps es una metodología que busca unir los esfuerzos de desarrollo (Dev) y operaciones (Ops) para entregar software de manera más rápida, confiable y frecuente. A través de la automatización, la colaboración y la mejora continua, DevOps permite a las organizaciones adaptarse a las demandas del mercado de forma más ágil.',12),
 	 (80,1,false,8,1,15,3,202402,202412,'DIPLOMADO UNIVERSITARIO: ADMINISTRADOR DE REDES LINUX CON ORIENTACIÓN EN CIBERSEGURIDAD','Curso abierto. los/as participantes tendrán el dominio del sistema operativo Linux para instalar, configurar, administrar y brindar soluciones para la implementación de servicios ajustados a las políticas de seguridad necesarias para asegurar la invulnerabilidad de los datos, como así también conocerán las herramientas que pongan en peligro el funcionamiento del sistema para poder anticiparse a cualquier evento que ponga en peligro la estabilidad del mismo.',12),
 	 (81,1,false,10,3,15,1,202504,202506,'POWER BI','Curso abierto. En este curso, los/las alumnos/as podrán convertir fácilmente los datos en información para la toma de decisiones. Power BI facilita la creación de informes y dashboards.',3),
 	 (82,1,false,4,3,15,1,202309,202311,'EXCEL','Curso abierto. Cuyo objetivo es Introducir al alumno/a en el entorno Excel, brindando los aspectos
-básicos para trabajar con esta herramienta, conocer sus múltiples aplicaciones y sus facilidades de uso.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+básicos para trabajar con esta herramienta, conocer sus múltiples aplicaciones y sus facilidades de uso.',3),
 	 (83,1,false,10,3,25,1,202403,202411,'BUSINESS INTELLIGENCE - POWER BI INICIAL Y AVANZADO','Aprender y conocer los fundamentos de BI, la importación y transformación de datos, creación de visualizaciones , y la publicación de reportes en Power BI Service.',6),
 	 (84,1,false,11,3,25,3,202503,202505,'AUTOCAD NIVEL INICIAL Y AVANZADO','Aprender a utilizar el software para dibujar, diseñar y modelar en 2D - 3D',3),
 	 (85,1,false,11,3,25,1,202303,202311,'MS POWER POINT NIVEL INICIAL Y AVANZADO','Aprender a crear presentaciones de calidad con las distintas funciones que brinda la herramienta.',6),
 	 (86,1,false,10,3,25,2,202303,202311,'MS EXCEL INICIAL Y AVANZADO','Aprender a utilizar la herramienta para obtener información a partir de grandes cantidades de datos, realizar cálculos sencillos y hacer seguimiento de información.',6),
 	 (88,1,false,7,3,25,1,202508,202510,'ALFABETIZACIÓN DIGITAL','Aprender a utilizar las tecnologias digitales',3),
-	 (89,1,false,11,4,25,1,202402,202412,'REDACCIÓN Y PRESENTACIÓN DE INFORMES','Aprender a  definir los objetivos y contenidos de un informe de forma clara y breve según la estructura a utilizar.',12),
+	 (89,1,false,11,4,25,1,202402,202412,'REDACCIÓN Y PRESENTACIÓN DE INFORMES','Aprender a  definir los objetivos y contenidos de un informe de forma clara y breve según la estructura a utilizar.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (90,1,false,24,3,25,1,202309,202311,'LIQUIDACIÓN DE SUELDOS Y JORNALES','Proporcionar los conocimientos teóricos prácticos para  realizar una liquidación.',3),
 	 (91,1,false,5,3,25,1,202303,202305,'ASPESCTOS CORROSIVOS EN MATERIALES','Comprender los principios y conceptos básicos de la corrosión cómo los factores ambientales, materiales y de diseño pueden afectar la corrosión.',3),
-	 (92,1,false,21,3,25,1,202409,202411,'SEGURIDAD E HIGIENE','Diseñado para proporcionar a los mandos medios las herramientas necesarias para garantizar un entorno laboral seguro y saludable',3),
-	 (94,1,false,11,3,25,1,202303,202311,'RESOLUCIÓN DE CONFLICTOS Y NEGOCIACIÓN.','Desarrollar habilidades negociadoras a través de la teoría, ejemplos audiovisuales y simulaciones de negociaciones.',6);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (94,1,false,11,3,25,1,202303,202311,'RESOLUCIÓN DE CONFLICTOS Y NEGOCIACIÓN.','Desarrollar habilidades negociadoras a través de la teoría, ejemplos audiovisuales y simulaciones de negociaciones.',6),
 	 (98,1,false,11,4,25,1,202402,202412,'ESTUDIOS ERGONÓMICOS DE LOS PUESTOS DE TRABAJO','Comprender y realizar una descripción sistemática y cuidadosa de la tarea o puesto de trabajo',12),
 	 (101,1,false,1,4,13,3,202302,202312,'Protocolo Internacional de Medida Verificación - EVO 10000 – 1:2010 (Es)','*Determinación de la eficiencia del equipo  en sistemas de generación de vapor, hornos y secaderos
 *Determinación de oportunidades de ahorros de energía  en sistemas de generación de vapor, hornos y secaderos
@@ -3158,7 +3130,8 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 • Leer y comprender textos narrativos cortos y simples y descripciones que incluyen vocabulario familiar, leyendo frase por frase, captando información específica.
 • Escribir descripciones simples, breves y guiadas, así como también información fáctica sobre sí mismo.
 • Comprender textos orales simples, lo suficientemente pausados para permitir la asimilación del significado.
-• Expresarse con frases cortas y sencillas sobre situaciones que le son familiares',6),
+• Expresarse con frases cortas y sencillas sobre situaciones que le son familiares',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (106,1,false,17,3,13,3,202308,202310,'Idiomas: Portugués (A1-A2)','CAPACITACION: 
 • Presentarse/presentar amigos, distinguir formas de saludarse
 • Pedir/ofrecer información en situaciones cotidianas
@@ -3175,8 +3148,7 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 • Entender y utilizar expresiones cotidianas y frases básicas. Extraer información de cartelería, anuncios y de textos de estructura sencilla.
 • Participar en conversaciones breves. Poder hacer preguntas a otras personas y dejar mensaje en un contestador.
 • Escribir textos breves y sencillos, relacionados con situaciones cotidianas.
-• Saber ubicar las ciudades principales de los países de habla alemana y conocer algunas particularidades',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+• Saber ubicar las ciudades principales de los países de habla alemana y conocer algunas particularidades',3),
 	 (109,1,false,1,3,13,1,202308,202310,'Taller Expresarte: Nivel 1 y 2','Saber comunicarse es una habilidad que sin dudas posibilita el desarrollo integral del ser humano, potencializando sus capacidades para la expresión creadora y la acción solidaria frente a su entorno.
 Sabemos que el hombre es un ser psicofísico, que subyacen en el todo un bagaje hereditario y cultural que lo hace diferente a los demás. Así, ExpresArte incide en el mejoramiento de las relaciones interpersonales, ya que al mejorar las habilidades para la comunicación (gestuales, orales, escritas y corporales) de los participantes favorece la desinhibición de estos, posibilitando una efectiva comunicación.',3),
 	 (110,1,false,19,3,13,3,202409,202411,'Producción Sostenible','Promocionar prácticas de producción sostenible con el objeto de disminuir los impactos ambientales de las actividades productivas, a través de la mejora en el desempeño y la gestión ambiental (previniendo las pérdidas de materias primas, la minimización de residuos, la eficiencia en el uso del agua y la energía) con el consecuente incremento de la productividad de las empresas abordando los objetivos del desarrollo sostenible',3),
@@ -3184,8 +3156,15 @@ Sabemos que el hombre es un ser psicofísico, que subyacen en el todo un bagaje 
 	 (112,1,false,13,3,13,2,202309,202311,'Economía Circular en Gobiernos Locales','• Conocer e identificar aplicaciones de economía circular en gobiernos locales.
 • Diseñar negocios circulares.
 • Pitch de negocios circulares.',3),
+	 (126,1,false,22,3,13,1,202403,202411,'Taller de química para alumnos de escuelas secundarias','• Orientado a alumnos de nivel secundario que quieran ingresar a la facultad o afianzar conocimientos de química de la escuela.
+• Crear lazos entre distintas instituciones de educación media y superior.
+• Mejorar la transición de los jóvenes en su paso hacia la educación superior y propiciar un primer acercamiento a los docentes universitarios.
+• Diagnosticar los conocimientos de química básica que el alumno ingresante posee.
+• Nivelar y afianzar los conocimientos de química general adquiridos en el nivel secundario.',6),
+	 (600,1,false,5,4,31,1,202302,202312,'Determinaciones técnicas y ensayos de aptitudes','Test periódicos de equipos',12),
 	 (114,1,false,22,3,13,3,202508,202510,'Robótica específica para docentes de la educación inicial','La robótica y la programación en la educación inicial, como lógicas de aprendizaje, se afianzan desde un abordaje protagónico especialmente vinculado a las metodologías ABR (aprendizaje basado en retos), MAKER (cultura hacedora) y lógicas STEAM (enfoque multidisciplinar con fuerte sesgo en las ingenierías, la matemática y el arte). Como población escolar, los educandos están en la primera base de la formación. Son sujetos que, mínimamente, permanecerán 12-14 años en el sistema educativo formal y obligatorio.
-Desarrollar pensamiento computacional es posible desde tan corta edad. Jugando a resolver, simplificando acciones, asumiendo la necesidad de pensar en la secuencia ordenada de acciones que conducen a la resolución de un problema.',3),
+Desarrollar pensamiento computacional es posible desde tan corta edad. Jugando a resolver, simplificando acciones, asumiendo la necesidad de pensar en la secuencia ordenada de acciones que conducen a la resolución de un problema.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (115,1,false,20,3,13,2,202508,202510,'Liderazgo','La realización de esta actividad parte de la necesidad de estudiantes y graduados de contar con herramientas que complementen sus conocimientos técnicos y potencien el desarrollo de competencias blandas que son sumamente necesaria para su actual o futura actividad profesional.
 Brindar herramientas de coaching ontológico y liderazgo consciente que empoderen la forma de liderar de los participantes, promoviendo el desarrollo de las competencias necesarias para coordinar acciones en forma efectiva.',3),
 	 (116,1,false,14,3,13,3,202508,202510,'Conceptos sobre Prácticas en Laboratorios Educativos','• Este curso permite conocer los conceptos básicos para el desempeño de actividades de laboratorio de física, en el marco educativo.
@@ -3201,8 +3180,7 @@ Brindar herramientas de coaching ontológico y liderazgo consciente que empodere
 • Desarrollar habilidades para presentar un tema o un producto con persuasión y elocuencia. Reconocer los procedimientos para construir un efectivo plan de presentación.
 • Identificar anomalías lingüísticas y corporales que debilitan la precisión de la comunicación. Promover el auto desarrollo de los participantes en la práctica discursiva.
 • Concientizar sobre la importancia de esta herramienta en el mundo de los negocios y entender que saber comunicar es el medio fundamental para obtener resultados',3),
-	 (119,1,false,22,3,13,1,202303,202311,'Taller Lenguaje Expresivo','La educación de lenguajes expresivos es un instrumento pedagógico que posibilita el desarrollo integral del ser humano, potencializando sus capacidades para la expresión creadora y la acción solidaria frente a su entorno; dándole asimismo mayores posibilidades de liderazgo. Este proyecto a través de la interdisciplinaridad tratará de conectar al alumno con ellos mismos, a través de su propia respiración para encontrar primero su ritmo personal predisponiéndolo así a escuchar y reconocer a los demás. Esta conexión queda asegurada en la educación de los lenguajes expresivos, puesto que es un proceso en lo que se involucra lo sensorial, lo emocional, lo afectivo y lo intelectual.',6);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (119,1,false,22,3,13,1,202303,202311,'Taller Lenguaje Expresivo','La educación de lenguajes expresivos es un instrumento pedagógico que posibilita el desarrollo integral del ser humano, potencializando sus capacidades para la expresión creadora y la acción solidaria frente a su entorno; dándole asimismo mayores posibilidades de liderazgo. Este proyecto a través de la interdisciplinaridad tratará de conectar al alumno con ellos mismos, a través de su propia respiración para encontrar primero su ritmo personal predisponiéndolo así a escuchar y reconocer a los demás. Esta conexión queda asegurada en la educación de los lenguajes expresivos, puesto que es un proceso en lo que se involucra lo sensorial, lo emocional, lo afectivo y lo intelectual.',6),
 	 (121,1,false,22,3,13,2,202403,202411,'Taller de química para docentes','• Crear lazos entre distintas instituciones de educación media y superior.
 • Propiciar espacios de aprendizaje para mejorar las prácticas docentes. Fomentar un ambiente de trabajo colaborativo para promover el intercambio de opiniones.
 • Brindar herramientas para la enseñanza, aprendizaje y evaluación por competencias de la química básica a partir de una mayor interrelación práctica-teoría.
@@ -3217,17 +3195,13 @@ En este curso se presentarán ejemplos de estos materiales, sus características
 	 (124,1,false,22,3,13,2,202303,202305,'Software Geogebra como recurso didáctico en la enseñanza secundaria','GeoGebra es un software gratuito, mezcla la geometría con el álgebra, es sencillo y fácil de utilizar, nos permite la representación de imágenes dinámicas que facilitan la visualización de los conceptos y la resolución de problemas a través de las herramientas y opciones que ofrece.
 Se pretende la búsqueda de un espacio compartido entre docentes, destinado a la actualización y el intercambio de conocimientos.
 GeoGebra es una herramienta de autoría que les permite a los docentes crear páginas-web interactivas y seleccionarlas de entre las que colegas de todo el mundo.',3),
-	 (125,1,false,10,3,13,3,202403,202411,'PYTHON para docentes','En los últimos años, Python ha demostrado ser el lenguaje de programación con mayor penetración en el campo científico y técnico, principalmente en procesamiento de datos, inteligencia artificial, cálculo ingenieril y, más recientemente, en electrónica embebida e Internet de las Cosas. Este curso presenta los conceptos y componentes más importantes de Python con orientación técnico- científica en el contexto de la docencia. Y explora las posibilidades que ofrece en combinación con la tecnología web para implementar interfaces interactivas modernas.',6),
-	 (126,1,false,22,3,13,1,202403,202411,'Taller de química para alumnos de escuelas secundarias','• Orientado a alumnos de nivel secundario que quieran ingresar a la facultad o afianzar conocimientos de química de la escuela.
-• Crear lazos entre distintas instituciones de educación media y superior.
-• Mejorar la transición de los jóvenes en su paso hacia la educación superior y propiciar un primer acercamiento a los docentes universitarios.
-• Diagnosticar los conocimientos de química básica que el alumno ingresante posee.
-• Nivelar y afianzar los conocimientos de química general adquiridos en el nivel secundario.',6),
+	 (125,1,false,10,3,13,3,202403,202411,'PYTHON para docentes','En los últimos años, Python ha demostrado ser el lenguaje de programación con mayor penetración en el campo científico y técnico, principalmente en procesamiento de datos, inteligencia artificial, cálculo ingenieril y, más recientemente, en electrónica embebida e Internet de las Cosas. Este curso presenta los conceptos y componentes más importantes de Python con orientación técnico- científica en el contexto de la docencia. Y explora las posibilidades que ofrece en combinación con la tecnología web para implementar interfaces interactivas modernas.',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (329,1,false,3,4,5,1,202302,202312,'DHARMAa (lab. Desarrollo de Herramientas de Aprendizaje y Razonamiento con Máquinas) Ing, Sist.','Desarrollo de Herramientas de Aprendizaje y Razonamiento con Máquinas.',12),
 	 (231,1,false,20,3,31,1,202409,202411,'CURSOS DE FORMACION PROFESIONAL: Gestión de negocios digitales','Capacitación abierta. El objetivo es proporcionar a los participantes las herramientas y conocimientos necesarios para destacarse como gestores de negocios digitales, ofreciendo un enfoque integral y personalizado a las necesidades específicas de cada empresa que gestionen',3),
 	 (127,1,false,20,3,13,1,202403,202405,'Inserción Laboral y Gestión del Capital Humano','La transformación del mercado laboral producto de la incorporación de las nuevas tecnologías y los cambios organizacionales asociados a la interacción de distintas generaciones y a nuevos enfoques de la administración, repercuten en las organizaciones poniendo en evidencia la necesidad de formar profesionales técnicos desde una perspectiva integral. Cada vez más las empresas solicitan profesionales altamente capacitados, no solo en habilidades técnicas sino con un buen entrenamiento en habilidades blandas y relacionales (trabajo en equipo, comunicación, liderazgo, etc.).',3),
 	 (160,1,false,7,3,19,2,202404,202406,'Capacitación electrónica básica y circuitos eletrónicos','Desarrollo de trabajos y ejercicios de interpretación de funcionamiento de circuitos. Los alumnos armarán prototipos circuitales en maquetas y en aplicaciones reales y aprenderán el uso de herramientas y componentes electrónicos.',3),
-	 (128,1,false,13,3,13,3,202303,202311,'Movilidad Sustentable','La necesidad de contar con medios de transportes más eficientes y menos contaminantes nos desafían a buscar nuevas soluciones tecnológicas. Tomar conciencia de la reducción de las emisiones, no sólo en el uso de los vehículos, sino en todo el proceso de fabricación y desarrollo de estos, es una necesidad ineludible. En el presente curso se analizará la situación actual de los medios de transporte, y su evolución hacia un futuro sustentable',6);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (128,1,false,13,3,13,3,202303,202311,'Movilidad Sustentable','La necesidad de contar con medios de transportes más eficientes y menos contaminantes nos desafían a buscar nuevas soluciones tecnológicas. Tomar conciencia de la reducción de las emisiones, no sólo en el uso de los vehículos, sino en todo el proceso de fabricación y desarrollo de estos, es una necesidad ineludible. En el presente curso se analizará la situación actual de los medios de transporte, y su evolución hacia un futuro sustentable',6),
 	 (129,1,false,9,3,13,3,202504,202506,'Introducción a Python con Orientación a las Ciencias e Ingenierías','Formar estudiantes y/o profesionales con interés en la aplicación del lenguaje de programación Python en el ámbito ingenieril y académico, destinado fundamentalmente al desarrollo de algoritmos de cálculo y procesamiento de datos obtenidos en aplicaciones industriales.',3),
 	 (130,1,false,19,3,13,1,202403,202405,'Introducción a la Formulación y Evaluación de Proyectos de Inversión','Un proyecto de inversión comprende la planificación de un conjunto de actividades a desarrollar en un periodo de tiempo, involucrando recursos y con el propósito de solucionar un problema. Es el estudio completo de una idea u oportunidad de negocios, cuantificada. El curso se orienta al aporte de elementos sobre los requerimientos básicos y al análisis de herramientas a utilizar en la formulación y evaluación económico - financiera, abordando contenidos teóricos y ejemplos prácticos que permitan al estudiante concluir en la elaboración de un proyecto',3),
 	 (131,1,false,19,3,13,1,202504,202506,'Introducción a la Formulación y Evaluación de Proyectos de Inversión','Un proyecto de inversión comprende la planificación de un conjunto de actividades a desarrollar en un periodo de tiempo, involucrando recursos y con el propósito de solucionar un problema. Es el estudio completo de una idea u oportunidad de negocios, cuantificada. El curso se orienta al aporte de elementos sobre los requerimientos básicos y al análisis de herramientas a utilizar en la formulación y evaluación económico - financiera, abordando contenidos teóricos y ejemplos prácticos que permitan al estudiante concluir en la elaboración de un proyecto',3),
@@ -3236,11 +3210,36 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (133,1,false,9,3,13,1,202403,202405,'Taller: Introducción a la Programación para adolescentes','• Despertar vocaciones informáticas orientadas a la programación.
 • Construcción de algoritmos y su posterior codificación al lenguaje Python.
 • Conocer el Programa Python y Scratch a modo de disparador.
-• Construcción de algoritmos base fundamental de los programas que serán el software.',3),
+• Construcción de algoritmos base fundamental de los programas que serán el software.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (134,1,false,14,3,13,1,202409,202411,'Taller Materias Básicas','Talleres divididos en temáticas de Matemáticas, Física, Química y Medio Ambiente. Haciendo énfasis en prácticas en Laboratorios, y la ejecución de diferentes experimentos didácticos para comprender diversos fenómenos que se observan en la vida diaria y que también afectan a nuestro ecosistema.',3),
 	 (135,1,false,24,3,13,2,202504,202506,'Taller Identidad y derechos en el marco de la ESI','Se divide en 4 taller o ejes descritos a continuación. Estos talleres podrán ir modificándose de acuerdo con lo que se vivencie en cada encuentro y la reflexión respectiva para el siguiente encuentro según la dinámica y características de cada grupo. Los módulos nombrados anteriormente se definieron tomando como base los ejes conceptuales de la ESI (Res 340/18).',3),
 	 (136,1,false,9,3,13,1,202403,202411,'Taller Robótica y Realidad Virtual','Este taller de robótica se enfoca en la construcción y programación de robots simples. Los participantes trabajarán en equipos para construir robots con kits de robótica básicos y aprenderán a programarlos para realizar tareas específicas. Los participantes también aprenderán sobre los conceptos de Realidad Virtual, su uso y cómo funciona.',6),
 	 (138,1,false,11,3,13,1,202309,202311,'Taller Fabricación Aditiva','Se introducirá no solo al mundo de la Impresión 3D, sino que se lo entrenará en el uso del software para realizar diseños, se expondrá al mundo de diseño asistido por computadora hoy con múltiples aplicaciones en muchos campos tecnológicos. A su vez, durante el desarrollo se irá acercando a la electrónica y a la mecánica explicando las estructuras y las leyes básicas de control y electrónica utilizada en las impresoras 3D y modelados. Se dictarán dos modalidades de este curso siendo las mismas Nivel introductorio y Nivel Avanzado.',3),
+	 (147,1,false,4,3,1,1,202504,202506,'Tornería','Curso de formación con clases  teórico-prácticas de una duración de 2 meses.
+El temario del mismo se resume en:
+- Medidas de seguridad en la máquina/herramienta
+- Interpretación de planos de dibujo mecánico
+- Instrumentos de medida. Descripción y funcionamiento
+- Método para medir el calibre y micrómetro
+- Torno. Descripción de la máquina
+- La herramienta de corte
+- Mecanizado en el torno
+- Cómo trabajar con método',3),
+	 (161,1,false,21,3,1,1,202309,202311,'Cursos de Cooperativismo y Factores de Riesgo por Actividad','Cursos destinados a fomentar el cooperativismo en la actividad rural',3),
+	 (149,1,false,2,3,1,1,202503,202505,'Soldadura','Curso de formación con clases teórico-prácticas de una duración de 3 meses.
+El temario del mismo se resume en:
+- Proceso MIG/MAG
+- Introducción. Ventajas del método
+- Descripción del proceso
+- Equipo y preparación. Parámetros/ajustes
+- Proceso de transferencia del metal
+- Alambres. Gases de protección
+- Salud y seguridad
+- Defectos de soldaduras
+- Mantenimiento del equipo
+- Prácticas
+- Soldadura en acero inoxidable',3),
 	 (140,1,false,13,3,1,1,202404,202406,'Sistemas de Gestión de Medio Ambiente ISO 14001:2015','Curso  dirigido a interesados en conocer los requisitos normativos de la ISO 14001 versión 2015; implementadores de sistemas de
 gestión, responsables de procesos, jefes y supervisores de medio ambiente; actuales y futuros
 auditores internos; profesionales o estudiantes avanzados y a quienes deseen conocer más
@@ -3255,8 +3254,7 @@ tecnologías de gestión de auditoría basadas en ISO 19011, que den soporte par
 definición, diseño, implementación y mantenimiento de un programa de auditoría.
 - Planificar y preparar una auditoría interna, reunir pruebas de las auditorías mediante
 observación, realización de entrevistas y toma de muestras de documentos y registros,
-realizando informes escritos coherentes, concretos y completos de auditoría.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+realizando informes escritos coherentes, concretos y completos de auditoría.',3),
 	 (233,1,false,7,3,31,1,202503,202505,'CURSOS DE OFICIOS: Inyección electrónica','Capacitación abierta. El objetivo es formar personas integrales en el rubro automotriz, con técnicas y conocimientos de los nuevos sistemas desarrollados.',3),
 	 (141,1,false,13,3,1,3,202409,202411,'Auditor Interno en Sistemas Integrados de Gestión ISO 9001:2015 | ISO 14001:2015 | ISO 45001:2018','Curso dirigido a directivos y mandos
 intermedios como así también a todos aquellos técnicos y profesionales que quieran adquirir
@@ -3274,7 +3272,8 @@ ISO 9001:2015, ISO 14001:2015 y 45001:2018.
 ISO 9001:2015, 14001:2015 y 45001:2018.
 - Llevar a cabo auditorías internas para verificar la eficacia del sistema integrado.
 -Reconocer las características y problemas más habituales en la consecución de la
-certificación de gestión de un sistema integrado de gestión.',3),
+certificación de gestión de un sistema integrado de gestión.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (142,1,false,13,3,1,3,202309,202311,'Huella de Carbono Estándares Internacionales, Herramientas de Cálculo y Mercados de Carbono','Curso  dirigido a directivos, responsables,
 profesionales, técnicos y personal administrativo del sector ambiental que tengan
 responsabilidades en cuanto a la gestión industrial relacionada con la minimización del
@@ -3328,30 +3327,7 @@ definición, diseño, implementación y mantenimiento de un programa de auditor�
 - Planificar y preparar una auditoría interna, reunir pruebas de las auditorías mediante
 observación, realización de entrevistas y toma de muestras de documentos y registros,
 realizando informes escritos coherentes, concretos y completos de auditoría',3),
-	 (147,1,false,4,3,1,1,202504,202506,'Tornería','Curso de formación con clases  teórico-prácticas de una duración de 2 meses.
-El temario del mismo se resume en:
-- Medidas de seguridad en la máquina/herramienta
-- Interpretación de planos de dibujo mecánico
-- Instrumentos de medida. Descripción y funcionamiento
-- Método para medir el calibre y micrómetro
-- Torno. Descripción de la máquina
-- La herramienta de corte
-- Mecanizado en el torno
-- Cómo trabajar con método',3),
-	 (161,1,false,21,3,1,1,202309,202311,'Cursos de Cooperativismo y Factores de Riesgo por Actividad','Cursos destinados a fomentar el cooperativismo en la actividad rural',3),
-	 (149,1,false,2,3,1,1,202503,202505,'Soldadura','Curso de formación con clases teórico-prácticas de una duración de 3 meses.
-El temario del mismo se resume en:
-- Proceso MIG/MAG
-- Introducción. Ventajas del método
-- Descripción del proceso
-- Equipo y preparación. Parámetros/ajustes
-- Proceso de transferencia del metal
-- Alambres. Gases de protección
-- Salud y seguridad
-- Defectos de soldaduras
-- Mantenimiento del equipo
-- Prácticas
-- Soldadura en acero inoxidable',3),
+	 (236,1,false,1,3,31,2,202309,202311,'CURSOS DE OFICIOS: Instalaciones eléctricas domiciliarias','Capacitación abierta. Su objetivo es conocer y aplicar los fundamentos necesarios para efectuar instalaciones, diagnósticos y reparaciones',3),
 	 (150,1,false,3,3,1,1,202303,202311,'Mecánica de Motos','Curso de formación con clases  teórico-prácticas de una duración de 4 meses.
 El temario del mismo se resume en:
 - Funcionamiento del motor 4 tiempos
@@ -3370,8 +3346,7 @@ El temario del mismo se resume en:
 - Electricidad
 - Diagnóstico de fallas
 - Sistema de inyección
-- Service y mantenimiento',6);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+- Service y mantenimiento',6),
 	 (152,1,false,21,3,1,1,202508,202510,'Gasista Matriculado Cat. III','Curso de formación con clases  teórico-prácticas de una duración de 7 meses.
 No se requiere tener conocimientos previos.
 El temario del mismo se resume en:
@@ -3425,7 +3400,8 @@ El temario del mismo se resume en:
 - Ejecución de Procesos
 - Ejecución de Procesos Heladeras No Frost
 - Refrigeración Comercial
-- Aire Acondicionado (Compacto y Split)',6),
+- Aire Acondicionado (Compacto y Split)',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (156,1,false,1,3,1,1,202403,202411,'Electricidad Industrial','Curso de formación con clases teórico-prácticas de una duración de 4 meses.
 El temario del mismo se resume en:
 - Energía y energía eléctrica
@@ -3487,8 +3463,7 @@ El temario del mismo se resume en:
 * Suelo Cemento Compactado
 * Suelo Cemento Fluido con Residuos Agrícolas
 * Suelo Cemento Fluido
-* Capacitación en construcción natural o bioconstrucción en las técnicas de: BTC, adobe quincha y tapia',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+* Capacitación en construcción natural o bioconstrucción en las técnicas de: BTC, adobe quincha y tapia',3),
 	 (168,1,false,14,3,24,1,202303,202305,'LABORATORIO DE NUEVAS TECNOLOGÍAS','* Armado de impresoras 3D, CNC a medida, Drones
 * Curso de manejo de drones
 * Diseño de piezas / repuestos para luego imprimir en 3D',3),
@@ -3501,18 +3476,19 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 * Registros de variables eléctricas 
 * Control de protección diferenciales 
 * Control de aislamiento en motores',3),
-	 (171,1,false,10,3,28,2,202508,202510,'Capacitación en Transformación Digital','Formar un especialista con sólidas competencias que le permitan crear e implementar nuevos modelos de negocio, procesos, productos y servicios que mejoren la productividad, la competitividad y la oferta de valor de las empresas.',3),
+	 (171,1,false,10,3,28,2,202508,202510,'Capacitación en Transformación Digital','Formar un especialista con sólidas competencias que le permitan crear e implementar nuevos modelos de negocio, procesos, productos y servicios que mejoren la productividad, la competitividad y la oferta de valor de las empresas.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (173,1,false,1,3,28,1,202303,202305,'Curso Electricidad Básica','La propuesta formativa está orientada a brindar las bases teóricas y prácticas para comprender los fenómenos eléctricos y sus aplicaciones. Se incluye una introducción a las bases de la electricidad, leyes fundamentales y aplicaciones en circuitos alimentados con corriente continua, para luego extender y ampliar los conceptos a circuitos de corriente alterna y finalmente dar una introducción a los circuitos trifásicos.',3),
 	 (174,1,false,9,3,28,1,202309,202311,'Curso de informática para principiantes','En este curso gratuito de informática para principiantes conocerás los componentes del ordenador, como la CPU, la memoria y el almacenamiento, conocerás las relaciones entre seguridad, hardware y software. Por último, aprenderás cómo los componentes del sistema informático interactúan con el sistema operativo. Está dirigido a personas que tienen poca o ninguna experiencia previa con ordenadores y desean adquirir conocimientos básicos en informática.',3),
 	 (175,1,false,4,3,28,2,202308,202310,'Curso para manejar Microsoft One Note','En este curso, aprenderás a manejar la plataforma Microsoft OneNote, a través de la cual podrás realizar anotaciones, organizarlas de la forma que creas conveniente y acceder a ellas desde cualquier dispositivo. OneNote es una aplicación de Microsoft que permite a los usuarios tomar notas y organizar información en un formato digital. Esencialmente, se trata de un cuaderno digital que se puede utilizar para tomar notas manuscritas, crear listas de tareas, grabar audio, agregar imágenes y recortes web, entre otras cosas. Al término del curso, tendrás la oportunidad de desarrollar un proyecto de aprendizaje (opcional)',3),
 	 (176,1,false,9,3,28,1,202504,202506,'Curso de Ofimatica','Los cursos de ofimática te preparan para realizar con fluidez diferentes tipos de tareas administrativas utilizando el grupo de programas informáticos de Microsoft Office. Ofimática es ese conjunto de aplicaciones y herramientas informáticas diseñadas para facilitar y mejorar las tareas relacionadas con la creación, edición, almacenamiento y distribución de información en el entorno de una oficina o empresa.',3),
 	 (177,1,false,24,3,28,1,202304,202306,'Curso de Idiomas: Frances. Nivel I y II','Capacitación abierta. Su estudio provee al alumno de una herramienta útil para su desarrollo en el mundo actual, al mismo tiempo que le permite explorar otras culturas, experimentar, analizar, producir y comunicarse en otro idioma, facilitándole al mismo tiempo la posibilidad de insertarse en el terreno laboral.',3),
-	 (178,1,false,24,3,28,2,202304,202306,'Curso de Idiomas: Ingles. Nivel I y II','Capacitación abierta. Su estudio provee al alumno de una herramienta útil para su desarrollo en el mundo actual, al mismo tiempo que le permite explorar otras culturas, experimentar, analizar, producir y comunicarse en otro idioma, facilitándole al mismo tiempo la posibilidad de insertarse en el terreno laboral.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (178,1,false,24,3,28,2,202304,202306,'Curso de Idiomas: Ingles. Nivel I y II','Capacitación abierta. Su estudio provee al alumno de una herramienta útil para su desarrollo en el mundo actual, al mismo tiempo que le permite explorar otras culturas, experimentar, analizar, producir y comunicarse en otro idioma, facilitándole al mismo tiempo la posibilidad de insertarse en el terreno laboral.',3),
 	 (180,1,false,24,3,28,1,202303,202305,'Manejo de Excel','Dotar de conocimientos técnicos en excel (introducción, nivel 1, 2 y avanzado)',3),
 	 (181,1,false,11,3,28,3,202404,202406,'Curso de Introduccion a la Robotica Para Impresion 3D','Aprender los fundamentos de la robótica y su aplicación en la impresión 3D, comprendiendo cómo la robótica puede impulsar la innovación y la eficiencia en la producción aditiva.',3),
 	 (182,1,false,21,3,28,1,202504,202506,'Curso de higiene y seguridad laboral','Los cursos de higiene y seguridad laboral permiten detectar y controlar los riesgos en el trabajo, realizar diagnósticos y aplicar mejoras. Este curso está diseñado para brindar a los participantes los conocimientos y herramientas necesarias para identificar, evaluar y controlar los riesgos presentes en el entorno laboral.',3),
-	 (183,1,false,11,3,7,3,202408,202410,'Curso de INTRODUCCIÓN A LA ROBÓTICA  PARA IMPRESIÓN 3D','La robótica juega un papel fundamental en la manufactura aditiva. En este curso  aprenderás cómo la robótica puede potenciar la innovación y la eficiencia en la  producción aditiva, aprovechando al máximo las capacidades de la impresión 3D. En este curso, explorarás casos de estudio y ejemplos prácticos que te ayudarán a  comprender cómo la sinergia entre la robótica y la impresión 3D impulsa proyectos  innovadores en diversas industrias.',3),
+	 (183,1,false,11,3,7,3,202408,202410,'Curso de INTRODUCCIÓN A LA ROBÓTICA  PARA IMPRESIÓN 3D','La robótica juega un papel fundamental en la manufactura aditiva. En este curso  aprenderás cómo la robótica puede potenciar la innovación y la eficiencia en la  producción aditiva, aprovechando al máximo las capacidades de la impresión 3D. En este curso, explorarás casos de estudio y ejemplos prácticos que te ayudarán a  comprender cómo la sinergia entre la robótica y la impresión 3D impulsa proyectos  innovadores en diversas industrias.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (185,1,false,22,3,7,1,202309,202311,'CURSO DE DESARROLLO PROFESIONAL MEJORA DE PRÁCTICAS DE EVALUACIÓN','La calidad de la educación depende, en buena medida, de la rigurosidad de la evaluación; por ello, reducirla a la medición de los productos hace perder de vista los procesos más ricos que se llevan a cabo en el aprendizaje.
 El concepto de evaluación es un continuo proceso de reflexión acerca de la construcción de los aprendizajes y de la calidad de la enseñanza. Evaluar implica una actitud de investigación, por parte de los docentes y alumnos, que permite retroalimentar la acción educativa. En este sentido, la evaluación formativa cobra especial relevancia, ya que permite un seguimiento continuo del proceso de aprendizaje y proporciona retroalimentación oportuna que facilita ajustes en el camino promoviendo una educación más equitativa y centrada en el desarrollo integral del alumno. El curso de desarrollo profesional "Mejora de Prácticas de Evaluación" tiene como objetivo principal capacitar a los docentes en la implementación de estrategias de evaluación que vayan más allá de la simple medición de resultados, promoviendo una cultura de evaluación formativa y reflexiva. Se busca que los docentes desarrollen competencias para diseñar e implementar evaluaciones que sean rigurosas, inclusivas y que realmente contribuyan al mejoramiento de la calidad educativa, fomentando un aprendizaje profundo y significativo en sus estudiantes.',3),
 	 (186,1,false,20,3,7,3,202408,202410,'Curso de Organización y gestión del mantenimiento industrial y condiciones generales de puesta a tierra y protecciones de equipos.','La organización y gestión del mantenimiento industrial son fundamentales para asegurar el funcionamiento eficiente y seguro de los equipos en una planta. Esto implica planificar y programar actividades de mantenimiento preventivo y correctivo, así como llevar un registro detallado de las intervenciones realizadas.',3),
@@ -3524,8 +3500,6 @@ Desarrollar en la propia universidad un ambiente propicio para los estudiantes e
 Avanzar con acciones que contemplen y/o integren a todos los sectores sociales, destacando el rol de la creación de empresas como dinamizador social e impulsoras de innovación. 
 Conocer e interpretar el ecosistema emprendedor y entender las acciones que desarrolla para el acompañamiento a los emprendimientos.',3),
 	 (234,1,false,3,3,31,1,202308,202310,'CURSOS DE OFICIOS: Mecánica general','Capacitación abierta.',3),
-	 (236,1,false,1,3,31,2,202309,202311,'CURSOS DE OFICIOS: Instalaciones eléctricas domiciliarias','Capacitación abierta. Su objetivo es conocer y aplicar los fundamentos necesarios para efectuar instalaciones, diagnósticos y reparaciones',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (189,1,false,10,3,7,1,202503,202505,'Curso de Principios de mejora de procesos y transformación digital para industrias','A través de esta propuesta de capacitación se busca promover los principios básicos para crear lugares de trabajo mejor organizados de forma permanente y lograr mayor productividad en un mejor entorno laboral. 
 En este sentido, se trata de iniciar el proceso de cambio cultural al interior de la empresa para aprovechar al máximo la tecnología disponible, realizando los cambios básicos en las etapas de la transformación digital e industria 4.0.',3),
 	 (191,1,false,11,3,7,1,202304,202306,'Curso “Herramientas para la Gestión Estratégica de Empresas Agropecuarias”','La empresa agropecuaria, un sector en constante transformación, demandas profesionales altamente capacitados. La incorporación de tecnologías y herramientas de gestión innovadoras ha redefinido las prácticas del sistema agroalimentario. 
@@ -3533,7 +3507,8 @@ Al analizar datos y utilizar modelos de simulación, los docentes pueden brindar
 	 (193,1,false,19,3,7,1,202404,202406,'Curso Estrategias Agropecuarias para un Futuro Climáticamente Inteligente','En el contexto del cambio climático, las prácticas agropecuarias enfrentan un complejo panorama de desafíos que abarcan impactos ambientales, económicos y sociales. El curso "Estrategias Agropecuarias para un Futuro Climáticamente Inteligente" está diseñado para equiparte con las herramientas y conocimientos necesarios para desarrollar y aplicar estrategias que aborden estos desafíos de manera integral. Analizaremos cómo las prácticas agropecuarias pueden mitigar los efectos del cambio climático y adaptarse a sus consecuencias, al tiempo que evaluamos los impactos en la salud de los ecosistemas, la sostenibilidad económica de las explotaciones y el bienestar de las comunidades rurales. Se estudiarán casos prácticos y explorarán enfoques innovadores que equilibran la producción agrícola y ganadera con la conservación ambiental y la equidad social. Este curso permitirá comprender cómo implementar soluciones que no solo mejoren la resiliencia y la eficiencia de los sistemas agropecuarios, sino que también promuevan un desarrollo sostenible y equitativo en el futuro.',3),
 	 (194,1,false,9,3,7,2,202404,202406,'Curso de Uso de Máquinas con CNC','En un entorno industrial, las máquinas CNC son esenciales para la producción de piezas complejas con alta precisión y repetibilidad. Este curso está diseñado para brindar a los participantes un conocimiento integral sobre la operación, programación y mantenimiento de máquinas CNC, desde su funcionamiento básico hasta la programación avanzada. Además, se abordarán temas cruciales como la interpretación de planos técnicos, la selección de herramientas de corte, y la resolución de problemas comunes en la operación de máquinas CNC.',3),
 	 (196,1,false,8,3,22,1,202303,202305,'Capacitación en FTTH','Educación / Servicios empresariales 
-Que los participantes adquieran conocimientos, conceptos y habilidades prácticas para la rápida inserción en el mercado laboral de las redes ópticas aplicada a las telecomunicaciones como también perfeccionen su expertica técnica los trabajadores involucrados en la industria. Temas: Infraestructura de Redes Ópticas. Planificación y Diseño de una Red óptica. Operación, Mantenimiento y Seguridad. Laboratorio y Taller de red óptica pasiva.',3),
+Que los participantes adquieran conocimientos, conceptos y habilidades prácticas para la rápida inserción en el mercado laboral de las redes ópticas aplicada a las telecomunicaciones como también perfeccionen su expertica técnica los trabajadores involucrados en la industria. Temas: Infraestructura de Redes Ópticas. Planificación y Diseño de una Red óptica. Operación, Mantenimiento y Seguridad. Laboratorio y Taller de red óptica pasiva.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (197,1,false,7,3,19,1,202309,202311,'Taller intensivo de optimización de clima laboral','Taller dirigido a equipos de trabajo del sector industrial, electrónicas, autopartistas. Diagnóstico inicial. Concepto de clima laboral. Variables que influyen en el clima organizacional. Impacto del clima laboral en la vida diaria. Intervenciones que facilitan y mejoran el clima. Comunicación asertiva.',3),
 	 (198,1,false,10,3,19,2,202403,202405,'Excel Avanzado','Capacitación dirigida a operarios de manufactura . Uso de la función si, funciones aritméticas.
 Protección de hojas y libros, orden personalizado, filtros personalizados, inmovilizar filas y
@@ -3542,26 +3517,27 @@ columnas. Subtotales, validación de datos, formato condicional. Buscar y reempl
 	 (201,1,false,9,3,7,3,202303,202305,'Curso de Introducción a la Programación','En un entorno cada vez más impulsado por la tecnología, la programación se ha convertido en una habilidad fundamental que abre puertas a innumerables oportunidades tanto para docentes como para estudiantes. Este curso está diseñado específicamente para profesores de escuelas secundarias técnicas que desean incorporar la enseñanza de la programación en sus aulas, equipando a sus estudiantes con competencias clave para el futuro.
 La programación no solo es el lenguaje de las computadoras, sino también una herramienta poderosa para desarrollar el pensamiento lógico, la creatividad y la capacidad de resolver problemas. A lo largo de este curso, los docentes explorarán los conceptos básicos de la programación y aprenderán a enseñarlos de manera efectiva, adaptando el contenido a diferentes niveles de conocimiento y contextos educativos.
 Este curso proporcionará las bases necesarias para que los docentes puedan introducir a sus estudiantes en el mundo de la programación, utilizando lenguajes accesibles y metodologías pedagógicas que fomenten el aprendizaje activo y la curiosidad. Al finalizar el curso, los participantes estarán capacitados para despertar en sus estudiantes el interés por la tecnología y guiar sus primeros pasos en la programación.',3),
-	 (224,1,false,24,3,31,2,202503,202505,'CURSOS DE IDIOMAS: Ingles. Nivel I, II, III, IV','Capacitación abierta. Su estudio provee al alumno de una herramienta útil para su desarrollo en el mundo actual, al mismo tiempo que le permite explorar otras culturas, experimentar, analizar, producir y comunicarse en otro idioma, facilitándole al mismo tiempo la posibilidad de insertarse en el terreno laboral',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (224,1,false,24,3,31,2,202503,202505,'CURSOS DE IDIOMAS: Ingles. Nivel I, II, III, IV','Capacitación abierta. Su estudio provee al alumno de una herramienta útil para su desarrollo en el mundo actual, al mismo tiempo que le permite explorar otras culturas, experimentar, analizar, producir y comunicarse en otro idioma, facilitándole al mismo tiempo la posibilidad de insertarse en el terreno laboral',3),
 	 (225,1,false,9,3,31,3,202403,202411,'CURSOS DE FORMACION PROFESIONAL: Diseño Web','Capacitación abierta. El objetivo es desarrollar habilidades de programación que podrás aplicar en cualquier proyecto',6),
 	 (228,1,false,12,3,31,3,202303,202305,'CURSOS DE FORMACION PROFESIONAL: Fotografía. Nivel inicial','Capacitación abierta. El objetivo es que aprendan a utilizar la cámara en función manual, pudiendo controlar todas sus variantes, haciendo de la cámara un instrumento a disposición del alumno, dominando tanto la parte teórica como la práctica
 Comprender los conceptos de la metodología de trabajo BIM. Este es un proceso de generación y gestión de datos del edificio utilizando software de modelado en 3D, para disminuir la pérdida de tiempo y recursos en el diseño y la construcción.',3),
+	 (326,1,false,5,4,23,1,202302,202312,'LABORATORIO DE METROLOGÍA','CURSOS DE CAPACITACION ESPECIFICA - SERVICIOS A EMPRESAS',12),
 	 (202,1,false,22,3,7,2,202308,202310,'Curso de Seguridad Informática','En la era digital actual, la seguridad informática se ha convertido en una prioridad crítica para cualquier institución, empresa y, por supuesto, en el ámbito educativo. Los docentes de escuelas secundarias técnicas tienen la responsabilidad no solo de proteger la información personal y profesional, sino también de educar a la próxima generación sobre la importancia de la ciberseguridad.
 Este curso está diseñado específicamente para docentes que desean comprender los fundamentos de la seguridad informática y aprender cómo implementar buenas prácticas de ciberseguridad en sus aulas y entornos educativos. A través de este curso, los participantes explorarán los principios clave de la seguridad informática, desde la protección de datos hasta la gestión de riesgos, y recibirán herramientas para enseñar estos conceptos a sus estudiantes.
 A medida que la tecnología sigue avanzando, las amenazas cibernéticas también evolucionan, lo que hace que la educación en seguridad informática sea más esencial que nunca. Este curso proporcionará a los docentes las habilidades y el conocimiento necesarios para proteger sus entornos digitales y para preparar a sus estudiantes para enfrentarse a los desafíos de la seguridad en el mundo digital.',3),
-	 (203,1,false,1,3,7,3,202409,202411,'Curso de Electricidad Básica','La Electricidad es la más flexible y versátil de todas las formas de energía. Sus múltiples funciones en equipamientos eléctricos y electrónicos, hace que la demanda en el uso de la electricidad crezca cada día más, por lo que es necesario tener conocimientos básicos para el manejo eficiente y seguro de la misma.',3),
+	 (203,1,false,1,3,7,3,202409,202411,'Curso de Electricidad Básica','La Electricidad es la más flexible y versátil de todas las formas de energía. Sus múltiples funciones en equipamientos eléctricos y electrónicos, hace que la demanda en el uso de la electricidad crezca cada día más, por lo que es necesario tener conocimientos básicos para el manejo eficiente y seguro de la misma.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (205,1,false,24,3,16,1,202404,202406,'USO Y MANEJO DE LA HERRAMIENTA DE EXCEL','Dotar de conocimientos técnicos en excel (introducción, nivel 1, 2 y avanzado) a operarios de empresas',3),
 	 (207,1,false,2,3,16,1,202403,202411,'ELECTRONICA BÁSICA APLICADA A LA INDUSTRIA','Dotar de conocimientos específicos a los técnicos asociados en temáticas vinculadas a refrigeración, climatización y electrónica',6),
 	 (208,1,false,2,3,16,1,202403,202405,'REFRIGERACION-CLIMATIZACIÓN','La propuestas está orientada a climatización y refrigeración aplicada a la conservación de alimentos.',3),
 	 (212,1,false,16,3,22,3,202308,202310,'INGLÉS INTERMEDIO PARA MINERÍA','Proporcionar a los trabajadores del sector minero con conocimientos previos del idioma inglés, las herramientas lingüísticas necesarias para mejorar sus habilidades comunicativas en situaciones laborales cotidianas. El curso está diseñado para apoyar el desarrollo profesional, ampliando el conocimiento técnico del personal y facilitando su participación en un entorno globalizado, con énfasis en la comunicación oral, la redacción de documentos técnicos y la preparación para reuniones y presentaciones en inglés.',3),
 	 (213,1,false,16,3,22,1,202403,202411,'INGLÉS TÉCNICO PARA MINERÍA','Proporcionar a los trabajadores de la industria minera, sin conocimientos previos de inglés, las herramientas lingüísticas necesarias para comprender textos técnicos en inglés, relacionados con la minería. Los participantes aprenderán a interpretar terminologías técnicas y científicas, lo que les permitirá manejar información específica del sector minero con mayor autonomía.',6),
-	 (214,1,false,2,2,22,3,202308,202310,'DISEÑO, IMPLEMENTACIÓN Y MANTENIMIENTO DE SISTEMAS DE PUESTA A TIERRA EN ENTORNOS MINEROS','Capacitar a los participantes en el diseño, implementación y mantenimiento de sistemas de puesta a tierra en instalaciones mineras, garantizando la seguridad de las personas y equipos y el cumplimiento de la normativa vigente.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (214,1,false,2,2,22,3,202308,202310,'DISEÑO, IMPLEMENTACIÓN Y MANTENIMIENTO DE SISTEMAS DE PUESTA A TIERRA EN ENTORNOS MINEROS','Capacitar a los participantes en el diseño, implementación y mantenimiento de sistemas de puesta a tierra en instalaciones mineras, garantizando la seguridad de las personas y equipos y el cumplimiento de la normativa vigente.',3),
 	 (215,1,false,6,3,22,1,202309,202311,'AUTOMATIZACIÓN DE PROCESOS MINEROS CON PLC','Capacitar a los participantes en la programación y aplicación de Controladores Lógicos Programables (PLC) en procesos mineros, optimizando la eficiencia, seguridad y productividad de las operaciones.',3),
 	 (216,1,false,1,2,22,1,202508,202510,'GESTIÓN Y MANTENIMIENTO DE APARAMENTA ELÉCTRICA EN ENTORNOS MINEROS','Capacitar a los participantes en la selección, instalación, operación, mantenimiento y pruebas de aparamenta eléctrica en sistemas mineros, garantizando la seguridad y confiabilidad de las instalaciones eléctricas.',3),
 	 (217,1,false,21,3,22,3,202304,202306,'Montaje y Desmontaje Seguro de Andamios en Entornos Mineros','Capacitar a los participantes para que adquieran los conocimientos y habilidades necesarias para realizar el montaje, inspección y desmontaje de andamios en entornos mineros, cumpliendo con las normas de seguridad y calidad establecidas.',3),
-	 (218,1,false,16,3,22,1,202409,202411,'Gestión Integral de la Seguridad y Salud en la Minería','Proporcionar los conocimientos necesarios para implementar y gestionar programas de seguridad y salud ocupacional en operaciones mineras.',3),
+	 (218,1,false,16,3,22,1,202409,202411,'Gestión Integral de la Seguridad y Salud en la Minería','Proporcionar los conocimientos necesarios para implementar y gestionar programas de seguridad y salud ocupacional en operaciones mineras.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (219,1,false,16,3,22,1,202403,202405,'Instrumentación aplicada a la Minería del Litio','Minería Metalífera- Capacitar a los participantes en la instrumentación y control específicos para la minería de litio, incluyendo su aplicación en procesos críticos como
 la extracción de salmuera, el manejo de equipos, y la
 integridad tanto de personal como de sistemas.',3),
@@ -3571,8 +3547,7 @@ cuanto al habla, redacción, comprensión lectora y auditiva.',3),
 	 (221,1,false,4,3,31,1,202403,202411,'CURSOS DE IDIOMAS: Portugués. Nivel I','Capacitación abierta. el objetivo es proporcionar a los asistentes un espacio para la adquisición de habilidades y competencias lingüísticas, comunicacionales y socioculturales en torno a la lengua portuguesa y la cultura brasileña.',6),
 	 (569,1,false,21,4,17,1,202402,202412,'Estudio de iluminación.','SEGURIDAD E HIGIENE',12),
 	 (226,1,false,13,3,31,1,202303,202305,'CURSOS DE FORMACION PROFESIONAL: Taller reparación de pequeños electrodomésticos','Capacitación abierta. El objetivo es capacitar a los participantes para que puedan diagnosticar, reparar y mantener pequeños electrodomésticos de manera segura y eficiente, contribuyendo así a la reducción de residuos electrónicos y promoviendo prácticas de consumo sostenibles.',3),
-	 (227,1,false,12,3,31,2,202403,202405,'CURSOS DE FORMACION PROFESIONAL: REVIT. Nivel inicial','Capacitación abierta. El objetivo es comprender los conceptos de la metodología de trabajo BIM. Este es un proceso de generación y gestión de datos del edificio utilizando software de modelado en 3D, para disminuir la pérdida de tiempo y recursos en el diseño y la construcción.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (227,1,false,12,3,31,2,202403,202405,'CURSOS DE FORMACION PROFESIONAL: REVIT. Nivel inicial','Capacitación abierta. El objetivo es comprender los conceptos de la metodología de trabajo BIM. Este es un proceso de generación y gestión de datos del edificio utilizando software de modelado en 3D, para disminuir la pérdida de tiempo y recursos en el diseño y la construcción.',3),
 	 (229,1,false,10,3,31,2,202403,202405,'CURSOS DE FORMACION PROFESIONAL: Power BI','Capacitación abierta. El objetivo es  Introducir al aprendizaje de Microsoft Power BI Desktop, con el fin de adquirir destrezas para su uso eficiente',3),
 	 (237,1,false,2,3,31,3,202403,202405,'CURSOS DE OFICIOS: Refrigeración y aires acondicionados','Curso abierto. Su objetivo es conocer y aplicar los fundamentos necesarios para efectuar diagnósticos, reparaciones e instalaciones de equipos frigoríficos hasta 3 kW',3),
 	 (238,1,false,3,3,31,2,202304,202306,'CURSOS DE OFICIOS:Reparación de máquinas lavadoras y secadoras domesticas e industriales','Capacitaciones abiertas a todo público interesado•	El objetivo es lograr los conocimientos adecuados para reparar todos los sistemas que integran a estos aparatos (agua, eléctrico, electrónico y mecánico)',3),
@@ -3604,7 +3579,8 @@ del material, determinación macrográfica de probetas soldadas, en prótesis.
  Cortadora metalográfica, incluidora
 metalográfica y pulidora metalográfica.
  Contamos con el contacto de laboratorios para realizar probetas de tracción
-y Charpy y el ensayo correspondiente',12),
+y Charpy y el ensayo correspondiente',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (240,1,false,5,3,5,1,202303,202305,'ITREN (Instituto Tec. Regional de Ensayos no Destructivos)','Objetivos
 Nace ante la imperiosa necesidad de conformar un equipo interdisciplinario que relacione la Universidad con la demanda en el campo de los Ensayos No Destructivos del sector público y privado de la región.
 DICTADO DE CURSOS
@@ -3623,13 +3599,13 @@ Química Computacional',3),
 	 (570,1,false,24,4,17,2,202402,202412,'Registro de marcas.','ASESORÍAS Y CONSULTORÍAS',12),
 	 (243,1,false,19,3,10,3,202303,202305,'CAPACITACIÓN EN CONTROL ESTADÍSTICO DE PROCESOS (CEP)','El objetivo de la misma fue capacitar a los supervisores de producción y operaciones de la empresa AKRON S.A. de San Francisco en los principios fundamentales del Control Estadístico de Procesos (CEP) para mejorar la calidad y consistencia en los procesos de producción.  La metodología que se implementó para la presente capacitación fue de modalidad Taller.',3),
 	 (244,1,false,21,3,10,1,202508,202510,'CAPACITACIÓN EN METODOLOGIA 5S','La capacitación en metodología 5S se enfocó en enseñar a los participantes cómo mejorar la eficiencia, seguridad y orden en el lugar de trabajo. Aprendiendo a aplicar los cinco pasos de las 5S: Clasificar, Ordenar, Limpiar, Estandarizar y Mantener. Además, se les instruyó sobre cómo identificar oportunidades de mejora, trabajar en equipo y medir el éxito de la implementación para fomentar una cultura de mejora continua.',3),
-	 (245,1,false,24,3,26,3,202403,202411,'Capacitación en Eficiencia Energética','Dictado de capacitaciones  sobre Eficiencia Energética en el sector residencial, comercial e industrial.',6);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (245,1,false,24,3,26,3,202403,202411,'Capacitación en Eficiencia Energética','Dictado de capacitaciones  sobre Eficiencia Energética en el sector residencial, comercial e industrial.',6),
 	 (246,1,false,1,3,26,1,202508,202510,'Capacitación en Energías Renovables','Dictado de capacitaciones  sobre diseño, instalación, operación y mantenimiento de: 1.Sistemas fotovoltaicos. 2.Sistemas solares térmicos. 3.Sistemas eólicos.',3),
 	 (247,1,false,11,3,26,1,202508,202510,'Cursos de capacitación a Instituciones y Empresas','Cursos de capacitación a Instituciones y empresas en las siguientes áreas temáticas: Análisis de riesgo, Ingeniería de la Confiabilidad, Modelado y Simulación de Procesos.',3),
 	 (248,1,false,12,3,26,3,202409,202411,'Construcción y Medio Ambiente','Capacitación técnica vinculada con Ingeniería Civil y Medio ambiente.',3),
 	 (249,1,false,11,3,12,3,202303,202311,'Cursos de Simulación Computacional','Cursos de capacitación en programas de simulación molecular (Amber, Gamess, MultiWFN, Gaussian, Avogadro y VMD) para estudiar interacciones entre moléculas y reacciones químicas. 
-Capacitaciones sobre diseño y producción de gráficos científicos y escritura de textos para las publicaciones científicas (papers, tesis y posters).',6),
+Capacitaciones sobre diseño y producción de gráficos científicos y escritura de textos para las publicaciones científicas (papers, tesis y posters).',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (250,1,false,15,3,26,1,202308,202310,'Capacitación en áreas de ciencia y tecnología de los alimentos','• Desarrollo de POES
 • Validación de POES
 • Manual de Buenas Practicas de Manufacturas',3),
@@ -3639,6 +3615,9 @@ a) Ingeniería del Mantenimiento
 b) Mantenimiento aplicado al ferrocarril',6),
 	 (283,1,false,2,3,12,2,202508,202510,'Refrigeración y aire acondicionado','Este curso esta diseñado para brindar una formación integral en el campo de la refrigeración y el aire acondicionado, enfocándose en la instalación, mantenimiento y reparación de sistemas de climatización.',3),
 	 (284,1,false,1,3,12,1,202304,202306,'Instalaciones eléctricas domiciliarias','Este curso proporciona una formación integral en la instalación eléctrica en viviendas, esta diseñado para personas interesadas en aprender los fundamentos y practicas esenciales para realizar instalaciones eléctricas segura y eficientes en el hogar.',3),
+	 (571,1,false,14,4,17,1,202302,202312,'Registro de tecnologías químicas.','ASESORÍAS Y CONSULTORÍAS',12),
+	 (328,1,false,20,4,5,1,202302,202312,'GE-LAB. (Lab. de Gobierno Electrónico) Ing. Sistemas','Procesos de Gestión, Optimización, Digitalización, Despapelización, Reingeniería, Modelo Estandar, NotaciónBPM-BPMN.',12),
+	 (601,1,false,2,2,31,3,202504,202506,'Determinaciones técnicas y ensayos de aptitudes','Control de equipos para mantenimiento',3),
 	 (252,1,false,19,3,20,1,202403,202411,'Capacitaciones Específicas del Ámbito Aeronáutico','Capacitación integral para la formación y profesionalización en las siguientes temáticas del ámbito aeronáutico: 
 -	Mejora continua
 -	Optimización y gestión de habilidades
@@ -3656,9 +3635,9 @@ b) Mantenimiento aplicado al ferrocarril',6),
 -	Seguridad de la aviación (AVSEC)
 -	Gestión de la seguridad operacional en aeropuertos
 -	Mantenimiento y conocimientos de reparación en pavimentos aeroportuarios',6),
-	 (253,1,false,22,3,30,3,202309,202311,'Estrategias Activas de Formación y Evaluación de Competencias Profesionales','Actividades de planificación, implementación y evaluación de estrategias activas para el desarrollo de competencias a docentes nivel secundario o superior de Educación Tecnológica.',3);
+	 (253,1,false,22,3,30,3,202309,202311,'Estrategias Activas de Formación y Evaluación de Competencias Profesionales','Actividades de planificación, implementación y evaluación de estrategias activas para el desarrollo de competencias a docentes nivel secundario o superior de Educación Tecnológica.',3),
+	 (254,1,false,3,3,2,3,202308,202310,'Mantenimiento de máquinas eléctricas','Cursos de mantenimiento para máquinas eléctricas. Aplicado a motores y generadores con desarrollos propios incluidos. Objetivos: Este curso está orientado a dar los conocimientos necesarios para realizar el diagnóstico predictivo de fallas en máquinas eléctricas de inducción producidas por fallas mecánicas y electromagnéticas. Duración: 6 horas/semana, 4 semanas. Certificado con aval UTN . ',3);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
-	 (254,1,false,3,3,2,3,202308,202310,'Mantenimiento de máquinas eléctricas','Cursos de mantenimiento para máquinas eléctricas. Aplicado a motores y generadores con desarrollos propios incluidos. Objetivos: Este curso está orientado a dar los conocimientos necesarios para realizar el diagnóstico predictivo de fallas en máquinas eléctricas de inducción producidas por fallas mecánicas y electromagnéticas. Duración: 6 horas/semana, 4 semanas. Certificado con aval UTN . ',3),
 	 (255,1,false,1,3,2,1,202303,202311,'Seguridad y capacitación para el trabajo de campo en electricidad','Cursos de capacitación a nivel de Jefe de redes y operarios. Aplicado a redes eléctricas y subestaciones urbanas-suburbanas y rurales con diseño estructural y cálculo. Certificado con aval UTN . ',6),
 	 (256,1,false,1,3,2,1,202304,202306,'Seguridad Eléctrica','Aplicado a sistemas eléctricos, Redes eléctricas, Subestaciones y Edificios con comparación con normas internas. Certificado con aval UTN. ',3),
 	 (257,1,false,1,3,2,1,202504,202506,'Energía eólica','Objetivos: Este curso está orientado a dar los conocimientos necesarios para realizar un análisis previo de instalación de un parque eólico. El temario incluye aspectos legales, económicos, técnicos y generales que hacen a la Instalación de un Parque Eólico. Cursos dictados a nivel de grado y posgrado en el ámbito de la UTN. Desarrollo Industrial de la Energía eólica. ',3),
@@ -3667,9 +3646,9 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (260,1,false,1,3,2,3,202508,202510,'Curso de Instalaciones Eléctricas Industriales','Modulo 1: Fundamentos, protecciones y elementos de maniobra. Modulo 2: Elementos de mando y señalización, tableros y máquinas eléctricas. Modulo 3: PLC, conductores, riesgo eléctrico y puesta a tierra de instalaciones eléctricas. Tiempo estimado de dictado: 60 horas.  Se otorga certificado avalado por la UTN.',3),
 	 (262,1,false,21,3,31,1,202308,202310,'Capacitación del personal','Cursos de uso y conservación de material de seguridad',3),
 	 (263,1,false,21,3,31,3,202403,202411,'Capacitación del personal','Cursos de seguridad industrial en electricidad',6),
-	 (264,1,false,1,3,31,2,202303,202311,'Capacitación del Personal','Cursos básicos de riesgo eléctrico',6);
+	 (264,1,false,1,3,31,2,202303,202311,'Capacitación del Personal','Cursos básicos de riesgo eléctrico',6),
+	 (265,1,false,8,2,14,1,202303,202305,'Armado y Reparación de Redes de Pesca','Tecnicas de armado de redes de pesca',3);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
-	 (265,1,false,8,2,14,1,202303,202305,'Armado y Reparación de Redes de Pesca','Tecnicas de armado de redes de pesca',3),
 	 (266,1,false,24,3,14,1,202309,202311,'calificación de soldadores (GMAW)','La certificación de soldadores es un proceso mediante el cual se evalúa la habilidad y el conocimiento de un soldador. Para obtener la certificación',3),
 	 (268,1,false,1,3,14,1,202308,202310,'Eficiencia energética y energías renovables','Principios básicos de funcionamiento de los equipos que aprovechan tanto la energía solar térmica y fotovoltaica.',3),
 	 (269,1,false,12,3,14,1,202303,202305,'Steel Frame','brindar el conocimiento y herramientas para que los estudiantes que lo realizan, aprender la teoría y la técnica para realizar construcciones en seco.',3),
@@ -3682,12 +3661,13 @@ Duración de 12 horas. Certificación UTN',3),
 	 (281,1,false,3,3,12,1,202409,202411,'Mecánica de motos','Incorporar los conocimientos básicos de mecánica de motos. Adquirir práctica en el desarme y el armado de motores, conocer
 el funcionamiento individual y en conjunto de las partes, evaluar
 el estado de las piezas para su posterior reemplazo, uso de
-herramientas específicas.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+herramientas específicas.',3),
 	 (282,1,false,2,3,12,3,202403,202411,'Buenas practicas en el manejo de refrigerantes inflamables','Este curso, pretende lograr que el interesado conozca las características, clasificación y selección de los refrigerantes inflamables más usados actualmente y de los futuros refrigerantes de baja afectación a la Capa de Ozono y el Calentamiento Global.
 Además, los procedimientos seguros durante el mantenimiento y la reparación de equipos, como así tambien el uso de herramientas específicas, medición de variables del ciclo frigorífico, cañerías,
-accesorios, soldaduras.',6),
+accesorios, soldaduras.',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (324,1,false,20,3,17,3,202309,202311,'Capacitación multinivel para mandos superiores, medios y bajos en todo tipo de temas.','Liderazgo y gestión',3),
+	 (602,1,false,5,4,31,1,202302,202312,'Determinaciones técnicas y ensayos de aptitudes','Control de equipos para recepción',12),
 	 (285,1,false,7,2,12,1,202408,202410,'Electrónica orientada a la reparación','Entender los principales conceptos y procedimientos en las reparaciones de placas electrónicas, detección de fallas, saber separar en bloques los problemas presentados en las diferentes tarjetas que hacen al funcionamiento de los equipos, entender, comprender principios y fenómenos involucrados en dispositivos
 electrónicos. 
 Conocer los elementos que componen las plaquetas, efectuar mediciones, permitiéndole al alumno encontrar y reparar fallas de las mismas',3),
@@ -3728,16 +3708,12 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (321,1,false,20,3,17,1,202303,202305,'Desarrollo de procesos de selección','Liderazgo y gestión',3),
 	 (322,1,false,20,3,17,1,202409,202411,'Desarrollo de las habilidades comunicacionales del personal de todos los niveles.','Liderazgo y Gestión',3),
 	 (325,1,false,5,4,23,1,202402,202412,'LABORATORIO DE METROLOGIA','LABTEC UTNFRGP BRINDA CURSOS DE CAPACITACION RELACIONADOS CON MSA, MEDICION CON MMC, EVALUACION DE INCERTIDUMBRE DE MEDICION, DETERMINACION DE INTERVALOS DE CALIBRACION Y TRAZABILIDAD, NORMALIZACION Y SISTEMAS DE GESTION.',12),
-	 (326,1,false,5,4,23,1,202302,202312,'LABORATORIO DE METROLOGÍA','CURSOS DE CAPACITACION ESPECIFICA - SERVICIOS A EMPRESAS',12),
-	 (571,1,false,14,4,17,1,202302,202312,'Registro de tecnologías químicas.','ASESORÍAS Y CONSULTORÍAS',12),
-	 (328,1,false,20,4,5,1,202302,202312,'GE-LAB. (Lab. de Gobierno Electrónico) Ing. Sistemas','Procesos de Gestión, Optimización, Digitalización, Despapelización, Reingeniería, Modelo Estandar, NotaciónBPM-BPMN.',12),
-	 (329,1,false,3,4,5,1,202302,202312,'DHARMAa (lab. Desarrollo de Herramientas de Aprendizaje y Razonamiento con Máquinas) Ing, Sist.','Desarrollo de Herramientas de Aprendizaje y Razonamiento con Máquinas.',12),
-	 (330,1,false,9,4,5,1,202402,202412,'LITAPS (Lab. de integración de tecnologías Aplicadas a Prototipos de software) Ing. Sist.','Desarrollo experimental de Prototipos de Software.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (330,1,false,9,4,5,1,202402,202412,'LITAPS (Lab. de integración de tecnologías Aplicadas a Prototipos de software) Ing. Sist.','Desarrollo experimental de Prototipos de Software.',12),
 	 (331,1,false,9,4,5,1,202402,202412,'LADEI (LABORATORIO DE INFORMÁTICA) Ing. Sist.','Laboratorio de Desarrollo de software, Web, aplicaciones para móviles, donde prevalece el estudio de nuevas herramientas para investigación, Desarrollo de Investigación, Desarrollo e investigación.',12),
 	 (332,1,false,21,4,5,1,202302,202312,'LICPaD (Lab. de Inv. en cómputo Paralelo Distribuido) Ing. Sis','Cómputo paralelo/Distribuido, Procesamiento paralelo, HPC, Reducción de incertidumbre, Metaheurísticas, Desarrollo y Sintonización de Aplicaciones paralelas, Predicción de Incendios Forestales.',12),
 	 (333,1,false,10,4,5,3,202302,202312,'ADA ( líneas de trabajo) Ing. en Sistemas.','Analítica de datos aplicada a distintos contextos organizacionales',12),
-	 (334,1,false,6,4,5,2,202302,202312,'REAVI (Lab. investigación en Ingeniería del Software con contenido de Realidad Aumentada / Virtual) Ing. Sist.','Tecnologías de Realidad Virtual,Aumentada y mixta en Educación, Neuroingeniería e Industria; y Metodologías de Ing. de sofware para contenidos de realidad aumentada / Virtual. Sistemas de Automatización y control de procesos. Ing. de sistemas de monitoreo y control para pequeños emprendimientos.',12),
+	 (334,1,false,6,4,5,2,202302,202312,'REAVI (Lab. investigación en Ingeniería del Software con contenido de Realidad Aumentada / Virtual) Ing. Sist.','Tecnologías de Realidad Virtual,Aumentada y mixta en Educación, Neuroingeniería e Industria; y Metodologías de Ing. de sofware para contenidos de realidad aumentada / Virtual. Sistemas de Automatización y control de procesos. Ing. de sistemas de monitoreo y control para pequeños emprendimientos.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (337,1,false,10,3,9,3,202504,202506,'Capacitación sobre herramientas de inteligencia artificial','Herramientas de inteligencia artificial. Capacitaciones en herramientas modernas de la inteligencia artificial y disciplinas relacionadas para su integración en procesos de negocio.',3),
 	 (339,1,false,23,1,9,2,202402,202412,'Capacitaciones en Oficios','Diplomaturas y cursos en Oficios: Soldadura; Instalación y reparación de aire acondicionado; Albañilería.
 Diplomaturas con una duración de 90 horas a 200 horas 
@@ -3748,22 +3724,23 @@ Cursos de capacitación con una duración de hasta 90 horas.',12),
 	 (342,1,false,12,1,9,3,202302,202312,'Capacitaciones sobre Ingeniería civil y construcción','Diplomaturas y cursos en temáticas Diseño e ingeniería civil: Diseño y construcción de muebles modulares de placas de biomasa forestal; Albañilería; Instalaciones sanitarias. Diplomaturas con una duración de 90 horas a 200 horas 
 Cursos de capacitación con una duración de hasta 90 horas.',12),
 	 (345,1,false,13,4,2,3,202302,202312,'Sistemas de Gestión de Calidad, Medio Ambiente y Seguridad, y Salud Ocupacional','Contenidos: Introducción a los Sistemas. Duración 8 hs.                                                           Documentación de los Sistemas. Duración 8hs .                                                                    Implementación y Auditoria. Duración 16 hs.                                                                         Implementación de un Sistema de Gestión Integral 16 hs.                                                                                    Sobre normas: ISO 9001 Sistema de Gestión de Calidad. ISO 14001 Sistema de Gestión Medio Ambiental. OSHAS 18001 Sistema de Gestión Seguridad y Salud Ocupacional.',12),
-	 (346,1,false,20,3,2,3,202303,202311,'Capacitación sobre Estudios de Impacto Ambiental y Social','Contenidos: Conocimientos para la realización de estudios de Impacto ambiental  y Social. Planificación e implementación eficaz de un Sistema de Gestión Ambiental.                                                                                                                      Duración: 16 hs',6);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (346,1,false,20,3,2,3,202303,202311,'Capacitación sobre Estudios de Impacto Ambiental y Social','Contenidos: Conocimientos para la realización de estudios de Impacto ambiental  y Social. Planificación e implementación eficaz de un Sistema de Gestión Ambiental.                                                                                                                      Duración: 16 hs',6),
 	 (347,1,false,20,3,2,3,202508,202510,'Capacitación sobre Sistema de Gestión para Procesos','Contenidos: Formalización de la Estructura de la organización. Elaboración del Organigrama.  Estudio del Estado Organizacional. Diagrama de Procesos, interaccion entre los mismo. Elaboración del Manual de Procedimientos y Organizacional.                                                                                               Duración: 18 hs.',3),
 	 (348,1,false,20,3,2,3,202309,202311,'Capacitación sobre Evaluación de Proyectos de Inversión','Contenido: Evaluación de Proyectos de Inversión Lucrativos y Sociales. Estudio técnico y evaluación de inversiones y costos afectados al proyecto. Análisis Financiero y Económico. Elaboración de Plan de Negocio. Análisis del costo Social del proyecto. TIR. VAN                                                                             Duración: 24 hs.',3),
 	 (349,1,false,13,3,2,1,202303,202311,'Capacitación en Análisis de efluentes Industriales','Contenido: Análisis de efluentes industriales. Prácticas en análisis fisicoquímico y microbiologico de aguas y efluentes.                                                                                                                                  Carga horaria: 30 hs totales',6),
-	 (350,1,false,15,3,2,1,202504,202506,'Capacitación en Análisis de Alimentos','Contenido: Calidad e inocuidad de alimentos. implementación de técnicas analíticas y microbiológicas en los distintos grupos de alimentos (lácteos, cárnicos, panificados, entre otros)                                                                                                             Carga Horaria: 30 horas totales.',3),
+	 (350,1,false,15,3,2,1,202504,202506,'Capacitación en Análisis de Alimentos','Contenido: Calidad e inocuidad de alimentos. implementación de técnicas analíticas y microbiológicas en los distintos grupos de alimentos (lácteos, cárnicos, panificados, entre otros)                                                                                                             Carga Horaria: 30 horas totales.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (352,1,false,13,3,30,1,202404,202406,'Taller Aproximación a la Sustentabilidad en los Edificios y en las Infraestructuras','Visión desde las ópticas del Análisis del Ciclo de Vida y la Huella de Carbono.',3),
 	 (353,1,false,7,3,30,1,202503,202505,'Curso sobre Arduino','Plataforma para desarrollar proyectos de electrónica de código abierto, es simple y accesible.',3),
 	 (354,1,false,9,3,30,1,202504,202506,'Curso sobre Python','Lenguajes de programación requeridos en la actualidad. Puede utilizarse para el desarrollo de aplicaciones web, procesamiento de datos, entre otros usos.',3),
 	 (355,1,false,24,3,30,1,202403,202411,'FODA Estratégico','Se plantean las acciones que deberíamos poner en marcha para aprovechar las oportunidades detectadas y a preparar a nuestra organización contra las amenazas teniendo conciencia de nuestras debilidades y fortalezas.',6),
 	 (356,1,false,10,3,30,1,202303,202311,'Taller de Transformación Digital para PYMES','Capacitación para mi PYMES sobre: Manufactura aditiva, robótica, inteligencia artificial y lean management.',6),
-	 (358,1,false,14,3,30,3,202508,202510,'Capacitación Destinada al Personal del Área de Obras Sanitarias','El Laboratorio de Agua de la Facultad Regional Trenque Lauquen de la UTN, ensaya sobre buenas prácticas para los muestreos, tanto para análisis bacteriológicos como físico-químicos, y se explican protocolos de análisis para el correcto funcionamiento del control interno del área.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (358,1,false,14,3,30,3,202508,202510,'Capacitación Destinada al Personal del Área de Obras Sanitarias','El Laboratorio de Agua de la Facultad Regional Trenque Lauquen de la UTN, ensaya sobre buenas prácticas para los muestreos, tanto para análisis bacteriológicos como físico-químicos, y se explican protocolos de análisis para el correcto funcionamiento del control interno del área.',3),
 	 (359,1,false,10,3,30,2,202408,202410,'Taller de Transformación Digital para PYMES','Capacitación sobre manufactura aditiva, robótica, inteligencia artificial y lean management para PYMES.',3),
+	 (422,1,false,19,4,25,1,202302,202312,'ANÁLISIS Y OPTIMIZACIÓN DE PROCESOS','Optimizar las operaciones, mejorar la calidad y reducir los costos eliminando ineficiencias y errores.',12),
 	 (360,1,false,24,3,30,2,202304,202306,'Capacitación en Género para Equipo Coordinador','El objetivo de la actividad es  coordinar las actividades que va a desempeñar el equipo de trabajo durante todo el año, consolidar el grupo y sentar nociones, conocimientos y acuerdos para el desarrollo del proyecto.',3),
-	 (361,1,false,1,3,5,1,202303,202311,'capacitación en Riesgo Eléctrico','Capacitaciones para operarios en la Industria y el petróleo',6),
+	 (361,1,false,1,3,5,1,202303,202311,'capacitación en Riesgo Eléctrico','Capacitaciones para operarios en la Industria y el petróleo',6);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (363,1,false,16,3,5,3,202403,202411,'capacitación oficio Instrumentista','capacitación o certificación para operarios en la Industria y el Petróleo',6),
 	 (364,1,false,16,3,5,3,202303,202305,'capacitación oficio Cañista-Tubista','Capacitaciones o certificaciones para operarios en la Industria del Petróleo',3),
 	 (365,1,false,3,3,5,2,202504,202506,'Certificación oficio Mecánica','Capacitacion o certificación para operarios en la Industria del Petróleo',3),
@@ -3775,12 +3752,12 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 • Resolver problemas vinculados con la seguridad personal o de otras personas durante la realización de actividades laborales.
 • Conocer sobre la selección, correcto uso y conservación de los Elementos de Protección Personal y Colectiva.',3),
 	 (370,1,false,3,3,13,1,202403,202411,'Soldaduras para Calificar','• Formar personal en técnicas de Soldado para calificar según Normas Internacionales de estandarización. Adiestrar en las Mecánica de soldadura y fenómenos asociados al personal de Empresas metalmecánicas. Instruir en los diferentes Tipos de probetas de calificación y posiciones de calificación.
-• Conocer los Tipos de ensayos de verificación de calidad de cordón soldado.',6);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+• Conocer los Tipos de ensayos de verificación de calidad de cordón soldado.',6),
 	 (371,1,false,8,3,13,1,202309,202311,'Programa de Formación en Tendido y Mantenimiento de Fibra Óptica','Actualmente existe una demanda creciente de técnicos para la construcción y mantenimiento de redes de fibra óptica. Esto se da en el marco de una migración de las redes tradicionales hacia las de fibra, por las ventajas técnicas y económicas que estas tienen.
 Los proveedores de internet (ISP), las cooperativas, cámaras del rubro y empresas encuentran una limitación a sus operaciones por la escasez de técnicos formados en la temática. Sumando a esto, los proyectos que se llevan adelante desde el Estado para la disminución de la brecha digital también se ven ralentizados por esta razón.',3),
 	 (372,1,false,1,3,13,1,202309,202311,'Gestión de la Energía en Edificios Comerciales y Públicos','Formar profesionales involucrados en la gestión operación y actualización de los sistemas para minimizar el uso de energía, de manera que sean capaces de lograr ahorros económicos, con enfoque hacia la sustentabilidad y con conocimientos de energías renovables aplicables',3),
-	 (373,1,false,2,3,13,1,202409,202411,'Generadores Fotovoltaicos de Baja Potencia','Introducir a los alumnos en conocimientos específicos relacionados al funcionamiento, diseño, operación y mantenimiento de sistemas fotovoltaicos de baja potencia, tanto del tipo “on-grid” como “off-grid”. Al finalizar el curso el alumno debe ser capaz de evaluar el recurso solar disponible en el lugar donde se emplace su proyecto y dimensionar adecuadamente un sistema fotovoltaico sencillo que cubra sus necesidades energéticas',3),
+	 (373,1,false,2,3,13,1,202409,202411,'Generadores Fotovoltaicos de Baja Potencia','Introducir a los alumnos en conocimientos específicos relacionados al funcionamiento, diseño, operación y mantenimiento de sistemas fotovoltaicos de baja potencia, tanto del tipo “on-grid” como “off-grid”. Al finalizar el curso el alumno debe ser capaz de evaluar el recurso solar disponible en el lugar donde se emplace su proyecto y dimensionar adecuadamente un sistema fotovoltaico sencillo que cubra sus necesidades energéticas',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (374,1,false,9,3,13,1,202303,202305,'Desarrollador de Aplicaciones Móviles con Android','Brindar al alumno las herramientas necesarias para poder desarrollar aplicaciones móviles para dispositivos Android, usando todas las características de los mismos, aprovechando los diversos sensores y las API brindadas. Consolidar el conocimiento en el lenguaje Java y el uso de herramientas como Android Studio y Git.',3),
 	 (375,1,false,20,3,13,1,202504,202506,'Desarrollador de Aplicaciones Empresariales con Java','• Que el alumno consolide sus conocimientos de tecnologías Java.
 • Se encontrará capacitado para desplegar aplicaciones distribuidas, que ejecuten en contenedores virtualizados, basadas en API Rest, con interfaces web modernas, basadas en AJAX, teniendo en cuenta aspectos vitales de la ingeniería de software como la gestión de versiones con Git, el aseguramiento de la calidad con JUnit, o la gestión de la configuración con Maven. Además, podrá interactuar con bases de datos relacionales a través del API Jpa y la implementación Hibernate',3),
@@ -3790,6 +3767,9 @@ Los proveedores de internet (ISP), las cooperativas, cámaras del rubro y empres
 	 (396,1,false,1,3,13,3,202309,202311,'Higiene y Seguridad – Riesgo Eléctrico','La energía eléctrica es utilizada prácticamente en todas las actividades, es indispensable identificar los riesgos presentes al momento de utilizar la misma o de realizar un trabajo eléctrico. Contar con herramientas metodológicas es fundamental para prevenir la ocurrencia de accidentes, y por otro lado conocer las exigencias de la normativa para cumplimentar los distintos trabajos de manera segura.',3),
 	 (378,1,false,20,3,13,1,202403,202405,'Eficiencia energética en PyMEs y en Municipios','Conocer, identificar y aplicar distintas metodologías para la correcta gestión de la energía que permita la mejora del desempeño energético en organizaciones del sector industrial, comercial o público.
 Aplicar buenas prácticas operativas para la implementación de acciones con vistas a realizar un consumo eficiente de la energía, su consecuente mejoramiento en el desempeño ambiental y la reducción de costos operativos. Estas acciones permitirán mejorar la productividad y contribuir a la disminución de los impactos sobre el ambiente y la mitigación del cambio climático.',3),
+	 (423,1,false,11,3,25,1,202303,202311,'TRASPASOS GENERACIONALES','Comprender el proceso que las empresas familiares deben planificar y ejecutar en la transición de la empresa a una nueva generación.',6),
+	 (424,1,false,11,4,25,1,202402,202412,'DIAGNÓSTICOS ORGANIZACIONALES','Aprender a analizar detalladamente las fortalezas y áreas a mejorar en una organización que influye en su efectividad.',12),
+	 (425,1,false,24,4,25,1,202402,202412,'AUDITORIA TANQUE SUBTERRÁNEO','Según resolución  1102/404 S.G.D.A',12),
 	 (381,1,false,20,2,13,1,202303,202305,'Gestión de Mantenimiento de Plantas Industriales','En el marco de una industria cada vez más competitiva, una correcta estrategia y gestión del mantenimiento es fundamental para garantizar un funcionamiento eficiente de las instalaciones y de los activos. Esto redundará en mejoras de la productividad, eficiencia de proceso, calidad, incidentes de seguridad y costos asociados al Mto. Se aprenderá los pasos para implementar un sistema de gestión, tipos de mantenimiento y analizar la información que el sistema nos brinda a fin de realizar de mejora continua. Su correcta implementación nos permitirá evolucionar a sistemas de Mto. avanzados como ser RCM/TPM.',3),
 	 (382,1,false,17,3,13,2,202404,202406,'Formación en Herramientas para la mejora de la productividad y prevención de la salud en Pymes','En un mundo globalizado las empresas, ya sea industriales, comerciales o de servicios, enfrentan la necesidad de mejorar sus niveles de eficiencia y productividad para mantenerse competitivas.
 Las técnicas del Estudio de Métodos y Tiempos permiten examinar el trabajo humano en todos sus contextos y que llevan sistemáticamente investigar todos los factores que influyen en la eficiencia y economía.
@@ -3811,6 +3791,7 @@ Promover la tecnología del Bloque de Tierra Comprimida y generar la infraestruc
 El conocimiento referido a los costos de las organizaciones, independientemente de su dimensión, estructura y actividad, se vuelve fundamental. Abordar conceptos fundamentales de costos y herramientas útiles para la toma de decisiones en base a la Teoría General de Costos, en el marco de la gestión de las organizaciones y con un enfoque general en los procesos productivos y/o administrativos.',3);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (397,1,false,9,3,13,3,202409,202411,'Hardware libre e IoT (Arduino y ESP)','Arduino y ESP8266 son plataformas de hardware libre, de difusión masiva, desarrollada para facilitar la integración de la electrónica y las comunicaciones WiFi en proyectos generales de aplicación. El curso propone el estudio del ecosistema Arduino y la integración del módulo WiFi ESP8266, explorando sus posibilidades de aplicación. Se introducirá al alumno a la programación mediante ejemplos prácticos, abordando los temas desde un nivel inicial, hasta el desarrollo de un proyecto integral donde se vuelque todo el contenido estudiado.',3),
+	 (426,1,false,24,4,25,1,202402,202412,'AUDITORIA TANQUES AÉREOS','Según resolución  1102/404 S.G.D.A',12),
 	 (398,1,false,1,3,13,1,202403,202411,'Instrumentación y Mediciones eléctricas','Los constantes avances tecnológicos realzan la necesidad de actualizar conocimientos sobre los tipos de cargas en una industria u hogar, como también sobre distintos instrumentos, diseñados para medir los diversos valores de consumo y alimentación. El curso pretende introducir lo necesario para desenvolverse en la actualidad de forma idónea. Como ejemplo, se analizarán medidas eléctricas relacionadas a las tecnologías LED, donde el tipo de instrumento elegido puede ser la diferencia para una correcta medición, equipos auxiliares y mediciones especiales, como los usados en termografía.',6),
 	 (399,1,false,1,3,13,1,202303,202305,'Energías Renovables: Solar','Actualmente, existen distintas alternativas viables para el aprovechamiento de la energía solar, tanto para la producción de energía eléctrica como térmica. En este curso se brindan conocimientos básicos relacionados con aprovechamientos eléctricos y térmicos orientados a baja potencia y se focaliza en el diseño y mantenimiento de sistemas fotovoltaicos. Se tratan aspectos relacionados al funcionamiento, diseño y operación de los generadores fotovoltaicos y calefones solares. El curso se complementa con la resolución práctica de algunos ejercicios propuestos en clases',3),
 	 (400,1,false,1,4,13,1,202302,202312,'Instalaciones Eléctricas','Conoceremos las normativas aplicables a las instalaciones eléctricas, abordaremos las consideraciones técnico - económicas y determinación de las demandas máximas en las instalaciones, como así también una introducción al estudio de cortocircuitos, para el posterior diseño de canalizaciones y conductores eléctricos, conceptos aplicables a nivel domiciliario y a niveles industriales. Estudiaremos los distintos esquemas de conexión de un sistema de puesta a tierra, el concepto de resistividad del terreno y el diseño de una jabalina de puesta a tierra. Analizaremos los efectos de la corriente sobre el cuerpo humano para luego entender el ¿Por qué? de las protecciones eléctricas y cuáles son las más utilizadas en las instalaciones.',12),
@@ -3819,9 +3800,9 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (404,1,false,6,3,13,1,202408,202410,'Automatización Industrial','Es inimaginable en la actualidad, la existencia de una industria moderna sin un completo sistema de instrumentación y control. El Controlador Lógico Programable (PLC) representa el elemento central de comando de este sistema. Este curso pretende que el alumno, con o sin experiencia en programación de PLC, sean capaces de implementar desde cero secuencias y algoritmos de programación para distintos tipos de procesos, ampliando el espectro de aplicaciones y utilizando al PLC como base de un sistema automático integrado a una red industrial.',3),
 	 (405,1,false,19,3,13,3,202403,202411,'Eficiencia Energética en la Industria','La eficiencia energética implica usar bien la energía, porque significa ahorrar sin perder en calidad de vida o en calidad de producción. En este módulo se analizarán los distintos sistemas que consumen energía en una industria, y las distintas estrategias de ahorro.',6),
 	 (406,1,false,20,3,13,1,202504,202506,'Domótica','La domótica define la incorporación a la vivienda de elementos que permiten su control y gestión, aumentando el bienestar y la seguridad de sus habitantes, y racionalizando los consumos energéticos. El enfoque está en los servicios que ofrece el hogar a los usuarios, el ahorro energético, la seguridad, el confort y las comunicaciones son los aspectos que permiten mejorar la calidad de vida.
-La palabra clave de la domótica es la integración, y pretende por tanto ser el nexo de unión de las tecnologías hogareñas con el objetivo de potenciar el hogar digital',3),
-	 (407,1,false,1,3,13,1,202308,202310,'Calidad de la Energía Eléctrica','En este curso se hace un análisis general de todas las perturbaciones que pueden afectar a los usuarios de la red eléctrica y se detalla sobre aspectos relacionados a las posibles causas, efectos y alternativas de solución. Se detalla sobre el uso de analizadores de red y sobre la interpretación de las campañas de medición.',3);
+La palabra clave de la domótica es la integración, y pretende por tanto ser el nexo de unión de las tecnologías hogareñas con el objetivo de potenciar el hogar digital',3);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (407,1,false,1,3,13,1,202308,202310,'Calidad de la Energía Eléctrica','En este curso se hace un análisis general de todas las perturbaciones que pueden afectar a los usuarios de la red eléctrica y se detalla sobre aspectos relacionados a las posibles causas, efectos y alternativas de solución. Se detalla sobre el uso de analizadores de red y sobre la interpretación de las campañas de medición.',3),
 	 (408,1,false,1,3,13,2,202308,202310,'Aprovechamiento térmico y eléctrico de la Energía Solar','En este curso se brindan conocimientos básicos relacionados con aprovechamientos eléctricos y térmicos orientados a baja potencia y se focaliza en el diseño y mantenimiento de sistemas fotovoltaicos. Se tratan aspectos relacionados al funcionamiento, diseño y operación de los generadores fotovoltaicos y calefones solares. El curso se complementa con la resolución práctica de algunos ejercicios propuestos en clases.',3),
 	 (409,1,false,10,3,13,1,202308,202310,'AgTech: Tecnologías aplicadas al Agro','Este curso tiene como objetivo dar a conocer el uso de las nuevas AgTech que existen para ser capaces de recolectar y analizar datos necesarios para la toma de decisiones inteligentes consiguiendo ser más eficientes.',3),
 	 (410,1,false,10,3,10,1,202403,202411,'CAPACITACIÓN EN TRANSFORMACIÓN DIGITAL','Capacitaciones en transformación digital e industria 4.0 adaptada a la necesidad de la contraparte en cuanto a duración, cantidad y cargo de los participantes.',6),
@@ -3830,14 +3811,8 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (413,1,false,24,3,25,3,202303,202305,'ASESORAMIENTO EN EL DISEÑO DE POLÍTICAS PÚBLICAS','Saber realizar la estructura secuencial del plan o programa en objetivos, actividades y recursos.',3),
 	 (419,1,false,6,3,25,3,202403,202411,'AUTOMATIZACIÓN DE PROCESOS INDUSTRIALES','Aplicar nuevas tecnologías y sistemas informáticos en organizaciones industriales. Se conocen y utilizan técnicas e instrumentación para desarrollar procesos modernos y computarizados.',6),
 	 (420,1,false,20,2,25,2,202404,202406,'ORGANIZACIÓN DE LA GESTIÓN DE MANTENIMIENTO','Implementar un sistema de gestión, los distintos tipos de mantenimiento y cómo analizar la información para mejorar continuamente.',3),
-	 (421,1,false,20,2,25,2,202303,202305,'ORGANIZACIÓN DE LA GESTIÓN DE MANTENIMIENTO','Implementar un sistema de gestión, los distintos tipos de mantenimiento y cómo analizar la información para mejorar continuamente.',3),
-	 (422,1,false,19,4,25,1,202302,202312,'ANÁLISIS Y OPTIMIZACIÓN DE PROCESOS','Optimizar las operaciones, mejorar la calidad y reducir los costos eliminando ineficiencias y errores.',12);
+	 (421,1,false,20,2,25,2,202303,202305,'ORGANIZACIÓN DE LA GESTIÓN DE MANTENIMIENTO','Implementar un sistema de gestión, los distintos tipos de mantenimiento y cómo analizar la información para mejorar continuamente.',3);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
-	 (423,1,false,11,3,25,1,202303,202311,'TRASPASOS GENERACIONALES','Comprender el proceso que las empresas familiares deben planificar y ejecutar en la transición de la empresa a una nueva generación.',6),
-	 (424,1,false,11,4,25,1,202402,202412,'DIAGNÓSTICOS ORGANIZACIONALES','Aprender a analizar detalladamente las fortalezas y áreas a mejorar en una organización que influye en su efectividad.',12),
-	 (425,1,false,24,4,25,1,202402,202412,'AUDITORIA TANQUE SUBTERRÁNEO','Según resolución  1102/404 S.G.D.A',12),
-	 (426,1,false,24,4,25,1,202402,202412,'AUDITORIA TANQUES AÉREOS','Según resolución  1102/404 S.G.D.A',12),
-	 (428,1,false,24,4,25,3,202302,202312,'AUDITORIA BATANES','Según resolución  1102/404 S.G.D.A',12),
 	 (429,1,false,14,4,5,1,202302,202312,'LABORATORIO DE METALURGIA','SERVICIOS DEL
 LABORATORIO
 •	Ensayos para determinar la composi- ción química de aceros con base Fe: C, Si, Mn, Cr, Mo, Ni, Co, Cu, Ti, V, W,
@@ -3853,39 +3828,39 @@ Pb, Al, Fe. También contamos con ba- ses Al, Co, Cu, por espectrometría de mas
 	 (430,1,false,20,4,19,2,202402,202412,'Gestión y administración de Proyectos','Gestión, Administración de Investigación aplicada (convocatorias del MinCyT)',12),
 	 (431,1,false,1,3,19,1,202404,202406,'Evaluación de electricistas matriculados','Evaluación de aspirantes a electricistas matriculados, de matriculados en servicio y capacitación de inspectores.',3),
 	 (432,1,false,24,4,19,1,202302,202312,'Asesoría en armado y operación de Drones','Se brinda asesoría técnica a interesados en armado y operación de vehículos no tripulados. Asesoría en usos posibles.',12),
-	 (434,1,false,19,4,4,1,202402,202412,'Reportes de sostenibilidad','Elaboración de informes que evalúan el impacto ambiental, social, y económico de las operaciones empresariales, fomentando la transparencia y la responsabilidad corporativa.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (434,1,false,19,4,4,1,202402,202412,'Reportes de sostenibilidad','Elaboración de informes que evalúan el impacto ambiental, social, y económico de las operaciones empresariales, fomentando la transparencia y la responsabilidad corporativa.',12),
 	 (437,1,false,7,3,4,3,202403,202411,'Diseño de página web','Desarrollo y diseño de sitios web para empresas locales, mejorando su presencia digital y facilitando el acceso a sus productos o servicios al mercado',6),
 	 (439,1,false,19,4,4,1,202402,202412,'Caracterización de materiales','Análisis de las propiedades físicas y químicas de los materiales para mejorar su desempeño y aplicabilidad en procesos industriales, optimizando su uso en la producción y fomentando la innovación.',12),
 	 (440,1,false,2,4,19,1,202402,202412,'Ensayos y Mediciones Industriales','Sector secundario o manufacturero: Automotriz y electromecánica',12),
 	 (441,1,false,13,3,19,3,202409,202411,'Auditoría de proceso de medición Industrial','Se audita formación de Recursos Humanos, normativa aplicables, condiciones ambientales de la medición, instrumental y equipamiento utilizado.',3),
-	 (442,1,false,20,4,1,1,202302,202312,'Análisis de Costos Agropecuarios','Costeo de actividades agropecuarias y agronegocios de la zona de influencia.',12),
+	 (442,1,false,20,4,1,1,202302,202312,'Análisis de Costos Agropecuarios','Costeo de actividades agropecuarias y agronegocios de la zona de influencia.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (443,1,false,13,4,11,1,202402,202412,'Consultoria Ambiental','La consultoría ambiental se centra en ofrecer un asesoramiento cualificado y profesional en materia ambiental para empresas, organizaciones y particulares.',12),
 	 (444,1,false,24,4,24,1,202402,202412,'GRUPO MEDIOAMBIENTE','Determinación de indicadores físico químicos',12),
 	 (507,1,false,7,4,26,3,202402,202412,'Gobierno abierto y competencias laborales en el sector público','Desarrollo de competencias en ciudadanos y goberanantes en el marco de nuevos paradigmas digitales',12),
 	 (508,1,false,8,4,26,1,202302,202312,'Analisis de redes sociales','El análisis de redes sociales es una aproximación metodológica con el fin de estudiar relaciones entre actores,  personas, organizaciones, países o cosas',12),
 	 (446,1,false,8,4,22,1,202302,202312,'Seguridad Electrónica y videovigilancia avanzada','Sotfware y servicos informáticos / Telecomunicaciones 
 Diseño e implementacion de sistemas de videovigilancia básicos y avanzados. Diseños e implementación de Centros de Monitoreo escalables y flexibles. Diseño de red de seguridad de videovigilancia sobre tecnología EPON, GPON, con enlaces de fibra óptica P2P o radios enlaces. 
- Dimensionamiento de storage de almacenamiento de cámaras de seguridad. Consultoria, diseño e implementación de soluciones de videovigilancia con Inteligencia Artificial, controles perimetrales, detecciones de rostros, patentes, gestos y movimientos. Integracion de controles de accesos.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+ Dimensionamiento de storage de almacenamiento de cámaras de seguridad. Consultoria, diseño e implementación de soluciones de videovigilancia con Inteligencia Artificial, controles perimetrales, detecciones de rostros, patentes, gestos y movimientos. Integracion de controles de accesos.',12),
 	 (447,1,false,2,3,22,2,202303,202311,'Mantenimiento, proyectos de ingenieria, formación y capacitación.','Relevamientos técnicos, realización de estudios e informes, entregables en tiempo y forma, programas de formación y capacitación en temas específicos de la ingeniería y del actividad industrial que se trate.',6),
 	 (725,1,false,20,4,30,2,202302,202312,'Consultorías para Emprendedores y PyMES','Espacio de consultoría sobre Comercio Electrónico, Marketing Digital, Redes Sociales, Acceso a Herramientas del Estado, Revisión de Modelo de Negocio, Acompañamiento y Orientación General.',12),
 	 (448,1,false,1,3,18,1,202308,202310,'Certificación de oficio - Operador de baja tensión (Res. 3068/14)','Certificación de los conocimientos y aptitudes de los trabajadores que realizan tareas de carácter técnico/eléctrico en procesos productivos, con el fin de constatar la idoneidad y competencias especificas requeridas para su tarea.',3),
 	 (449,1,false,23,3,18,3,202303,202311,'Certificación de oficio - Operador de equipos de Izajes.','Certificación de los conocimientos y aptitudes de los trabajadores que realizan tareas de manejo de maquinarias de izaje, con el fin de constatar la idoneidad y competencias especificas requeridas para la tarea.',6),
-	 (450,1,false,3,3,18,3,202503,202505,'Certificación de oficio - Operador de Autoelevador (Res 960/15)','Certificación de los conocimientos y aptitudes de los trabajadores que realizan tareas de manejo de maquinas industriales, con el fin de constatar la idoneidad y competencias especificas requeridas para la tarea.',3),
+	 (450,1,false,3,3,18,3,202503,202505,'Certificación de oficio - Operador de Autoelevador (Res 960/15)','Certificación de los conocimientos y aptitudes de los trabajadores que realizan tareas de manejo de maquinas industriales, con el fin de constatar la idoneidad y competencias especificas requeridas para la tarea.',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (451,1,false,1,3,18,1,202408,202410,'Certificación de oficio - Eléctrico.','Certificación de los conocimientos y aptitudes de los trabajadores que realizan tareas de carácter eléctrico en procesos productivos, con el fin de constatar la idoneidad y competencias especificas requeridas para su tarea.',3),
 	 (452,1,false,4,3,18,2,202304,202306,'Certificación de oficio - Soldador','Certificación de los conocimientos y aptitudes de los trabajadores que realizan tareas de soldadura, con el fin de constatar la idoneidad y competencias especificas requeridas para su tarea.',3),
 	 (453,1,false,23,3,18,1,202304,202306,'Certificación de Oficios - Mecánico','Certificación de los conocimientos y aptitudes de los trabajadores que realizan tareas de carácter técnico en procesos productivos, con el fin de constatar la idoneidad y competencias especificas requeridas para su tarea.',3),
 	 (454,1,false,21,3,19,3,202304,202306,'Auditorias técnicas y de seguridad en instalaciones de GLP Resol. 404/94 y 1097/2015','Auditoría y certificación de tanques, realización de informes, entrega de certificados.',3),
 	 (455,1,false,1,3,24,1,202308,202310,'GRUPO DE INVESTIGACION DE DESCARGAS ELECTRICAS','-	Formación de recursos humanos especializados en Física del Plasma con capacidad de implementación de diversas técnicas de diagnóstico para el estudio de los plasmas producidos.
 -	Formación de recursos humanos especializados en Física del Plasma con capacidad de implementación de códigos numéricos para el estudio de los plasmas producidos.
--	Asesoramiento y transferencia de conocimientos a empresas tecnológicas.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+-	Asesoramiento y transferencia de conocimientos a empresas tecnológicas.',3),
 	 (456,1,false,20,3,6,1,202504,202506,'Gestión Integral de Proyectos del Programa de Crédito Fiscal del INET','Asistencia Técnica para la formulación, gestión de recursos, diseño de contenidos, administración económica, vinculación y convenios, en los establecimientos educativos del RFIETP, en vinculación con Fundación Loma Negra y Fundación YPF.',3),
 	 (458,1,false,8,3,16,2,202403,202405,'GRUPO DE ESTUDIOS DE ESTRUCTURAS CIVILES','El Grupo de Estudio de Estructuras, en adelante GEDEC, tiene como misiones fomentar la investigación por medio de la elaboración y ejecución de proyectos de investigación, desarrollo e innovación, generando conocimiento y creando valor, que aporten al desarrollo del sector productivo y académico, de organizaciones públicas y privadas, de la región y el país; contribuir con la formación de recursos humanos de grado y posgrado; difundir los temas relativos a la especialidad; participar y/o organizar reuniones científicas, cursos, conferencias, seminarios o cualquier otra actividad que contribuya al logro de los objetivos propuestos; integrar redes de investigadores aplicando y transfiriendo los conocimientos con grupos afines a la temática',3),
 	 (459,1,false,1,4,16,1,202402,202412,'GRUPO DE SERVICIOS ENERGÉTICOS','GRUSE tiene entre sus actividades el asesoramiento y realización del diseño de proyectos relacionados con el aprovechamiento de las energías renovables y el uso racional de la energía a organismos gubernamentales y empresas privadas.',12),
 	 (461,1,false,19,4,16,1,202302,202312,'CONSULTORIO DE COMERCIO INTERNACIONAL','CONEXPORTA busca brindar un servicio a los micro emprendimientos, a jóvenes profesionales y a pequeños empresarios, que por su bajo volumen de producción o su condiciones limitadas en cuanto a infraestructura no son atendidos por los sistemas convencionales de asesoramiento de exportación (cámaras, profesionales en comercio exterior, despachantes, entidades gubernamentales, y otros)',12),
-	 (509,1,false,20,4,26,3,202402,202412,'Calidad','Gestion de la calidad y revision de procesos para identificar oportunidades de mejora.',12),
+	 (509,1,false,20,4,26,3,202402,202412,'Calidad','Gestion de la calidad y revision de procesos para identificar oportunidades de mejora.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (462,1,false,14,4,16,1,202402,202412,'LABORATORIO DE INNOVACIÓN INGENIERÍA Y DISEÑO','LAIN2DI es un espacio dedicado a la innovación abierta centrada en los usuarios, donde se pueden crear nuevos modelos productivos. Los laboratorios de innovación destacan por ofrecer un espacio físico que pone a las personas en el centro del proceso.
 El Laboratorio de Innovación en Ingeniería y Diseño realiza cuatro actividades principales:
 •	Co-Creación: Co-diseño por usuarios y estudiantes.
@@ -3902,8 +3877,7 @@ En este sentido el Grupo busca integrar diversas disciplinas como la física, el
 	 (466,1,false,13,4,16,2,202302,202312,'GRUPO DE SOSTENIBILIDAD Y ECONOMÍA CIRCULAR','Debemos construir una recuperación inclusiva y resiliente, con una creciente actividad económica innovadora y regenerativa.
 Economía Circular: una visión compartida
 La economía circular brinda la oportunidad de repensar la forma en que funciona nuestra economía y nuestra sociedad. Al reinventar la producción y el consumo, desde los productos hasta los sistemas.',12),
-	 (467,1,false,20,4,16,1,202402,202412,'GRUPO DE GESTIÓN DE PROPIEDAD INDUSTRIAL','Somos agente del INPI (Instituto Nacional de Propiedad Industrial)  y conformamos la red de la OMPI (Organización Mundial de Propiedad Industrial). En este marco se trabaja en la Gestión de propiedad intelectual de marca de patentes, marcas diseño y modelos industriales.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (467,1,false,20,4,16,1,202402,202412,'GRUPO DE GESTIÓN DE PROPIEDAD INDUSTRIAL','Somos agente del INPI (Instituto Nacional de Propiedad Industrial)  y conformamos la red de la OMPI (Organización Mundial de Propiedad Industrial). En este marco se trabaja en la Gestión de propiedad intelectual de marca de patentes, marcas diseño y modelos industriales.',12),
 	 (468,1,false,20,3,16,1,202409,202411,'BUENAS PRACTICAS: Documentación e Integridad de datos Fábrica de Productos Médicos','1. Sistemas de Gestión de la Calidad: Introducción a la serie de Normas ISO 9000/ ISO 9001
 2. Disposición 3266/13 ANMAT
 3. ISO 19011 Auditorías internas de Calidad. Curso de Auditorías Internas.
@@ -3912,20 +3886,20 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 	 (470,1,false,22,4,16,3,202302,202312,'OPEN INNOVATION','Junto a la participación de estudiantes, graduados, investigadores y docentes capacitados para usar herramientas y métodos que estimulan la creatividad y las etapas de la innovación. Se conforman equipos organizados de tal forma de constituir un contexto de trabajo colaborativo real. 
 Bajo esta mirada, se trabaja en buscar soluciones por medio de modernas herramientas, tecnologías de diseño, arte, ingeniería y matemática.',12),
 	 (471,1,false,12,4,22,3,202402,202412,'Proyectos de Obras Civiles','Análisis, estudios, Cálculos y Proyectos vinculados a la obras civiles',12),
-	 (472,1,false,21,4,22,3,202302,202312,'Ergonomía - Ruido - Iluminación - Protección contra Incendio','Estudio Ergonómico, de Ruido e Iluminación de Puestos de Trabajos, Protección contra incendios.',12),
+	 (472,1,false,21,4,22,3,202302,202312,'Ergonomía - Ruido - Iluminación - Protección contra Incendio','Estudio Ergonómico, de Ruido e Iluminación de Puestos de Trabajos, Protección contra incendios.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (473,1,false,20,4,22,1,202302,202312,'Residuos Sólidos Urbanos','Gestión de Residuos Sólidos Urbanos',12),
 	 (474,1,false,13,4,22,3,202402,202412,'Calidad de agua y de aire','Calidad de agua (efluentes cloacales – efluentes industriales). - Calidad de aire (PM10)',12),
 	 (475,1,false,13,4,22,3,202302,202312,'Impactos ambientales','Estudios de impacto ambiental',12),
-	 (476,1,false,13,3,22,1,202503,202505,'Impacto Ambiental','Estudio y Evaluación de Impactos Ambientales',3),
 	 (477,1,false,16,4,22,2,202302,202312,'IMPLEMENTACIÓN Y MONITOREO DE SISTEMAS DE VIDEOVIGILANCIA PARA MINERÍA','Software y Servicios Informáticos
-Mejorar la calidad de los procesos optimizando la seguridad en planta. Identificar áreas de riesgo y proporcionar a los clientes las herramientas y soluciones necesarias para un mejor control de las operaciones. Análisis de la operación en conjunto con el cliente para determinar la estrategia de seguridad y videovigilancia a emplear. Ofrecemos reportes imparciales y con valor técnico. Diseño integral de proyectos de Sistemas de videovigilancia para empresas mineras.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+Mejorar la calidad de los procesos optimizando la seguridad en planta. Identificar áreas de riesgo y proporcionar a los clientes las herramientas y soluciones necesarias para un mejor control de las operaciones. Análisis de la operación en conjunto con el cliente para determinar la estrategia de seguridad y videovigilancia a emplear. Ofrecemos reportes imparciales y con valor técnico. Diseño integral de proyectos de Sistemas de videovigilancia para empresas mineras.',12),
 	 (478,1,false,12,4,12,1,202302,202312,'Desarrollo de Tecnología para la industria','Contribuir al desarrollo de tecnología y maquinarias aplicadas, realizando el diseño y desarrollo de equipos para el uso industrial. Entre los trabajos realizados se mencionan el diseño y construcción de un Horno de tratamientos térmicos,  un molino de bola para pulverización de  espumas esféricas metálicas.',12),
 	 (479,1,false,5,2,15,3,202504,202506,'ENSAYOS NO DESTRUCTIVOS','Asistencia técnica e inspecciones especiales.',3),
 	 (480,1,false,1,3,15,1,202304,202306,'INGENIERÍA ELÉCTRICA','Servicios, capacitación y ensayos en ingeniería eléctrica.',3),
 	 (510,1,false,24,4,26,1,202402,202412,'Metodologias Agiles','Enfoque para el desarrollo de software  basado en equipos autoorganizados y multidisciplinarios con toma de decisiones a corto plazo, con desarrollos iterativos e incrementales.',12),
 	 (511,1,false,10,4,26,1,202402,202412,'Inteligencia Artificial','Modelos capaces de realizar inferencia y actividades propias de los seres humanos.',12),
-	 (512,1,false,10,4,26,1,202402,202412,'Ciencia de Datos','análisis de datos, aprendizaje automático con la finalidad  de comprender y analizar los fenómenos reales',12),
+	 (512,1,false,10,4,26,1,202402,202412,'Ciencia de Datos','análisis de datos, aprendizaje automático con la finalidad  de comprender y analizar los fenómenos reales',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (682,1,false,20,3,17,3,202504,202506,'Gestión integral de procesos de certificación de normas ISO.','SISTEMAS DE GESTIÓN.',3),
 	 (481,1,false,8,4,15,1,202302,202312,'DICTÁMENES E INFORMES TÉCNICOS','Régimen para la importación de bienes usados comprendidos en determinadas posiciones arancelarias de la Nomenclatura Común del Mercosur. Informe técnico Preliminar y Final para las Resoluciones –166/2007 y 220/2007.
 
@@ -3937,43 +3911,43 @@ Régimen de Importación de Bienes mediante la Ley de Inversiones Mineras. Infor
 
 Modificación del decreto nro. 379/2001 por el que se instrumento un régimen de incentivo para los fabricantes comprendidos en los sectores de bienes de capital, informática y telecomunicaciones, que contaren con establecimientos industriales radicados en el territorio nacional.',12),
 	 (483,1,false,5,4,1,1,202402,202412,'Reparación de Equipos de medición.','Se realiza la revisión y calibración de equipos defectuosos que por algún motivo han dejado de funcionar o presentan fallas. Contamos con instrumental de precisión para la elaboración de diagnósticos de fallas.',12),
-	 (484,1,false,5,4,1,1,202402,202412,'Calibración de Instrumentos de Medición','Se realizan calibraciones y/o contratación de Calibres Pie de Rey y Micrómetros de exteriores.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (484,1,false,5,4,1,1,202402,202412,'Calibración de Instrumentos de Medición','Se realizan calibraciones y/o contratación de Calibres Pie de Rey y Micrómetros de exteriores.',12),
 	 (485,1,false,24,4,1,1,202302,202312,'Implementación de calidad','Brindamos asesoramiento a empresas/instituciones que requieran Certificar Normas de Calidad.',12),
 	 (486,1,false,3,2,1,1,202403,202411,'Mecánica 3D','Realizamos Servicio de impresión y escaneo de objetos en tres dimensiones.',6),
 	 (488,1,false,24,2,26,1,202403,202411,'Ventilación','Diseño de locales. Cálculo y diseño de equipos de tratamiento de aire. Montaje e instalación de conductos.',6),
 	 (489,1,false,7,4,26,1,202302,202312,'Neumática','Componentes e instalaciones. Diseño y cálculo de instalaciones de aire comprimido. Diagramación y lógica de circuitos.',12),
 	 (492,1,false,20,4,26,1,202402,202412,'Gestión de generación FV','Desarrollo de aplicaciones para monitoreo de equipamiento de generación distribuida. Integración de distintas marcas y modelos en un solo sistema. Ejemplos de aplicación. Aplicaciones basadas 100% en software libre.',12),
-	 (495,1,false,1,3,26,1,202308,202310,'Auditorías Energéticas','Auditorías de Eficiencia energética en edificios públicos y viviendas. Dictado de Cursos de auditoría para el SMEC (Sistema de Medición de Energía Comercial)',3),
+	 (495,1,false,1,3,26,1,202308,202310,'Auditorías Energéticas','Auditorías de Eficiencia energética en edificios públicos y viviendas. Dictado de Cursos de auditoría para el SMEC (Sistema de Medición de Energía Comercial)',3);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (497,1,false,9,4,26,1,202402,202412,'Consultoría y Servicios sobre desarrollos web y mobile','Desarrollo de aplicaciones web y mobile.',12),
 	 (726,1,false,5,4,30,1,202402,202412,'Control de Compactación en Alteos de Tosca','Ensayos para determinar la compactación en alteos de tosca para soportar cargas.',12),
 	 (498,1,false,11,3,26,1,202404,202406,'Computer Vision, Machine Learning, Simulación','Métodos para adquirir, procesar, analizar y comprender las imágenes del mundo real capaces de realizar inferencia y actividades propias de los seres humanos. Realizar inferencias y actividades propias de seres humanos a traves de las tecnologias.',3),
-	 (499,1,false,24,3,26,1,202308,202310,'Como virtualizar el apoyo escolar para asignaturas de secundario con costo cero basados en la Suite Google. Destinado a escuelas primarias y medias.','Herramientas y tecnicas de apoyo escolar en forma virtual',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (499,1,false,24,3,26,1,202308,202310,'Como virtualizar el apoyo escolar para asignaturas de secundario con costo cero basados en la Suite Google. Destinado a escuelas primarias y medias.','Herramientas y tecnicas de apoyo escolar en forma virtual',3),
 	 (500,1,false,24,4,26,1,202402,202412,'Vinculacion con empresas de auditoria Auditorias','Vinculacion con empresas de auditoria
 Auditorias',12),
 	 (502,1,false,9,4,26,1,202402,202412,'Auditoria y soporte a la Gestion de TI','Auditoria informatica y gestion de IT de acuerdo a mejoras practicas, revision de procesos, adquisiciones y evaluacion de proyectos.',12),
 	 (503,1,false,10,4,26,1,202402,202412,'Consultoria respecto de Transformación digital','Integración de las nuevas tecnologías en todas las áreas de una Organización  para cambiar procesos tradicionales y mejorarlos con la tecnologia.',12),
 	 (504,1,false,22,4,26,1,202302,202312,'Diseño de objetos de aprendizaje','Tecnologias de la informacion aplicadas a la Educacion',12),
 	 (505,1,false,22,4,26,2,202402,202412,'Tecnologías de la información y la comunicación para la educación','Tecnologias de la informacion aplicadas a la Educacion',12),
-	 (506,1,false,7,4,26,1,202302,202312,'Competencias en ciudadanía digital inteligente','Desarrollo de competencias en ciudadanos y goberanantes en el marco de nuevos paradigmas digitales',12),
+	 (506,1,false,7,4,26,1,202302,202312,'Competencias en ciudadanía digital inteligente','Desarrollo de competencias en ciudadanos y goberanantes en el marco de nuevos paradigmas digitales',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (513,1,false,10,4,26,3,202402,202412,'Big Data','Análisis predictivo de comportamientos extrayendo valor de los datos almacenados, y formulando predicciones a través de los patrones observados.',12),
 	 (515,1,false,9,4,26,3,202402,202412,'UX/UI','Diseño de interfaz de usuario basada en experiencia de usuario para aplicaciones moviles y web de acuerdo a estandares y mejores prácticas',12),
+	 (603,1,false,5,4,31,1,202402,202412,'Determinaciones Técnicas y Ensayos de Aptitudes','Instalaciones en Operación',12),
 	 (516,1,false,11,3,26,1,202303,202311,'Análisis de consecuencias , Riesgo en Instalaciones Industriales y Transporte de sustancias peligrosas.','Identificación, evaluación y cálculo de los riesgos posibles ante accidentes mayores en instalaciones industriales en las que estén involucradas sustancias químicas peligrosas (tóxicas, bioaerosoles, sustancias explosivas), ya sea en depósito, en proceso o en transporte. Estimación de consecuencias y determinación de distancias de afectación. Estudios de vulnerabilidad basados en modelos matemáticos de simulación.',6),
-	 (517,1,false,24,4,26,1,202302,202312,'Análisis HAZOP / What if','Estudios del análisis funcional de operabilidad utilizando herramientas suministradas por la Ingeniería de la Confiabilidad.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (517,1,false,24,4,26,1,202302,202312,'Análisis HAZOP / What if','Estudios del análisis funcional de operabilidad utilizando herramientas suministradas por la Ingeniería de la Confiabilidad.',12),
 	 (518,1,false,17,4,26,3,202302,202312,'Laboratorio de Electromedicina','Asesoramiento técnico, informes, relevamientos, proyectos, normatización, desarrollos, relativos a las áreas de Electromedicina - Bioingeniería.',12),
 	 (520,1,false,13,4,26,1,202402,202412,'Huella de Carbono','Cálculo de Huella de Carbono. Verificación y validación de Huella de Carbono calculada por un tercero.',12),
 	 (521,1,false,13,3,26,1,202504,202506,'Estudio de impacto ambiental y planes de gesstión ambiental.','Identificación, predicción, evaluación y mitigación los potenciales impactos en proyectos de obra o actividades.',3),
 	 (522,1,false,5,4,26,2,202402,202412,'Validación de ensayos, protocolos y técnicas.','Revisión de procedimientos, ensayos y técnicas.',12),
-	 (523,1,false,24,4,26,1,202402,202412,'Mediciones de emisiones gaseosas y calidad del aire','Estudio comparativo de agentes atmosféricos mediante distintos tipos de monitoreo.',12),
+	 (523,1,false,24,4,26,1,202402,202412,'Mediciones de emisiones gaseosas y calidad del aire','Estudio comparativo de agentes atmosféricos mediante distintos tipos de monitoreo.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (524,1,false,1,4,26,3,202302,202312,'Auditoría Energetica','Auditorias energéticas, destinadas a plantas industriales, instituciones publicas que permiten determinar acciones para el uso racionalización de la energía.',12),
 	 (525,1,false,11,4,26,3,202302,202312,'Análisis de Riesgo','Riesgo ambiental. Simulación de consecuencias. Riesgos de incendio y explosión. Métodos de identificación',12),
 	 (526,1,false,13,4,26,2,202402,202412,'Campos Electromagnéticos de Baja Frecuencia.','"Estudios de impacto ambiental en redes y subestaciones.
 Cálculo y Medición de CEM."',12),
 	 (529,1,false,12,4,26,1,202402,202412,'Gestión en Residuos','Planes Integrales de RSU. Residuos de la construcción. Planes de residuos en general.',12),
-	 (530,1,false,13,4,26,1,202402,202412,'ICMA - Ingeniería Civil y Medio Ambiente','Se realizan trabajos de tipo investigación y estudios de Impacto Ambiental, peritajes',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (530,1,false,13,4,26,1,202402,202412,'ICMA - Ingeniería Civil y Medio Ambiente','Se realizan trabajos de tipo investigación y estudios de Impacto Ambiental, peritajes',12),
 	 (532,1,false,12,4,26,1,202402,202412,'Topografía','Se realizan trabajos de tipo geodésico y mensurasRelevamiento topográfico',12),
 	 (535,1,false,15,3,26,3,202308,202310,'Capacitación en áreas de ciencia y tecnología de los alimentos','• Desarrollo de POES
 • Validación de POES
@@ -3987,7 +3961,8 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 • Estabilidad de la espuma. Método Constant. Se determina mediante agitación y medición de volumen y estabilidad de  la espuma.
 • Iso-alfa-ácidos. AOAC Official Meth. 965.21. Se determina mediante espectrofotometría.
 • Contenido de alcohol. AOAC Official Meth.935.22. Se determina mediante destilación y medición de densidad por picnómetro.
-• Análisis sensorial. Descripción de las características sensoriales y la correspondencia con su estilo.',12),
+• Análisis sensorial. Descripción de las características sensoriales y la correspondencia con su estilo.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (581,1,false,1,4,2,1,202302,202312,'Asesoramiento en el  cálculo para instalaciónes eléctricas.','Verificación de las corrientes de cortocircuito y medición de lazo de corriente. Se cuenta con un aparato de medición de corrientes de lazo y verificación de corrientes de cortocircuito en el sistema. El sistema debe requerir investigación de equipo multidisciplinario. La asistencia se realiza en edificios e industrias.',12),
 	 (583,1,false,1,3,2,1,202303,202311,'Medición y análisis de recursos eólicos','Investigación y análisis de los recursos eólicos que permita la planificación e implementación de un proyecto de energía eólica.',6),
 	 (539,1,false,14,4,26,3,202302,202312,'Análisis de miel','• Determinación de Humedad. Método. IE DHR-4 basado en IRAM 15931:2007, mediante un refractómetro. 
@@ -4001,8 +3976,7 @@ INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_ar
 • Flavonoides. Se miden espectrofotométricamente utilizando quercetina como estándar.
 • Análisis Sensorial. Descripción de las características sensoriales y de la correspondencia con su origen floral.',12),
 	 (541,1,false,24,4,26,1,202302,202312,'Utilización de materias primas e ingredientes no tradicionales para la alimentación humana y animal','La investigación tiene como eje central el desarrollo de formulaciones para la alimentación humana y animal con propiedades nutricionales, funcionales y sensoriales específicas.',12),
-	 (543,1,false,2,4,20,1,202302,202312,'Elaboración de Manuales de Operación y Mantenimiento','Asesoramiento, revisión y propuesta en la reestructuración, actualización y elaboración de los documentos necesarios para los procesos de Operación y Mantenimiento de los equipos fabricados y ofrecidos por las empresas.',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (543,1,false,2,4,20,1,202302,202312,'Elaboración de Manuales de Operación y Mantenimiento','Asesoramiento, revisión y propuesta en la reestructuración, actualización y elaboración de los documentos necesarios para los procesos de Operación y Mantenimiento de los equipos fabricados y ofrecidos por las empresas.',12),
 	 (546,1,false,8,4,13,1,202402,202412,'Res. Comisión Nacional de Comunicaciones N° 3690/2004','Medición de Campos Electromagnéticos en Sistemas de Comunicaciones (RNI, inmisión).',12),
 	 (547,1,false,24,4,13,1,202302,202312,'Medición IRAM 4062','Medición de Ruidos Molestos al Vecindario. NOTA: el servicio depende de la zona afectada por el ruido y el horario de referencia. Se toma como base una habitación y la medición en horario diurno.',12),
 	 (548,1,false,1,4,13,2,202302,202312,'Res. Secretaría de Energía N° 77/98','Medición de Campos Eléctricos y Magnéticos en Estaciones Transformadoras. NOTA: el servicio depende del tamaño de la estación. Se toma como referencia un predio de 50x50m.
@@ -4010,48 +3984,43 @@ Medición de Campos Eléctricos y Magnéticos en Líneas Eléctricas
 Medición de Ruido Audible en Líneas Eléctricas
 Medición de Radio interferencia en Sistemas Eléctricos de Potencia.',12),
 	 (549,1,false,1,4,13,1,202302,202312,'Campos Eléctricos y Magnéticos en Líneas Eléctricas y Estaciones Transformadoras','Estimaciones Teóricas de Campos Eléctricos y Magnéticos en Líneas Eléctricas y Estaciones Transformadoras. NOTA: el servicio se lo puede considerar como no rutinario ya que depende de la configuración de la Estación Transformadora (ET). Se toma como referencia una ET con un alinea de entrada y tres de salida de 50 MVA de potencia.',12),
-	 (550,1,false,24,4,13,1,202302,202312,'Medición IRAM 2281','Medición de Puesta a Tierra. NOTA: depende de la configuración del sistema. Se toma como base una jabalina.',12),
+	 (550,1,false,24,4,13,1,202302,202312,'Medición IRAM 2281','Medición de Puesta a Tierra. NOTA: depende de la configuración del sistema. Se toma como base una jabalina.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (551,1,false,24,3,4,1,202408,202410,'Evaluación de tecnologías','Análisis y evaluación de tecnologías emergentes o existentes para su aplicación en el sector productivo local, determinando su viabilidad y beneficios para la región.',3),
 	 (552,1,false,12,4,4,1,202302,202312,'Memoria Ambiental','Registro y análisis de las condiciones ambientales históricas de una región, para contribuir a una mejor planificación de futuros proyectos productivos y de infraestructura.',12),
 	 (553,1,false,13,4,4,1,202302,202312,'Estudios de Impacto Ambiental','Evaluaciones que miden los efectos de proyectos industriales o de infraestructura sobre el medio ambiente, con el objetivo de proponer medidas para mitigar impactos negativos.',12),
 	 (554,1,false,12,4,4,2,202402,202412,'Ingeniería Vial','Diseño y ejecución de proyectos de infraestructura vial que mejoren el transporte y conectividad en la región, favoreciendo el desarrollo económico local.',12),
-	 (556,1,false,13,3,4,1,202309,202311,'Economía Circular','Iniciativas para promover la reutilización de recursos, reciclaje y reducción de residuos en la industria regional, fomentando la sostenibilidad en el ciclo productivo.',3);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (556,1,false,13,3,4,1,202309,202311,'Economía Circular','Iniciativas para promover la reutilización de recursos, reciclaje y reducción de residuos en la industria regional, fomentando la sostenibilidad en el ciclo productivo.',3),
 	 (557,1,false,24,4,4,2,202402,202412,'Estudio de Comercialización','Investigación de mercados, estrategias de ventas y posicionamiento de productos locales en nuevos mercados, apoyando a la empresas de la región en su expansión comercial.',12),
 	 (558,1,false,20,4,4,2,202402,202412,'Desarrollo de software','Creación de soluciones de software personalizadas para mejorar la gestión y operación de empresas locales, así como para automatizar procesos en diferentes sectores.',12),
 	 (560,1,false,6,4,4,3,202402,202412,'Eficiencia productiva','Aplicación de técnicas de mejora continua y automatización de procesos en empresas de la región para aumentar la productividad y competitividad en el mercado.',12),
 	 (562,1,false,13,4,4,2,202402,202412,'Huella de Carbono','Se realizan estudios de huellas de carbono en productos y procesos industriales.',12),
-	 (563,1,false,13,4,17,1,202402,202412,'Estudios de impacto ambiental.','CUIDADO DEL MEDIO AMBIENTE - SUSTENTABILIDAD.',12),
+	 (563,1,false,13,4,17,1,202402,202412,'Estudios de impacto ambiental.','CUIDADO DEL MEDIO AMBIENTE - SUSTENTABILIDAD.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (565,1,false,13,4,17,1,202402,202412,'Consultoría ambiental.','CUIDADO DEL MEDIO AMBIENTE - SUSTENTABILIDAD.',12),
 	 (566,1,false,24,4,17,1,202302,202312,'Análisis ergonómico de puestos de trabajo.','ASESORÍAS Y CONSULTORÍAS',12),
 	 (567,1,false,24,4,17,1,202302,202312,'Análisis, medición y mejora de las condiciones del lugar de trabajo.','ASESORÁS Y CONSULTORÍAS',12),
 	 (573,1,false,12,2,17,1,202403,202405,'Asesoramiento y Asistencia Técnica en todo tipo de Obras Civiles','ASESORÍAS Y CONSULTORÍAS',3),
-	 (574,1,false,12,4,17,1,202402,202412,'Prueba de cargas en estructuras, incluye: Medición de cargas. Medición de deformaciones, flecha máxima y flecha residual.','ASESORÍAS Y CONSULTORÍAS',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (574,1,false,12,4,17,1,202402,202412,'Prueba de cargas en estructuras, incluye: Medición de cargas. Medición de deformaciones, flecha máxima y flecha residual.','ASESORÍAS Y CONSULTORÍAS',12),
 	 (575,1,false,11,4,17,1,202302,202312,'Evaluación de capacidad de carga en prototipos pre moldeados.','ASESORÍAS Y CONSULTORÍAS',12),
 	 (576,1,false,24,4,17,1,202402,202412,'Trabajos de Relevamientos Topográficos','ASESORÍAS Y CONSULTORÍAS',12),
 	 (578,1,false,8,4,17,1,202302,202312,'Consultoría en mástiles para elevación de antenas (torres)','ASESORÍAS Y CONSULTORÍAS',12),
 	 (579,1,false,20,4,2,2,202402,202412,'Eficiencia energética','Gestión de la eficiencia energética y el desarrollo de programa para empresas e instituciones.',12),
-	 (580,1,false,1,4,2,1,202402,202412,'Desarrollo de nuevos dispositivos generadores de energía','Desarrollo de generadores para molinos eólicos.',12),
+	 (580,1,false,1,4,2,1,202402,202412,'Desarrollo de nuevos dispositivos generadores de energía','Desarrollo de generadores para molinos eólicos.',12);
+INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
 	 (584,1,false,1,4,2,2,202302,202312,'Verificación y asesoramiento para tendido eléctrico seguro y eficaz en edificio.','Verificación de instalaciones eléctricas existentes con equipos de medición de corrientes de lazo e interpretación normativa que requiera investigación. Análisis de sistemas de distribución futuros bajo condiciones que requieran aportes de investigación.',12),
 	 (585,1,false,1,4,2,1,202302,202312,'Asesoramiento para el Desarrollo de Pliegos de Licitación para obra.','Armado y presentación a solicitud del cliente, de un pliego de licitación para la alimentación de energía.',12),
 	 (586,1,false,1,3,2,1,202409,202411,'Asesoramiento e inspección eléctrica con informe final','Verificación de un sistema eléctrico y análisis normativo que requieran investigación y actuación de equipo multidisciplinario. Ensayos técnicos bajo normativas vigentes en bombas de incendio y niveles de iluminación en sistemas que requieran certificación y actuación de equipo multidisciplinario.',3),
 	 (587,1,false,16,2,2,3,202508,202510,'Auditoría de Tanques de Almacenamiento de Hidrocarburos','La asistencia técnica consiste en la realización de Auditorias según resolución 404/94 de la Secretaría de Energía de la Nación. Estas se realizan en Refinerías, plantas de almacenaje y despacho de combustibles, almacenajes en tanques de recepción y entrega en puertos. La resolución considera: Auditoria de Plantas de Combustibles Líquidos, Auditoria de Plantas de LPG (Liquefied Petroleum Gas) y Ensayos decenales de Tanques sometidos a presión.
 La asistencia técnica consiste en la realización de Auditorias según resolución SE 785/05 de la Secretaría de Energía de la Nación. Esta consiste en el Control de Pérdidas de Tanques Aéreos de Almacenamiento de Hidrocarburos y sus Derivados. La resolución considera: Auditorias Técnicas de Integridad de Tanques y Auditorias Ambientales.',3),
-	 (588,1,false,7,4,2,1,202402,202412,'Asesoramiento en sistema de control e instrumentación industrial y electrónica de potencia','Asesoramiento técnico',12);
-INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
+	 (588,1,false,7,4,2,1,202402,202412,'Asesoramiento en sistema de control e instrumentación industrial y electrónica de potencia','Asesoramiento técnico',12),
 	 (590,1,false,1,4,31,1,202402,202412,'Estudios Económicos','Energía Eléctrica. Control de sistemas de alumbrados y sistematizaciones',12),
 	 (593,1,false,1,4,31,1,202302,202312,'Estudios Económicos','Energía Eléctrica. Distribución de energía',12),
 	 (594,1,false,1,4,31,1,202302,202312,'Estudios de Problemas Técnicos Especiales','Energía Eléctrica. Energía solar',12),
 	 (595,1,false,1,4,31,2,202402,202412,'Estudios de Problemas Técnicos Especiales','Energía Eléctrica. Sistemas de energía no convencionales',12),
-	 (596,1,false,1,4,31,1,202402,202412,'Estudios de Problemas Técnicos Especiales','Energía Eléctrica. Grupos generadores',12),
-	 (597,1,false,1,4,31,1,202302,202312,'Estudios de Problemas Técnicos Especiales','Energía Eléctrica. Estaciones transformadoras',12),
-	 (598,1,false,24,4,31,2,202402,202412,'Estudios de Problemas Técnicos Especiales','Líneas de transmisión y distribución',12),
-	 (600,1,false,5,4,31,1,202302,202312,'Determinaciones técnicas y ensayos de aptitudes','Test periódicos de equipos',12),
-	 (601,1,false,2,2,31,3,202504,202506,'Determinaciones técnicas y ensayos de aptitudes','Control de equipos para mantenimiento',3),
-	 (602,1,false,5,4,31,1,202302,202312,'Determinaciones técnicas y ensayos de aptitudes','Control de equipos para recepción',12);
+	 (596,1,false,1,4,31,1,202402,202412,'Estudios de Problemas Técnicos Especiales','Energía Eléctrica. Grupos generadores',12);
 INSERT INTO public.hecho_oferta (id_hecho_oferta,oferta_count,vigente_flag,id_area,id_tipo_servicio,id_unidad,id_modalidad,id_mes_inicio,id_mes_fin,titulo_oferta,descripcion_oferta,duracion) VALUES
-	 (603,1,false,5,4,31,1,202402,202412,'Determinaciones Técnicas y Ensayos de Aptitudes','Instalaciones en Operación',12),
+	 (597,1,false,1,4,31,1,202302,202312,'Estudios de Problemas Técnicos Especiales','Energía Eléctrica. Estaciones transformadoras',12),
 	 (604,1,false,8,4,31,1,202302,202312,'Asesoramiento y Estudios de Redes','Aplicaciones en actividad rural',12),
 	 (606,1,false,1,4,31,1,202402,202412,'Asesoramiento y Estudios de Redes','Distribución eléctrica',12),
 	 (607,1,false,13,2,14,3,202309,202311,'Gestión Ambiental.','Asistencia en la optimización de procesos industriales para la gestión ambiental y de medio ambiente.',3),
